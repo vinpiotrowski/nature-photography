@@ -21,8 +21,6 @@ $dark-grey:        #333333;
 
 $link-blue:        #009BFF;
 
-$link-blue:        #9AB2C5;
-
 $grey:             #555555;
 
 $pure-black:       #141414;
@@ -45,6 +43,10 @@ $facebook:            '\f082';
 $twitter:             '\f081';
 
 $instagram:           '\f16d';
+
+$quoteleft:           '\e977';
+
+$quoteright:          '\e978';
 
 
 
@@ -132,6 +134,51 @@ body, html {
   background: $dark-grey;
 }
 
+.container-quote {
+  padding-left: 21px;
+  position: relative;
+}
+
+.container-quote:before {
+  color: $dark-grey;
+  content: $quoteleft;
+  font-family: $glyph-font;
+  font-size: 70px;
+  left: 14px;
+  position: absolute;
+  top: -21px;
+  z-index: 0;
+}
+
+.container-quote p {
+  color: $white;
+  font-size: 14pt;
+  line-height: 2em;
+  position:relative;
+  z-index: 1;
+}
+
+.container-columns {
+  column-count: 2;
+
+  -webkit-column-break-inside: avoid;
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+.container-columns p {
+  margin: 0;
+}
+
+.container-pull-right {
+  float: right!important;
+  margin-top: -35px;
+}
+
+.container-pull-right .container-image {
+  margin: 0 auto;
+}
+
 .container-image img {
   display: block;
   margin: 0 auto;
@@ -167,12 +214,13 @@ span, p {
 }
 
 a {
-  color: $text-grey;
+  color: $link-blue;
   transition: all .3s ease-in-out;
 }
 
 a:hover {
-  color: $orange!important;
+  color: $orange;
+  text-decoration: none;
 }
 
 strong {
@@ -266,6 +314,14 @@ hr:before {
     font-size: 21px;
   }
 
+  .container-columns {
+    column-count: 1;
+  }
+
+  .container-pull-right {
+    float: left!important;
+    margin-top: 0;
+  }
 
   .footer a:before {
     font-size: 35px;
