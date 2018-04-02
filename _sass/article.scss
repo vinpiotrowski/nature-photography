@@ -1,0 +1,28 @@
+.article {
+    position: relative;
+}
+
+.article + .article {
+    margin-top: 49px;
+}
+
+.article h3 {
+    color: $text-grey;
+}
+
+.article .container-image {
+    margin-bottom: 14px;
+    margin-top: 14px;
+}
+
+.article .link-permalink {
+    position: absolute;
+    right: 14px;
+    z-index: 1;
+}
+
+@media(max-width: 767px) {
+    .article .link-permalink {
+        display: none;
+    }
+}

@@ -1,0 +1,80 @@
+.container-tertiary {
+    background: #333;
+    border-radius: 7px;
+    clear: both;
+    margin: 0 auto 21px;
+}
+
+.container-tertiary h3 {
+    color: #f1f1f1;
+    float: left;
+    margin: 9px 14px;
+}
+
+.container-tertiary ul {
+    list-style: none inside;
+    float: right;
+    margin: 0;
+    padding: 0 14px;
+}
+
+.container-tertiary li {
+    float: left;
+    padding: 0;
+}
+
+.container-tertiary a {
+    color: $text-grey;
+    display: block;
+    padding: 14px;
+    text-decoration: none;
+}
+
+body.overview .container-tertiary .overview a,
+body.mountains .container-tertiary .mountains a,
+body.foothills .container-tertiary .foothills a,
+body.prairies .container-tertiary .prairies a,
+body.badlands .container-tertiary .badlands a,
+body.northwest .container-tertiary .northwest a,
+body.techniques .container-tertiary .techniques a,
+body.news .container-tertiary .news a,
+body.inspiration .container-tertiary .inspiration a
+ {
+    background: $blue;
+    color: $white;
+    pointer-events: none;
+}
+
+@media(max-width: 960px) {
+    .container-tertiary {
+        border-radius: 0;
+        margin-left: -14px;
+        margin-right: -14px;
+    }
+
+    .container-tertiary ul {
+        border-radius: 0;
+    }
+
+    .container-tertiary li {
+        font-size: .77em;
+    }
+}
+
+@media(max-width: 767px) {
+    .container-tertiary h3 {
+        float: none;
+        margin: 14px 14px 0;
+    }
+
+    .container-tertiary ul {
+        float: left;
+    }
+
+    .container-tertiary a {
+        border-radius: 7px;
+        padding: 7px 14px;
+        margin: 7px 0;
+    }
+
+}

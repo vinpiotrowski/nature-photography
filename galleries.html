@@ -1,0 +1,45 @@
+---
+layout: default
+permalink: /photos/
+section: "overview"
+title: "Photo Galleries"
+---
+
+{% include tertiary-landscapes.html %}
+
+<section class="clearfix">
+    <div class="col-xs-12">
+        <h1 class="title">Browse photos by gallery</h1>
+    </div>
+
+    {% for post in site.posts reversed %}
+    {% if post.layout == 'gallery' %}
+    <div class="gallery tile">
+        <div class="col-xs-12 col-sm-6">
+            <a href="{{ post.permalink | prepend: site.baseurl }}">
+                <div class="container-image">
+                    <img src="{{ '/content/images/' | prepend: site.baseurl | append: post.thumbnail | append: '.jpg' }}" alt="">
+                </div>
+            </a>
+        </div>
+        <div class="col-xs-12 col-sm-6 description">
+            <h3>{{ post.title }}</h3>
+            <div>{{ post.summary }}</div>
+            <a href="{{ post.permalink | prepend: site.baseurl }}" title="View gallery" class="call-to-action secondary">View gallery</a>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+    {% endif %}
+    {% endfor %}
+
+</section>
+
+
+
+
+
+
+
+
+
+

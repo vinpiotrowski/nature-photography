@@ -1,0 +1,31 @@
+---
+layout: default
+permalink: /blog/
+section: "overview"
+title: "Photo Galleries"
+---
+
+{% include tertiary-articles.html %}
+
+<div class="clearfix">
+
+    {% for post in site.posts %}
+        {% if post.layout == 'article' %}
+            <section class="article clearfix">
+                <a href="{{ post.permalink }}" class="link-permalink call-to-action secondary">Permalink</a>
+                {{ post.content }}
+            </section>
+        {% endif %}
+    {% endfor %}
+
+</div>
+
+
+
+
+
+
+
+
+
+

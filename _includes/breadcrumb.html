@@ -1,0 +1,54 @@
+<div class="container-breadcrumb">
+    <div class="breadcrumb">
+        <ul>
+            <li><a href="/">Home</a></li>
+
+            {% if page.section == 'photos' %}
+                <li><a href="/photos">Photos</a></li>
+            {% endif %}
+
+            {% if page.subsection == 'mountains' %}
+                <li><a href="/photos/canadian-rockies-photo-gallery">Canadian Rockies</a></li>
+            {% endif %}
+
+            {% if page.subsection == 'foothills' %}
+                <li><a href="/photos/alberta-foothills-photo-gallery">Foothills</a></li>
+            {% endif %}
+
+            {% if page.subsection == 'prairies' %}
+                <li><a href="/photos/alberta-prairies-photo-gallery">Prairies</a></li>
+            {% endif %}
+
+            {% if page.subsection == 'badlands' %}
+                <li><a href="/photos/alberta-badlands-photo-gallery">Badlands</a></li>
+            {% endif %}
+
+            {% if page.subsection == 'northwest' %}
+            <li><a href="/photos/pacific-northwest-and-united-states-photo-gallery">Pacific Northwest</a></li>
+            {% endif %}
+
+            {% if page.section == 'articles' %}
+            <li><a href="/blog">Articles</a></li>
+            {% endif %}
+
+            {% if page.subsection == 'techniques' %}
+            <li><a href="/blog/nature-and-landscape-photography-tips-and-techniques">Tips & Techniques</a></li>
+            {% endif %}
+
+            {% if page.subsection == 'news' %}
+            <li><a href="/blog/nature-and-landscape-photography-tips-and-techniques">News & Updates</a></li>
+            {% endif %}
+
+            {% if page.subsection == 'inspiration' %}
+            <li><a href="/blog/inspiring-photographers">Inspiring People</a></li>
+            {% endif %}
+
+            <li class="active">{{ page.title }}</li>
+        </ul>
+    </div>
+</div>
+
+
+
+
+

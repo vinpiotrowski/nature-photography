@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  {% include head.html %}
+
+  <body class="{{page.section}}">
+
+  <div class="page-content">
+
+      {% include header.html %}
+
+      <div class="col-xs-12">
+          {% include breadcrumb.html %}
+      </div>
+
+      <div class="col-xs-12">
+          <div class="container-image photo">
+              {{ content }}
+          </div>
+          {% if page.previousOverride %}
+            <a class="link-prev" href="#" onclick="window.location.replace( '{{page.previousOverride | prepend: site.baseurl}}' );">Previous</a>
+          {% else %}
+            <a class="link-prev" href="#" onclick="window.location.replace( '{{page.previous.url | prepend: site.baseurl}}' );">Previous</a>
+          {% endif %}
+
+          {% if page.nextOverride %}
+            <a class="link-next" href="#" onclick="window.location.replace( '{{page.nextOverride | prepend: site.baseurl}}' );">Next</a>
+          {% else %}
+            <a class="link-next" href="#" onclick="window.location.replace( '{{page.next.url | prepend: site.baseurl}}' );">Next</a>
+          {% endif %}
+      </div>
+
+      <div class="col-xs-12">
+          <h1>{{ page.title}}</h1>
+          <p>{{ page.description}}</p>
+      </div>
+
+      <div class="clearfix"> </div>
+
+      {% include footer.html %}
+  </div>
+
+
+  </body>
+
+</html>

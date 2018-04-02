@@ -1,0 +1,25 @@
+---
+layout: default
+---
+
+{% include tertiary-landscapes.html %}
+
+<div class="col-xs-12">
+    <h1>{{ page.title }}</h1>
+    <p>{{ page.description}}</p>
+</div>
+
+<div class="tiles">
+    {% assign test = page.tag %}
+    {% for post in site.posts reversed %}
+        {% if post.subsection contains test %}
+            <div class="col-xs-4 tile">
+                <a href="{{ post.permalink | prepend: site.baseurl }}">
+                    <div class="container-image">
+                        <img src="{{ '/content/images/' | prepend: site.baseurl | append: post.photo | append: '-240x240.jpg' }}" alt="{{ post.alt }}">
+                    </div>
+                </a>
+            </div>
+        {% endif %}
+    {% endfor %}
+</div>

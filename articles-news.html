@@ -1,0 +1,44 @@
+---
+layout: default
+permalink: /blog/news-and-updates
+categories: article news
+section: "news"
+title: "Thoughts & News Articles"
+---
+
+{% include tertiary-articles.html %}
+
+<section class="clearfix">
+    <div class="col-xs-12">
+        <h2 class="title">Thoughts & News</h2>
+    </div>
+    {% assign idx = 0 %}
+    {% assign sortedPosts = site.posts %}
+    {% for post in sortedPosts %}
+    {% if post.subsection == 'news' %}
+    <div class="col-xs-12 col-sm-6 tile">
+        <a href="{{ post.permalink | prepend: site.baseurl }}">
+            <div class="container-image">
+                <img src="{{'/content/images/' | prepend: site.baseurl | append: post.thumbnail | append: '-500x500.jpg'}}" alt="">
+            </div>
+        </a>
+        <div>
+            <h4><time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%b %-d, %Y" }}</time></h4>
+            <h3>{{ post.title | truncate: 35 }}</h3>
+            {{ post.description | truncate: 210 }}
+        </div>
+        <a href="{{ post.permalink | prepend: site.baseurl }}" title="Read more" class="call-to-action secondary">Read More</a>
+    </div>
+    {% assign idx = idx | plus:1 %}
+    {% endif %}
+    {% endfor %}
+</section>
+
+
+
+
+
+
+
+
+
