@@ -4,10 +4,40 @@ permalink: /contact
 section: "overview"
 title: "Contact"
 ---
-<div class="col-xs-12">
-    <h3>Contact</h3>
-</div>
+{% include tertiary-contact.html %}
+
+<style>
+    .email * {
+        display: inline-block;
+        margin: 0;
+    }
+</style>
+
+<section class="clearfix">
 
 
 
 
+        <div class="col-sm-6">
+            <h3>Location:</h3>
+            <div class="container-image">
+                <img src="{{ '/content/images/mapLocation.jpg' | prepend: site.baseURL }}" alt="" />
+            </div>
+            <p>I'm located in Calgary Alberta Canada. I often photograph the local areas like Kananaskis, Dinosaur Provincial Park, Banff, and Jasper. If you see me in the field walk up and say hi. I drive a black Nissan Xterra with a BirdNerds sticker on it.</p>
+        </div>
+
+
+        <div class="col-sm-6">
+            <h3>Email:</h3>
+            <span class="email">
+                <h1>vpiotrow</h1>
+                <h4>-at-</h4>
+                <h1>yahoo</h1>
+                <h4>-dot-</h4>
+                <h1>ca</h1>
+            </span>
+        </div>
+
+
+
+</section>

@@ -4,6 +4,7 @@ section: "home"
 title: "Home"
 ---
 
+
     <section class="clearfix">
         <div class="hero homepage col-xs-12 no-gutter-xs">
             <div class="container-image">
@@ -11,6 +12,7 @@ title: "Home"
             </div>
             <div class="headline">
                 <h1>An exhibition of <strong>nature</strong> and <strong>light</strong>;</h1>
+                <h3>Vincent Piotrowski is a nature and landscape photographer living in Alberta Canada celebrating the wonders of the outdoors.</h3>
             </div>
         </div>
     </section>
@@ -34,7 +36,7 @@ title: "Home"
             </a>
             <div>
                 {% assign words = post.title | split: '|' %}
-                <h4>{{ words[0] }}</h4>
+                <h4 class="reverse">{{ words[0] }}</h4>
                 <h3>{{ words[1] }}</h3>
                 {{ post.alt | truncate: 105 }}
             </div>
@@ -86,15 +88,15 @@ title: "Home"
         <div class="col-xs-12">
             <hr />
         </div>
-        <div class="col-xs-12">
-            <h2 class="title">nature-photography.ca</h2>
-        </div>
         <div class="col-xs-12 col-sm-6 container-pull-right">
             <div class="container-image">
                 <img src="{{ '/content/images/nature-photography-camera.jpg' | prepend: site.baseURL }}" alt="" />
             </div>
         </div>
         <div class="col-xs-12 col-sm-6">
+            <div>
+                <h2 class="title">nature-photography.ca</h2>
+            </div>
             <p>You never know what you'll see around the next bend in the trail; a calm lake, sun breaking through the trees, or perhaps a mountain goat riding a jet ski. When the lighting is right these scenes come alive and I capture them creatively with my camera.</p>
             <p>For me being out in the wilderness is super fun-ness bigtime! Alongside the photos there are pretty words describing the adventures that coincide with a nature photographer's lifestyle. These tales are sexy, interesting, funny, angry, and a whole lot of other things.</p>
         </div>

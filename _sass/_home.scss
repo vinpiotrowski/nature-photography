@@ -5,14 +5,20 @@
     transform: translate(-50%, -50%);
 }
 
+.homepage .headline {
+    transform: translate(-50%, -35%);
+}
+
 .headline h1 {
+    font-weight: 100;
+    margin: 7px 0;
     white-space: nowrap;
-    text-shadow: 0 0 14px #000;
 }
 
 .headline h3 {
     display: inline;
-    text-shadow: 0 0 14px #000;
+    font-weight: 400;
+    margin: 7px 0;
 }
 
 .call-to-action.primary {

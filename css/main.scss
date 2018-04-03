@@ -40,6 +40,8 @@ $chev-circle-right:   '\f138';
 
 $facebook:            '\f082';
 
+$menu:                '\e900';
+
 $twitter:             '\f081';
 
 $instagram:           '\f16d';
@@ -172,7 +174,6 @@ body, html {
 
 .container-pull-right {
   float: right!important;
-  margin-top: -35px;
 }
 
 .container-pull-right .container-image {
@@ -185,7 +186,7 @@ body, html {
   max-width: 100%;
 }
 
-h1, h2, h3, h4 {
+h1, h2, h3  {
   color: $white;
 }
 
@@ -207,6 +208,10 @@ h3 {
 
 h2 + p {
   font-size: 14pt;
+}
+
+h4 {
+  margin: 0;
 }
 
 span, p {
