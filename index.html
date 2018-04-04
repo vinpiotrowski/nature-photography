@@ -25,7 +25,7 @@ title: "Home"
         </div>
 
         {% assign idx = 0 %}
-        {% assign sortedPosts = site.posts | sort: 'taken' | reverse %}
+        {% assign sortedPosts = site.posts | sort: 'featured' | reverse %}
         {% for post in sortedPosts %}
         {% if post.categories contains 'photo' %}
         <div class="col-xs-12 col-sm-4 tile">

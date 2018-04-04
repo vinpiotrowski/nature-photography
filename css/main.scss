@@ -208,7 +208,7 @@ a:hover {
 
 strong {
   font-size: 1.05em;
-  text-shadow: 0 0 1px $text-grey;
+  -webkit-text-stroke-width: 1px;
 }
 
 hr {
