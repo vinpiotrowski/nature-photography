@@ -18,7 +18,7 @@ title: "Photo Galleries"
         <div class="col-xs-12 col-sm-6">
             <a href="{{ post.permalink | prepend: site.baseurl }}">
                 <div class="container-image">
-                    <img src="{{ '/content/images/' | prepend: site.baseurl | append: post.thumbnail | append: '.jpg' }}" alt="">
+                    <img src="{{ '/content/images/' | prepend: site.baseurl | append: post.thumbnail | append: '-500x500.jpg' }}" alt="">
                 </div>
             </a>
         </div>
