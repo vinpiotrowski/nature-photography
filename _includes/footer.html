@@ -3,8 +3,8 @@
     <div class="col-xs-12">
         <hr />
         <a href="//www.instagram.com/birdnerdsca/" class="insta"><span>Instagram</span></a>
-        <a href="//facebook.com/birdnerdsca/" class="fb"><span>Facebook</span></a>
-        <a href="//twitter.com/bird_nerds/" class="twitter"><span>Twitter</span></a>
+        <a href="//www.facebook.com/vincentpiotrowski/" class="fb"><span>Facebook</span></a>
+        <a href="//twitter.com/vpiotrowski" class="twitter"><span>Twitter</span></a>
 
         <div class="clearfix"></div>
 
@@ -17,3 +17,20 @@
 
 
 
+<script type="text/javascript">
+
+    var toggleButton = document.getElementById("toggle-nav"), body = document.getElementsByTagName("body")[0];
+
+    // Fire toggleClass function when toggleButton is clicked
+    toggleButton.onclick = toggleClass;
+
+    function toggleClass(event) {
+        var el = event.target;
+        if ( -1 !== el.className.indexOf( "active" ) ) {
+            el.className = el.className.replace( " active", "" );
+        } else {
+            el.className += " active"
+        }
+    }
+
+</script>

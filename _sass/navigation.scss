@@ -1,0 +1,161 @@
+
+.toggle-navigation {
+    color: $grey;
+    display: none;
+    height: 49px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    width: 49px;
+}
+
+.toggle-navigation:before {
+    content: $menu;
+    display: block;
+    font-family: $glyph-font;
+    font-weight: 100;
+    font-size: 21px;
+    margin-top: 7px;
+}
+
+.container-menu {
+    float: right;
+    padding: 17px 0;
+    text-align: right;
+}
+
+.container-menu ul {
+    margin: 0;
+    padding: 0;
+}
+
+.container-menu li {
+    display: inline-block;
+}
+
+.container-menu .secondary li:before {
+    color: $grey;
+    content: " | ";
+}
+
+.container-menu .secondary li:first-child:before {
+    content: "";
+}
+
+.container-menu .secondary a {
+    color: $grey;
+    display: inline-block;
+    padding: 7px 7px 0;
+    text-decoration: none;
+}
+
+.container-menu .primary a {
+    color: $white;
+    display: inline-block;
+    font-size: 28px;
+    padding: 7px 10px 0;
+    text-decoration: none;
+}
+
+.container-menu .primary a:hover,
+.container-menu .secondary a:hover {
+    color: $orange;
+}
+
+@media(max-width: 960px) {
+
+    .container-menu {
+        font-size: 14px;
+    }
+
+    .container-menu .primary a {
+        font-size: 21px;
+    }
+
+    .container-image.photo {
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+}
+
+@media(max-width: 767px) {
+
+    .container-menu .secondary li:before {
+        display: none;
+    }
+
+    .toggle-navigation {
+        display: block;
+        position: absolute;
+        top: 7px;
+        right: 7px;
+        transition: all .3s ease-in-out;
+    }
+
+    .container-menu {
+        max-height: 0;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        right: 7px;
+        text-align: center;
+        top: 57px;
+        transition: all .3s ease-in-out;
+        width: 49px;
+        z-index: 49;
+    }
+
+    .container-menu .secondary {
+        display: none;
+    }
+
+    .container-menu .primary a, .container-menu .secondary a {
+        border-bottom: solid 1px $grey;
+        color: $grey;
+        font-size: 10px;
+        height: 49px;
+        padding: 0;
+        text-align: center;
+        text-transform: capitalize;
+        width: 49px;
+    }
+
+    .container-menu a:before {
+        content: $camera;
+        display: block;
+        font-family: $glyph-font;
+        font-size: 21px;
+        font-weight: 100;
+        margin-top: 7px;
+    }
+
+    .container-menu a.home:before {
+        content: $home;
+    }
+
+    .container-menu a.contact:before {
+        content: $comment;
+    }
+
+    .container-menu a.photos:before {
+        content: $photo;
+    }
+
+    .container-menu a.blog:before {
+        content: $news;
+    }
+
+    .container-menu a.shop:before {
+        content: $shoppingcart;
+    }
+
+    .toggle-navigation.active {
+        background: $orange;
+        color: $white;
+    }
+
+    .toggle-navigation.active + .container-menu {
+        background: $orange;
+        max-height: 350px;
+    }
+}

@@ -37,6 +37,10 @@
     text-decoration: none;
 }
 
+.breadcrumb a:hover {
+    color: $orange;
+}
+
 .breadcrumb li:first-child a {
     padding: 11px 0 11px 21px;
 }

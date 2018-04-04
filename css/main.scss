@@ -32,15 +32,26 @@ $text-grey:        #989898;
 $white:            #f1f1f1;
 
 
+
 $angle-left:          '\f104';
 
 $angle-right:         '\f105';
 
+$camera:              '\e901';
+
 $chev-circle-right:   '\f138';
+
+$comment:             '\f0e5';
 
 $facebook:            '\f082';
 
+$home:                '\e904';
+
 $menu:                '\e900';
+
+$news:                '\f1ea';
+
+$photo:               '\e902';
 
 $twitter:             '\f081';
 
@@ -49,6 +60,8 @@ $instagram:           '\f16d';
 $quoteleft:           '\e977';
 
 $quoteright:          '\e978';
+
+$shoppingcart:        '\e903';
 
 
 
@@ -85,51 +98,8 @@ body, html {
 
 .container-logo {
   float: left;
+  max-width: 274px;
   padding: 35px 0 35px;
-}
-
-.container-menu {
-  float: right;
-  padding: 17px 0;
-  text-align: right;
-}
-
-.container-menu ul {
-  margin: 0;
-  padding: 0;
-}
-
-.container-menu li {
-  display: inline-block;
-}
-
-.container-menu .secondary li:before {
-  color: $grey;
-  content: " | ";
-}
-
-.container-menu .secondary li:first-child:before {
-  content: "";
-}
-
-.container-menu .secondary a {
-  color: $grey;
-  display: inline-block;
-  padding: 7px 7px 0;
-  text-decoration: none;
-}
-
-.container-menu .primary a {
-  color: $white;
-  display: inline-block;
-  font-size: 28px;
-  padding: 7px 10px 0;
-  text-decoration: none;
-}
-
-.container-menu .primary a:hover,
-.container-menu .secondary a:hover {
-  color: $orange;
 }
 
 .container-contrast {
@@ -162,6 +132,14 @@ body, html {
 
 .container-columns {
   column-count: 2;
+
+  -webkit-column-break-inside: avoid;
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+.container-columns-3 {
+  column-count: 3;
 
   -webkit-column-break-inside: avoid;
   page-break-inside: avoid;
@@ -234,11 +212,11 @@ strong {
 }
 
 hr {
-  background: linear-gradient(left,rgba(51,51,51,0) 0%,rgba(51,51,51,0) 15%,rgba(51,51,51,0.65) 50%,rgba(51,51,51,0) 85%,rgba(51,51,51,0) 100%);
-  background: -webkit-linear-gradient(left,rgba(51,51,51,0) 0%,rgba(51,51,51,0) 15%,rgba(51,51,51,0.65) 50%,rgba(51,51,51,0) 85%,rgba(51,51,51,0) 100%);
+  background: linear-gradient(left,rgba(77,77,77,0) 0%,rgba(77,77,77,0) 15%,rgba(77,77,77,0.65) 50%,rgba(77,77,77,0) 85%,rgba(77,77,77,0) 100%);
+  background: -webkit-linear-gradient(left,rgba(77,77,77,0) 0%,rgba(77,77,77,0) 15%,rgba(77,77,77,0.65) 50%,rgba(77,77,77,0) 85%,rgba(77,77,77,0) 100%);
   border: 0;
   height: 3px;
-  margin: 18px 0;
+  margin: 28px 0 21px;
   position: relative;
 }
 
@@ -255,6 +233,10 @@ hr:before {
 
 .reverse {
   color: $white!important;
+}
+
+.center {
+  text-align: center;
 }
 
 .footer {
@@ -299,14 +281,6 @@ hr:before {
 
 @media(max-width: 960px) {
 
-  .container-menu {
-    font-size: 14px;
-  }
-
-  .container-menu .primary a {
-    font-size: 21px;
-  }
-
   .container-image.photo {
     margin-left: -15px;
     margin-right: -15px;
@@ -315,11 +289,20 @@ hr:before {
 
 @media(max-width: 767px) {
 
+  .container-logo {
+    padding: 17px 0 21px;
+    max-width: 210px;
+  }
+
   h1 {
     font-size: 21px;
   }
 
   .container-columns {
+    column-count: 1;
+  }
+
+  .container-columns-3 {
     column-count: 1;
   }
 
@@ -337,7 +320,7 @@ hr:before {
   }
 }
 
-
+@import "navigation";
 @import "home";
 @import "breadcrumb";
 @import "photo";
