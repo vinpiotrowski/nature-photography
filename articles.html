@@ -1,13 +1,16 @@
 ---
 layout: default
 permalink: /blog/
-section: "overview"
+section: "blog overview"
 title: "Photo Galleries"
 ---
 
-{% include tertiary-articles.html %}
+<div class="col-xs-12">
+    {% include tertiary-articles.html %}
+</div>
 
-<div class="clearfix">
+
+<div class="col-xs-12 no-gutter-xs clearfix">
 
     {% for post in site.posts %}
         {% if post.layout == 'article' %}

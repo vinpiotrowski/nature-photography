@@ -1,3 +1,10 @@
+body {
+    background-image: url('/content/images/cover.jpg');
+    background-position: center -70px;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
+
 .headline {
     left: 50%;
     position: absolute;
@@ -28,7 +35,6 @@
     color: $white;
     display: inline-block;
     font-family: $alt-font;
-    font-weight: 700;
     padding: 10px 14px;
     text-decoration: none;
     text-transform: uppercase;
@@ -60,12 +66,32 @@
 }
 
 .call-to-action.secondary:hover {
-    background: $orange;
+    background: $orange!important;
     color: $white!important;
 }
 
+.container-contrast .call-to-action.secondary {
+    background: $black;
+}
+
+.tip {
+    border-radius: $border-radius $border-radius 0 0;
+    color: $white;
+}
+
+p.tip:before {
+    content: $tip;
+    font-family: $glyph-font;
+    margin-right: 7px;
+}
+
+
 
 @media(max-width: 767px) {
+    body {
+        background-image: none;
+    }
+
     .hero .container-image {
         overflow: hidden;
     }

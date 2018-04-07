@@ -1,8 +1,8 @@
 .container-breadcrumb {
-    background: #333;
-    border-radius: 7px;
+    background: $dark-grey;
+    border-radius: $border-radius;
     clear: both;
-    margin: 0 auto 21px;
+    margin: 14px auto;
     overflow: auto;
 }
 
@@ -23,7 +23,7 @@
 }
 
 .breadcrumb li {
-    background: #333;
+    background: $dark-grey;
     float: left;
     list-style: none;
 }
@@ -79,6 +79,8 @@
 .breadcrumb li.active {
     background: $blue;
     color: $white;
+    font-size: 14px;
+    font-weight: 700;
     padding: 11px 35px;
 }
 

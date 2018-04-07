@@ -1,8 +1,8 @@
 .container-tertiary {
-    background: #333;
-    border-radius: 7px;
+    background: $dark-grey;
+    border-radius: $border-radius;
     clear: both;
-    margin: 0 auto 21px;
+    margin: 14px auto;
 }
 
 .container-tertiary h3 {
@@ -40,7 +40,7 @@ body.techniques .container-tertiary .techniques a,
 body.news .container-tertiary .news a,
 body.inspiration .container-tertiary .inspiration a,
 body.links .container-tertiary .links a
- {
+{
     background: $blue;
     color: $white;
     pointer-events: none;
@@ -49,8 +49,6 @@ body.links .container-tertiary .links a
 @media(max-width: 960px) {
     .container-tertiary {
         border-radius: 0;
-        margin-left: -14px;
-        margin-right: -14px;
     }
 
     .container-tertiary ul {

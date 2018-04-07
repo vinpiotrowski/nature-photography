@@ -21,8 +21,7 @@
 
 .tile.gallery .description {
     line-height: 1.5;
-    padding: 28px 49px;
-    text-align: center;
+    padding: 14px 49px;
 }
 
 .container-image.photo img {
@@ -54,7 +53,7 @@
     content: $angle-left;
     display: block;
     font-family: $glyph-font;
-    left: 28px;
+    left: 14px;
     padding: 7px 0;
     position: absolute;
     font-size: 70px;
@@ -69,7 +68,7 @@
 .link-next:after {
     content: $angle-right;
     left: auto;
-    right: 28px;
+    right: 14px;
 }
 
 .link-next:hover:after, .link-prev:hover:before {
@@ -86,6 +85,11 @@
         padding-right: 7px!important;
         margin-bottom: 7px;
         margin-top: 7px;
+    }
+
+    .tile.gallery .description {
+        padding: 21px 21px 35px;
+        text-align: center;
     }
 
     .homepage .tile {

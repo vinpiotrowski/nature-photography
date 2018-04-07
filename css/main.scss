@@ -12,6 +12,8 @@ $alt-font: 'Helvetica Neue', Helvetica,Arial, sans-serif;
 
 $glyph-font: 'np-glyphs';
 
+$border-radius: 14px;
+
 
 $black:            #212121;
 
@@ -53,6 +55,8 @@ $news:                '\f1ea';
 
 $photo:               '\e902';
 
+$tip:                 '\e905';
+
 $twitter:             '\f081';
 
 $instagram:           '\f16d';
@@ -78,7 +82,7 @@ body, html {
   color: $text-grey;
   font-family: $base-font;
   font-size: 15px;
-  font-weight: 700;
+  font-weight: 400;
   image-rendering: -webkit-optimize-contrast;
   margin: 0;
   padding: 0;
@@ -91,15 +95,20 @@ body, html {
 }
 
 .page-content {
-  box-shadow: 0 30px 30px $pure-black;
+  /*box-shadow: 0 30px 30px $pure-black;*/
   margin: 0 auto;
   max-width: 980px;
+}
+
+.page-main {
+  background: $black;
+  border-radius: 14px 14px 0 0;
 }
 
 .container-logo {
   float: left;
   max-width: 274px;
-  padding: 35px 0 35px;
+  padding: 42px 0 42px;
 }
 
 .container-contrast {
@@ -166,6 +175,7 @@ body, html {
 
 h1, h2, h3  {
   color: $white;
+  font-weight: 400;
 }
 
 h1 {
@@ -208,7 +218,7 @@ a:hover {
 
 strong {
   font-size: 1.05em;
-  -webkit-text-stroke-width: 1px;
+  font-weight: 700;
 }
 
 hr {
