@@ -81,7 +81,7 @@ body, html {
   background: $black;
   color: $text-grey;
   font-family: $base-font;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 400;
   image-rendering: -webkit-optimize-contrast;
   margin: 0;
@@ -196,7 +196,7 @@ h3 {
 }
 
 h2 + p {
-  font-size: 14pt;
+  margin-top: -14px;
 }
 
 h4 {
