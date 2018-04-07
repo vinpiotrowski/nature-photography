@@ -49,11 +49,11 @@
 body.home .primary .home,
 body.photos .primary .photos,
 body.blog .primary .blog,
-body.shop .primary .show,
+body.shop .primary .shop,
 body.about .primary .about {
-    border-radius: $border-radius;
+    /*border-radius: $border-radius;
     box-shadow: inset 0 0 0 3px $blue;
-    pointer-events: none;
+    pointer-events: none;*/
 }
 
 @media(max-width: 960px) {
@@ -64,11 +64,6 @@ body.about .primary .about {
 
     .container-menu .primary a {
         font-size: 21px;
-    }
-
-    .container-image.photo {
-        margin-left: -15px;
-        margin-right: -15px;
     }
 }
 
@@ -106,6 +101,7 @@ body.about .primary .about {
         height: 49px;
         padding: 0;
         text-align: center;
+        text-shadow: none;
         text-transform: capitalize;
         width: 49px;
     }

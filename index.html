@@ -63,7 +63,7 @@ title: "Home"
         {% assign idx = 0 %}
         {% assign sortedPosts = site.posts %}
         {% for post in sortedPosts %}
-        {% if post.categories contains 'article' %}
+        {% if post.section contains 'blog' %}
         <div class="col-xs-12 col-sm-6 tile">
             <a href="{{ post.permalink | prepend: site.baseurl }}">
                 <div class="container-image">

@@ -1,13 +1,14 @@
 .container-tertiary {
-    background: $dark-grey;
+    /*background: $dark-grey;*/
     border-radius: $border-radius;
     clear: both;
-    margin: 14px auto;
+    margin: 7px auto;
 }
 
 .container-tertiary h3 {
     color: #f1f1f1;
     float: left;
+    font-weight: 700;
     margin: 9px 14px;
 }
 
@@ -24,10 +25,16 @@
 }
 
 .container-tertiary a {
+    border-radius: 7px;
     color: $text-grey;
     display: block;
-    padding: 14px;
+    margin: 6px;
+    padding: 8px;
     text-decoration: none;
+}
+
+.container-tertiary a:hover {
+    color: $orange;
 }
 
 body.overview .container-tertiary .overview a,
@@ -43,11 +50,13 @@ body.links .container-tertiary .links a
 {
     background: $blue;
     color: $white;
+    font-weight: 700;
     pointer-events: none;
 }
 
 @media(max-width: 960px) {
     .container-tertiary {
+        background: $dark-grey;
         border-radius: 0;
     }
 
@@ -62,8 +71,8 @@ body.links .container-tertiary .links a
 
 @media(max-width: 767px) {
     .container-tertiary h3 {
-        float: none;
-        margin: 14px 14px 0;
+        /*float: none;
+        margin: 14px 14px 0;*/
     }
 
     .container-tertiary ul {

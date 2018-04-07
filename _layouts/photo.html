@@ -3,7 +3,7 @@
 
   {% include head.html %}
 
-  <body class="{{page.section}}">
+  <body class="{{page.section}} {{page.subsection}}">
 
   <div class="page-content">
 
@@ -11,9 +11,7 @@
 
       <main class="page-main clearfix">
 
-          <div class="col-xs-12">
-              {% include breadcrumb.html %}
-          </div>
+          {% include tertiary-landscapes.html %}
 
           <div class="col-xs-12 no-gutter-xs">
               <div class="container-image photo">
@@ -35,6 +33,9 @@
               {% assign words = page.title | split: '|' %}
               <h1><span class="location">{{ words[0] }}</span><span class="name">{{ words[1] }}</span></h1>
               <p><strong>{{ words[0] }}</strong>&nbsp;&nbsp;{{ page.description}}</p>
+          </div>
+          <div class="col-xs-12">
+              {% include breadcrumb.html %}
           </div>
 
       </main>

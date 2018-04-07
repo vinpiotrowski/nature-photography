@@ -95,7 +95,6 @@ body, html {
 }
 
 .page-content {
-  /*box-shadow: 0 30px 30px $pure-black;*/
   margin: 0 auto;
   max-width: 980px;
 }
@@ -103,6 +102,8 @@ body, html {
 .page-main {
   background: $black;
   border-radius: 14px 14px 0 0;
+  box-shadow: 0 28px 28px $pure-black;
+  box-shadow: 0 0 28px $pure-black;
 }
 
 .container-logo {
@@ -250,6 +251,7 @@ hr:before {
 }
 
 .footer {
+  background: $black;
   padding-bottom: 35px;
   text-align: center;
 }
@@ -284,16 +286,8 @@ hr:before {
 }
 
 @media(max-width: 1200px) {
-  .page-content {
+  .page-main {
     box-shadow: none;
-  }
-}
-
-@media(max-width: 960px) {
-
-  .container-image.photo {
-    margin-left: -15px;
-    margin-right: -15px;
   }
 }
 

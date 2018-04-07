@@ -71,7 +71,11 @@ body {
 }
 
 .container-contrast .call-to-action.secondary {
-    background: $black;
+    border: solid 3px $text-grey;
+}
+
+.container-contrast .call-to-action.secondary:hover {
+    border: solid 3px $orange;
 }
 
 .tip {
