@@ -13,8 +13,10 @@
 }
 
 .article .link-permalink {
-    position: absolute;
-    right: 35px;
+    float: right;
+    margin-bottom: -70px;
+    margin-right: 21px;
+    position: relative;
     z-index: 1;
 }
 
