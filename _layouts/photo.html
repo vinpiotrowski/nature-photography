@@ -30,12 +30,12 @@
               {% endif %}
           </div>
           <div class="col-xs-12">
+              {% include breadcrumb.html %}
+          </div>
+          <div class="col-xs-12">
               {% assign words = page.title | split: '|' %}
               <h1><span class="location">{{ words[0] }}</span><span class="name">{{ words[1] }}</span></h1>
               <p><strong>{{ words[0] }}</strong>&nbsp;&nbsp;{{ page.description}}</p>
-          </div>
-          <div class="col-xs-12">
-              {% include breadcrumb.html %}
           </div>
 
       </main>
