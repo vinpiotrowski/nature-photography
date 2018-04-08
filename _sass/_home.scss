@@ -70,11 +70,12 @@ body {
     color: $white!important;
 }
 
-.container-contrast .call-to-action.secondary {
+.container-contrast .call-to-action.secondary, .article .call-to-action.secondary {
+    background: none;
     border: solid 3px $text-grey;
 }
 
-.container-contrast .call-to-action.secondary:hover {
+.container-contrast .call-to-action.secondary:hover, .article .call-to-action.secondary:hover {
     border: solid 3px $orange;
 }
 

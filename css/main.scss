@@ -6,6 +6,10 @@
 
 
 // Our variables
+$title-font: 'Lora', serif;
+
+$title-font: 'Raleway', sans-serif;
+
 $base-font: 'Raleway', sans-serif;
 
 $alt-font: 'Helvetica Neue', Helvetica,Arial, sans-serif;
@@ -96,7 +100,7 @@ body, html {
 
 .page-content {
   margin: 0 auto;
-  max-width: 980px;
+  max-width: 1050px;
 }
 
 .page-main {
@@ -104,6 +108,12 @@ body, html {
   border-radius: 14px 14px 0 0;
   box-shadow: 0 28px 28px $pure-black;
   box-shadow: 0 0 28px $pure-black;
+}
+
+.page-article {
+  margin: 0 auto;
+  max-width: 960px;
+  position: relative;
 }
 
 .container-logo {
@@ -176,6 +186,7 @@ body, html {
 
 h1, h2, h3  {
   color: $white;
+  font-family: $title-font;
   font-weight: 400;
 }
 

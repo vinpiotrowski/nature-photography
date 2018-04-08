@@ -11,7 +11,7 @@ title: "Photo Galleries"
 
     {% for post in site.posts %}
         {% if post.layout == 'article' %}
-            <section class="article clearfix">
+            <section class="article page-article clearfix">
                 <a href="{{ post.permalink }}" class="link-permalink call-to-action secondary">Permalink</a>
                 {{ post.content }}
             </section>
