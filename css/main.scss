@@ -128,7 +128,6 @@ body, html {
 
 .container-logo {
   float: left;
-  image-rendering: auto;
   max-width: 310px;
   padding: 35px 0 35px;
 }
@@ -316,6 +315,7 @@ hr:before {
 @media(max-width: 767px) {
 
   .container-logo {
+    image-rendering: auto;
     padding: 17px 0 21px;
     max-width: 210px;
   }
