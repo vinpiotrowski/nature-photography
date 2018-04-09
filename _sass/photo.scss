@@ -26,7 +26,7 @@
 }
 
 .container-image.photo img {
-    max-height: 791px;
+    max-height: 840px;
 }
 
 .link-prev, .link-next {
@@ -48,7 +48,7 @@
 }
 
 .link-prev:before, .link-next:after {
-    background: #333333;
+    background: $black;
     border-radius: 7px;
     color: $white;
     content: $angle-left;
@@ -74,6 +74,10 @@
 
 .link-next:hover:after, .link-prev:hover:before {
     color: $orange;
+}
+
+.container-image.photo {
+    background: $dark-grey;
 }
 
 @media(max-width: 767px) {
