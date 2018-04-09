@@ -29,6 +29,74 @@ body {
     margin: 7px 0;
 }
 
+.container-galleries .title {
+    display: none;
+}
+
+.container-galleries ul {
+    display: table;
+    list-style: none;
+    margin: -245px auto 0;
+    padding: 0 70px;
+    position: relative;
+    table-layout: fixed;
+    width: 70%;
+}
+
+.container-galleries li {
+    display: table-cell;
+    position: relative;
+    text-align: center;
+}
+
+.container-galleries a {
+    border-radius: 7px;
+    color: $white;
+    display: block;
+    font-weight: 700;
+    padding: 14px 7px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.container-galleries a:hover {
+    background: $orange;
+}
+
+.container-galleries a:before {
+    display: block;
+    font-family: $glyph-font;
+    font-size: 49px;
+    font-weight: 100;
+    margin-bottom: 14px;
+}
+
+.container-galleries a::after {
+    content: $angle-right;
+    font-family: $glyph-font;
+    margin-left: 7px;
+}
+
+.container-galleries .mountains:before {
+    content: $mountains;
+}
+
+.container-galleries .foothills:before {
+    content: $foothills;
+}
+
+.container-galleries .prairies:before {
+    content: $prairies;
+}
+
+.container-galleries .badlands:before {
+    content: $badlands;
+}
+
+.container-galleries .travel:before {
+    content: $travel;
+}
+
 .call-to-action.primary {
     background: $black;
     border-radius: 24px;
@@ -90,7 +158,12 @@ p.tip:before {
     margin-right: 7px;
 }
 
-
+@media(max-width: 991px) {
+    .container-galleries ul {
+        margin: -175px auto 0;
+        width: 100%;
+    }
+}
 
 @media(max-width: 767px) {
     body {
@@ -133,4 +206,36 @@ p.tip:before {
         margin: 14px auto 0;
         width: 140px;
     }
+
+    .container-galleries {
+        background: $dark-grey;
+    }
+
+    .container-galleries .title {
+        display: block;
+    }
+
+    .container-galleries ul {
+        display: block;
+        margin: 0 auto;
+        padding: 0;
+        position: static;
+        table-layout: auto;
+    }
+
+    .container-galleries li {
+        display: inline-block;
+        float: left;
+        position: relative;
+        width: 33%;
+    }
+
+    .container-galleries a {
+        padding: 14px;
+    }
+
+    .container-galleries a:after {
+        padding-left: 0;
+    }
+
 }

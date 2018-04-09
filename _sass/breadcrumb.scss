@@ -1,8 +1,7 @@
 .container-breadcrumb {
     background: $dark-grey;
-    border-radius: $border-radius;
     clear: both;
-    margin: 14px auto;
+    margin: 3px auto 14px;
     overflow: auto;
 }
 
@@ -18,8 +17,6 @@
     overflow: hidden;
     margin: 0;
     padding: 0;
-    border-top-left-radius: 7px;
-    border-bottom-left-radius: 7px;
 }
 
 .breadcrumb li {
@@ -32,6 +29,7 @@
     color: $text-grey;
     display: block;
     float: left;
+    font-size: 13px;
     padding: 11px 0 11px 35px;
     position: relative;
     text-decoration: none;
@@ -79,7 +77,7 @@
 .breadcrumb li.active {
     background: $blue;
     color: $white;
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 700;
     padding: 11px 35px;
 }
@@ -88,21 +86,7 @@
     margin-top: 0;
 }
 
-@media(max-width: 960px) {
-    .container-breadcrumb {
-        border-radius: 0;
-        margin-left: -14px;
-        margin-right: -14px;
-    }
 
-    .breadcrumb ul {
-        border-radius: 0;
-    }
-
-    .breadcrumb li {
-        font-size: .77em;
-    }
-}
 
 @media(max-width: 767px) {
     .breadcrumb{
