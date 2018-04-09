@@ -70,6 +70,10 @@ body.links .container-tertiary .links a
 }
 
 @media(max-width: 767px) {
+    .container-tertiary {
+        display: none;
+    }
+
     .container-tertiary h3 {
         /*float: none;
         margin: 14px 14px 0;*/
