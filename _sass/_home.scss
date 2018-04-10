@@ -64,11 +64,15 @@ body {
 }
 
 .container-galleries a:before {
+    border-radius: 50%;
     display: block;
     font-family: $glyph-font;
     font-size: 49px;
+    height: 77px;
     font-weight: 100;
-    margin-bottom: 14px;
+    margin: 0 auto;
+    padding: 14px 0 0;
+    width: 77px;
 }
 
 .container-galleries a::after {
