@@ -150,6 +150,30 @@ body {
     color: $white;
 }
 
+
+section .title, section .title + p {
+    text-align: center;
+}
+
+section .title:before {
+    background: $blue;
+    content: " ";
+    display: block;
+    height: 7px;
+    margin: 7px auto;
+    width: 140px;
+}
+
+section .title:after {
+    background: $blue;
+    content: " ";
+    display: block;
+    height: 7px;
+    margin: 14px auto 0;
+    width: 140px;
+}
+
+
 p.tip:before {
     content: $tip;
     font-family: $glyph-font;
