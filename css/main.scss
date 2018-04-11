@@ -27,6 +27,8 @@ $blue-2:           #358faa;
 
 $blue-3:           #33aebe;
 
+$blue-4:           #43cede;
+
 $dark-grey:        #333333;
 
 $link-blue:        #009BFF;
@@ -114,21 +116,21 @@ body, html {
   -webkit-text-size-adjust: 100%;
 }
 
-.page-content {
+.page-wide {
   margin: 0 auto;
   max-width: 1050px;
+}
+
+.page-narrow {
+  margin: 0 auto;
+  max-width: 960px;
 }
 
 .page-main {
   background: $black;
   border-radius: 14px 14px 0 0;
   box-shadow: 0 28px 28px $pure-black;
-  box-shadow: 0 0 28px $pure-black;
-}
-
-.page-article {
-  margin: 0 auto;
-  max-width: 960px;
+  box-shadow: 0 0 7px $pure-black;
 }
 
 .container-logo {

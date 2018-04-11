@@ -51,7 +51,7 @@ body.links .container-tertiary .links a
     background: $blue;
     color: $white;
     font-weight: 700;
-    pointer-events: none;
+    /*pointer-events: none;*/
 }
 
 @media(max-width: 960px) {

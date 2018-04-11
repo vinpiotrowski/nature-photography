@@ -5,16 +5,18 @@
 
   <body class="{{page.section}}">
 
-  <div class="page-content clearfix">
+  <div class="page-wide clearfix">
 
       {% include header.html %}
 
       <section class="article page-main clearfix">
           {% include tertiary-articles.html %}
+
           <div class="col-xs-12">
               {% include breadcrumb.html %}
           </div>
-          <div class="page-article">
+
+          <div class="">
               {{ page.content }}
           </div>
       </section>

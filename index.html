@@ -37,6 +37,7 @@ title: "Home"
             <p>Views of nature's good side captured in Alberta and Western Canada.</p>
         </div>
 
+        <div class="tiles clearfix">
         {% assign idx = 0 %}
         {% assign sortedPosts = site.posts | sort: 'featured' | reverse %}
         {% for post in sortedPosts %}
@@ -58,10 +59,10 @@ title: "Home"
         {% assign idx = idx | plus:1 %}
         {% endif %}
         {% if idx == 3 %}
-        <div class="clearfix"> </div>
-        {% break %}
+          {% break %}
         {% endif %}
         {% endfor %}
+        </div>
     </section>
 
 
@@ -70,74 +71,80 @@ title: "Home"
             <h2 class="title">Helpful articles</h2>
             <p>I have lots of stories to share, tips to give, and nude photos (of my dog).</p>
         </div>
-        {% assign idx = 0 %}
-        {% assign sortedPosts = site.posts %}
-        {% for post in sortedPosts %}
-        {% if post.section contains 'blog' %}
-        <div class="col-xs-12 col-sm-6 tile">
-            <a href="{{ post.permalink | prepend: site.baseurl }}">
-                <div class="container-image">
-                    <img src="{{'/content/images/' | prepend: site.baseurl | append: post.thumbnail | append: '-500x500.jpg'}}" alt="">
+        <div class="tiles clearfix">
+            {% assign idx = 0 %}
+            {% assign sortedPosts = site.posts %}
+            {% for post in sortedPosts %}
+            {% if post.section contains 'blog' %}
+            <div class="col-xs-12 col-sm-6 tile">
+                <a href="{{ post.permalink | prepend: site.baseurl }}">
+                    <div class="container-image">
+                        <img src="{{'/content/images/' | prepend: site.baseurl | append: post.thumbnail | append: '-500x500.jpg'}}" alt="">
+                    </div>
+                </a>
+                <div>
+                    <h4><time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%b %-d, %Y" }}</time></h4>
+                    <h3>{{ post.title | truncate: 35 }}</h3>
+                    {{ post.description | truncate: 105 }}
                 </div>
-            </a>
-            <div>
-                <h4><time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%b %-d, %Y" }}</time></h4>
-                <h3>{{ post.title | truncate: 35 }}</h3>
-                {{ post.description | truncate: 105 }}
+                <a href="{{ post.permalink | prepend: site.baseurl }}" title="Read more" class="call-to-action secondary">Read more</a>
             </div>
-            <a href="{{ post.permalink | prepend: site.baseurl }}" title="Read more" class="call-to-action secondary">Read More</a>
+            {% assign idx = idx | plus:1 %}
+            {% endif %}
+            {% if idx == 2 %}
+              {% break %}
+            {% endif %}
+            {% endfor %}
         </div>
-        {% assign idx = idx | plus:1 %}
-        {% endif %}
-        {% if idx == 2 %}
-        <div class="clearfix"> </div>
-        {% break %}
-        {% endif %}
-        {% endfor %}
+
     </section>
 
 
     <section class="clearfix">
         <div class="col-xs-12">
-            <hr />
-        </div>
-        <div class="col-xs-12 col-sm-6 container-pull-right">
-            <div class="container-image">
-                <img src="{{ '/content/images/nature-photography-camera.jpg' | prepend: site.baseURL }}" alt="" />
+            <div class="col-xs-12">
+                <br />
             </div>
-        </div>
-        <div class="col-xs-12 col-sm-6">
-            <div>
-                <h2 class="title">nature-photography.ca</h2>
+            <div class="col-xs-12 col-sm-6 container-pull-right">
+                <div class="container-image">
+                    <img src="{{ '/content/images/nature-photography-camera.jpg' | prepend: site.baseURL }}" alt="" />
+                </div>
             </div>
-            <p>You never know what you'll see around the next bend in the trail; a calm lake, sun breaking through the trees, or perhaps a mountain goat riding a jet ski. When the lighting is right these scenes come alive and I capture them creatively with my camera.</p>
-            <p>For me being out in the wilderness is super fun-ness bigtime! Alongside the photos there are pretty words describing the adventures that coincide with a nature photographer's lifestyle. These tales are sexy, interesting, funny, angry, and a whole lot of other things.</p>
-        </div>
-        <div class="col-xs-12">
-            <hr />
+            <div class="col-xs-12 col-sm-6">
+                <div>
+                    <h2 class="title">nature-photography.ca</h2>
+                </div>
+                <p>You never know what you'll see around the next bend in the trail; a calm lake, sun breaking through the trees, or perhaps a mountain goat riding a jet ski. When the lighting is right these scenes come alive and I capture them creatively with my camera.</p>
+                <p>For me being out in the wilderness is super fun-ness bigtime! Alongside the photos there are pretty words describing the adventures that coincide with a nature photographer's lifestyle. These tales are sexy, interesting, funny, angry, and a whole lot of other things.</p>
+            </div>
+            <div class="col-xs-12">
+                <hr />
+            </div>
         </div>
     </section>
 
 
     <section class="clearfix">
-        <div class="col-xs-12 col-sm-3">
-            <h3>Proudly Canadian</h3>
-            <p>I was born and raised in Alberta, Canada. I am heavily influenced by Canadian symbolism and feel patriotic whenever I see mounties, mooses, or maple syrup.</p>
-            <p>I am very proud of where I live and my heritage. When I think of Canada I picture unspoiled wilderness, mountains, wildlife and natural beauty.</p>
-        </div>
-        <div class="col-xs-12 col-sm-3">
-            <h3>Local Landscapes</h3>
-            <p>The work comes from the Canadian Rockies, the Alberta Prairies, and the Pacific Northwest. I make a conscious effort to keep my subject matter narrowed to the local landscape but you never know, maybe one day I'll have a gallery full of pelvic thrusting polar bear pictures. Many of the pictures you'll see were practically taken in my backyard.</p>
-        </div>
-        <div class="col-xs-12 col-sm-3">
-            <h3>Helpful Articles</h3>
-            <p>You'll never see me say that a camera lens is so incredible that it walks your dog and doubles on sax!</p>
-            <p>Instead I try to be open and honest about processing and techniques to promote landscape photography. I'm motivated by contributing to the community not by a marketing plan.</p>
-        </div>
-        <div class="col-xs-12 col-sm-3">
-            <h3>Conservation</h3>
-            <p>Being environmentally friendly is important to me and that's why this website was handcrafted with eco-friendly code and nature-inspired designs.</p>
-            <p>I try to support companies that promote sustainability and help protect the outdoors. I also do my part by staying on trails, not littering, and being a good forest visitor.</p>
+        <div class="col-xs-12 clearfix">
+            <div class="col-xs-12 col-sm-3">
+                <h3>Proudly Canadian</h3>
+                <p>I was born and raised in Alberta, Canada. I am heavily influenced by Canadian symbolism and feel patriotic whenever I see mounties, mooses, or maple syrup.</p>
+                <p>I am very proud of where I live and my heritage. When I think of Canada I picture unspoiled wilderness, mountains, wildlife and natural beauty.</p>
+            </div>
+            <div class="col-xs-12 col-sm-3">
+                <h3>Local Landscapes</h3>
+                <p>The work comes from the Canadian Rockies, the Alberta Prairies, and the Pacific Northwest. I make a conscious effort to keep my subject matter narrowed to the local landscape but you never know, maybe one day I'll have a gallery full of pelvic thrusting polar bear pictures. Many of the pictures you'll see were practically taken in my backyard.</p>
+            </div>
+            <div class="col-xs-12 col-sm-3">
+                <h3>Helpful Articles</h3>
+                <p>You'll never see me say that a camera lens is so incredible that it walks your dog and doubles on sax!</p>
+                <p>Instead I try to be open and honest about processing and techniques to promote landscape photography. I'm motivated by contributing to the community not by a marketing plan.</p>
+            </div>
+            <div class="col-xs-12 col-sm-3">
+                <h3>Conservation</h3>
+                <p>Being environmentally friendly is important to me and that's why this website was handcrafted with eco-friendly code and nature-inspired designs.</p>
+                <p>I try to support companies that promote sustainability and help protect the outdoors. I also do my part by staying on trails, not littering, and being a good forest visitor.</p>
+            </div>
         </div>
     </section>
 
