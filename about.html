@@ -6,6 +6,25 @@ title: "About Vincent Piotrowski"
 ---
 
 <style>
+
+    .about-hero .headline {
+        left: 70px;
+        max-width: 420px;
+        top: 28px;
+        transform: none;
+    }
+
+    .about-hero .headline h2 {
+        margin: 14px 0;
+        text-shadow: 0 0 35px #212121;
+        white-space: normal;
+    }
+
+    .about-hero .headline h3 {
+        margin: 0;
+        text-shadow: 0 0 35px #212121;
+    }
+
     .section-about p {
         line-height: 1.6em;
         margin: 0;
@@ -20,6 +39,10 @@ title: "About Vincent Piotrowski"
     }
 
     @media(max-width: 767px) {
+        .about-hero .headline {
+            position: static;
+        }
+
         .section-about p {
             padding: 0;
         }
@@ -39,8 +62,17 @@ title: "About Vincent Piotrowski"
     {% include tertiary-about.html %}
 
     <div class="col-xs-12 no-gutter-xs">
-        <div class="container-image">
+        <div class="container-image about-hero">
             <img src="{{ "/content/images/hero-about-lg.jpg" | prepend: site.baseurl }}" alt="">
+            <div class="headline">
+                <aside class="container-quote">
+                    <blockquote>
+                        <h2><strong>I envision myself as being the hallmark of ruggedness;</strong></h2>
+                        <h3><strong>Not unlike a sasquatch riding a moose through the forest.</strong></h3>
+                        <p><em>-Vincent Piotrowski</em></p>
+                    </blockquote>
+                </aside>
+            </div>
         </div>
     </div>
 </section>
