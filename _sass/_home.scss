@@ -108,6 +108,15 @@ body {
     text-decoration: none;
 }
 
+.call-to-action.secondary:after {
+    content: $arrow-right;
+    display: none;
+    font-family: $glyph-font;
+    font-weight: 100;
+    margin-left: 14px;
+    vertical-align: bottom;
+}
+
 .call-to-action.secondary:hover {
     background: $orange!important;
     color: $white!important;

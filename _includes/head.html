@@ -5,19 +5,18 @@
 
   <title>nature-photography.ca | {% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
   <meta name="description" content="{% if page.description %}{{ page.description | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
-  <meta name="image" content="{% if page.thumbnail %}{{ 'http://birdnerds.ca/images/' | prepend: site.baseurl | append: page.thumbnail | replace:'-sm.','-lg.' }}{% else %}{{ 'http://birdnerds.ca/images/' | prepend: site.baseurl | append: 'thumb-website.png' }}{% endif %}" />
+  <meta name="image" content="//nature-photography.ca/content/images/nature-photography.jpg" />
 
   <meta property="og:url"                content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" />
   <meta property="og:type"               content="article" />
   <meta property="og:title"              content="Vincent Piotrowski | {{ page.title }}" />
   <meta property="og:description"        content="{% if page.description %}{{ page.description | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}" />
-  <meta property="og:image"              content="{% if page.thumbnail %}{{ 'http://birdnerds.ca/images/' | prepend: site.baseurl | append: page.thumbnail | replace:'-sm.','-lg.' }}{% else %}{{ 'http://birdnerds.ca/images/' | prepend: site.baseurl | append: 'thumb-website.png' }}{% endif %}" />
+  <meta property="og:image"              content="//nature-photography.ca/content/images/nature-photography.jpg" />
 
   <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
 
   <link rel="stylesheet" href="{{ '/css/main.css' | prepend: site.baseurl }}">
-  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ '/feed.xml' | prepend: site.baseurl | prepend: site.url }}">
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" />
   <link rel="icon" type="image/png" href="/favicon.png">
 </head>
