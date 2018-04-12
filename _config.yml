@@ -8,9 +8,9 @@
 # Site settings
 title: Nature Photography
 email: vin.piotrowski@gmail.com
-description: Join Vince Piotrowski and Sandra Mills as they trek through vast tracks of wilderness around Calgary, Alberta searching for birds.
+description: Nature and landscape photography from Alberta and Western Canada featuring photo galleries and blogs by Vincent Piotrowski
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://birdnerds.ca/"
+url: "http://nature-photography.ca/"
 
 # Build settings
 markdown: kramdown
