@@ -29,14 +29,14 @@ body {
     margin: 7px 0;
 }
 
-.container-galleries .title {
-    display: none;
+.container-galleries {
+    background: $dark-grey;
 }
 
 .container-galleries ul {
     display: table;
     list-style: none;
-    margin: -245px auto 0;
+    margin: 14px auto;
     padding: 0 70px;
     position: relative;
     table-layout: fixed;
@@ -206,10 +206,6 @@ p.tip:before {
 
     .container-galleries {
         background: $dark-grey;
-    }
-
-    .container-galleries .title {
-        display: block;
     }
 
     .container-galleries ul {
