@@ -40,7 +40,7 @@ body {
     padding: 0 70px;
     position: relative;
     table-layout: fixed;
-    width: 70%;
+    width: 77%;
 }
 
 .container-galleries li {
@@ -67,12 +67,12 @@ body {
     border-radius: 50%;
     display: block;
     font-family: $glyph-font;
-    font-size: 49px;
-    height: 63px;
+    font-size: 70px;
+    height: 91px;
     font-weight: 100;
     margin: 0 auto;
     padding: 7px 0;
-    width: 63px;
+    width: 91px;
 }
 
 .container-galleries .mountains:before {
@@ -179,7 +179,6 @@ p.tip:before {
 
 @media(max-width: 991px) {
     .container-galleries ul {
-        margin: -175px auto 0;
         width: 100%;
     }
 }
