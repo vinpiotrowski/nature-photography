@@ -5,7 +5,7 @@ title: "Home"
 ---
 
 
-    <section class="clearfix">
+    <section class="col-xs-12 no-gutter-xs clearfix">
         <div class="col-xs-12 tip">
             <p class="tip">Vincent Piotrowski is a nature and landscape photographer from Alberta Canada.</p>
         </div>
@@ -18,9 +18,11 @@ title: "Home"
                 <h3>now with 50% more sticks and rocks.</h3>
             </div>
         </div>
-        <div class="col-xs-12 container-galleries">
-            <h2 class="title">The galleries</h2>
-            <ul >
+        <div class="container-galleries clearfix">
+            <div class="col-xs-12">
+                <h2 class="title" style="display: none;">The galleries</h2>
+            </div>
+            <ul>
                 <li><a class="mountains" href="{{ '/photos/canadian-rockies-photo-gallery' | prepend: site.baseURL}}">Mountains</a></li>
                 <li><a class="foothills" href="{{ '/photos/alberta-foothills-photo-gallery' | prepend: site.baseURL}}">Foothills</a></li>
                 <li><a class="prairies" href="{{ '/photos/alberta-prairies-photo-gallery' | prepend: site.baseURL}}">Prairies</a></li>
