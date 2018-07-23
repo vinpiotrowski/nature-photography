@@ -5,7 +5,7 @@
 
   <body class="{{page.section}} {{page.subsection}}">
 
-  <div class="page-wide">
+  <div class="page-wide clearfix">
 
       {% include header.html %}
 
@@ -13,31 +13,32 @@
 
           {% include tertiary-landscapes.html %}
 
-          <div class="col-xs-12 no-gutter-xs">
-              <div class="container-image photo">
-                  {{ content }}
-              </div>
-              {% if page.previousOverride %}
-                <a class="link-prev" href="#" onclick="window.location.replace( '{{page.previousOverride | prepend: site.baseurl}}' );">Previous</a>
-              {% else %}
-                <a class="link-prev" href="#" onclick="window.location.replace( '{{page.previous.url | prepend: site.baseurl}}' );">Previous</a>
-              {% endif %}
+      </div>
 
-              {% if page.nextOverride %}
-                <a class="link-next" href="#" onclick="window.location.replace( '{{page.nextOverride | prepend: site.baseurl}}' );">Next</a>
-              {% else %}
-                <a class="link-next" href="#" onclick="window.location.replace( '{{page.next.url | prepend: site.baseurl}}' );">Next</a>
-              {% endif %}
+      <div class="col-xs-12 no-gutter-xs">
+          <div class="container-image photo">
+              {{ content }}
           </div>
-          <div class="col-xs-12 no-gutter-xs">
-              {% include breadcrumb.html %}
-          </div>
-          <div class="col-xs-12">
-              {% assign words = page.title | split: '|' %}
-              <h1><span class="location">{{ words[0] }}</span><span class="name">{{ words[1] }}</span></h1>
-              <p><strong>{{ words[0] }}</strong>&nbsp;&nbsp;{{ page.description}}</p>
-          </div>
+          {% if page.previousOverride %}
+          <a class="link-prev" href="#" onclick="window.location.replace( '{{page.previousOverride | prepend: site.baseurl}}' );">Previous</a>
+          {% else %}
+          <a class="link-prev" href="#" onclick="window.location.replace( '{{page.previous.url | prepend: site.baseurl}}' );">Previous</a>
+          {% endif %}
 
+          {% if page.nextOverride %}
+          <a class="link-next" href="#" onclick="window.location.replace( '{{page.nextOverride | prepend: site.baseurl}}' );">Next</a>
+          {% else %}
+          <a class="link-next" href="#" onclick="window.location.replace( '{{page.next.url | prepend: site.baseurl}}' );">Next</a>
+          {% endif %}
+      </div>
+      <div class="col-xs-12 no-gutter-xs">
+          {% include breadcrumb.html %}
+      </div>
+
+      <div class="col-xs-12">
+          {% assign words = page.title | split: '|' %}
+          <h1><span class="location">{{ words[0] }}</span><span class="name">{{ words[1] }}</span></h1>
+          <p><strong>{{ words[0] }}</strong>&nbsp;&nbsp;{{ page.description}}</p>
       </div>
 
       {% include footer.html %}

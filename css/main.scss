@@ -45,6 +45,8 @@ $text-grey:        #989898;
 
 $white:            #f1f1f1;
 
+$border:           #CCCCCC;
+
 
 
 $angle-left:          '\f104';
@@ -131,14 +133,18 @@ body, html {
 .page-main {
   background: $black;
   border-radius: 14px 14px 0 0;
-  box-shadow: 0 28px 28px $pure-black;
   box-shadow: 0 0 7px $pure-black;
+  box-shadow: 0 0 1px $border;
 }
 
 .container-logo {
   float: left;
   max-width: 310px;
   padding: 35px 0 35px;
+}
+
+.container-logo img {
+  filter: drop-shadow(0 0 14px $black);
 }
 
 .container-contrast {
@@ -258,23 +264,12 @@ strong {
 }
 
 hr {
-  background: linear-gradient(left,rgba(77,77,77,0) 0%,rgba(77,77,77,0) 15%,rgba(77,77,77,0.65) 50%,rgba(77,77,77,0) 85%,rgba(77,77,77,0) 100%);
-  background: -webkit-linear-gradient(left,rgba(77,77,77,0) 0%,rgba(77,77,77,0) 15%,rgba(77,77,77,0.65) 50%,rgba(77,77,77,0) 85%,rgba(77,77,77,0) 100%);
+  background: $grey;
   border: 0;
-  height: 3px;
-  margin: 28px 0 21px;
-  position: relative;
-}
-
-hr:before {
-  content: " ";
-  display: block;
-  border-top: solid 1px rgba(0,0,0,0.100);
-  width: 100%;
   height: 1px;
-  position: absolute;
-  top: 50%;
-  z-index: 1;
+  margin: 28px auto 21px;
+  position: relative;
+  width: 60%;
 }
 
 .reverse {
@@ -287,7 +282,7 @@ hr:before {
 
 .footer {
   background: $black;
-  padding-bottom: 35px;
+  padding: 49px 0 35px;
   text-align: center;
 }
 
