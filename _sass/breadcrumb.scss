@@ -1,16 +1,12 @@
 .container-breadcrumb {
     background: $black;
-    border-radius: 7px;
-    display: none;
     clear: both;
-    margin: 14px auto;
+    margin: 0 auto 14px;
     overflow: auto;
 }
 
 .breadcrumb {
     background: $black;
-    border-radius: 7px;
-    /*box-shadow: inset 0 0 0 3px $blue;*/
     overflow: auto;
 }
 
@@ -82,8 +78,9 @@
 .breadcrumb li.active {
     background: none;
     color: $white;
+    font-size: 13px;
     font-weight: 700;
-    padding: 11px 35px;
+    padding: 13px 35px 0;
 }
 
 .container-tertiary + div .container-breadcrumb {
