@@ -1,12 +1,13 @@
 
 .toggle-navigation {
-    color: $grey;
+    color: $white;
     display: none;
     height: 49px;
     position: relative;
     text-align: center;
     text-decoration: none;
     width: 49px;
+    z-index: 77;
 }
 
 .toggle-navigation:before {
@@ -46,6 +47,37 @@
     color: $orange;
 }
 
+.container-mobile-menu {
+    background: $grey;
+    bottom: 0;
+    right: 0;
+    margin: 0;
+    overflow: hidden;
+    position: fixed;
+    left: 100%;
+    top: 0;
+    transition: all .3s;
+    z-index: 70;
+}
+
+.container-mobile-menu img {
+    width: 70px;
+}
+
+.container-mobile-menu ul, .container-mobile-menu li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.container-mobile-menu .call-to-action.secondary {
+    color: $white;
+    margin-bottom: 0;
+    text-align: center;
+    text-transform: uppercase;
+    width: 100%;
+}
+
 body.home .primary .home,
 body.photos .primary .photos,
 body.blog .primary .blog,
@@ -69,10 +101,6 @@ body.about .primary .about {
 
 @media(max-width: 767px) {
 
-    .container-menu .secondary li:before {
-        display: none;
-    }
-
     .toggle-navigation {
         display: block;
         position: absolute;
@@ -81,67 +109,16 @@ body.about .primary .about {
         transition: all .3s ease-in-out;
     }
 
+    .toggle-navigation.active:before {
+        content: $arrow-right;
+    }
+
+    .toggle-navigation.active + .container-mobile-menu {
+        left: 35px;
+        padding: 21px 35px;
+    }
+
     .container-menu {
-        max-height: 0;
-        overflow: hidden;
-        padding: 0;
-        position: absolute;
-        right: 7px;
-        text-align: center;
-        top: 57px;
-        transition: all .3s ease-in-out;
-        width: 49px;
-        z-index: 49;
-    }
-
-    .container-menu .primary a, .container-menu .secondary a {
-        border-bottom: solid 1px $grey;
-        color: $grey;
-        font-size: 10px;
-        height: 49px;
-        padding: 0;
-        text-align: center;
-        text-shadow: none;
-        text-transform: capitalize;
-        width: 49px;
-    }
-
-    .container-menu a:before {
-        content: $camera;
-        display: block;
-        font-family: $glyph-font;
-        font-size: 21px;
-        font-weight: 100;
-        margin-top: 7px;
-    }
-
-    .container-menu a.home:before {
-        content: $home;
-    }
-
-    .container-menu a.contact:before {
-        content: $comment;
-    }
-
-    .container-menu a.photos:before {
-        content: $photo;
-    }
-
-    .container-menu a.blog:before {
-        content: $news;
-    }
-
-    .container-menu a.shop:before {
-        content: $shoppingcart;
-    }
-
-    .toggle-navigation.active {
-        background: $orange;
-        color: $white;
-    }
-
-    .toggle-navigation.active + .container-menu {
-        background: $orange;
-        max-height: 350px;
+        display: none;
     }
 }

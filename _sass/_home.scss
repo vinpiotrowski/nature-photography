@@ -10,8 +10,7 @@ body.default {
     background-repeat: no-repeat;
     background-size: cover;
     bottom: -7px;
-    filter: url(#blur);
-    filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius='7');
+    filter: blur(7px);
     -webkit-filter: blur(7px);
     -moz-filter: blur(7px);
     -o-filter: blur(7px);
@@ -63,8 +62,6 @@ body.default {
 }
 
 .container-galleries {
-    background: $blue;
-    border-radius: 14px 14px 0 0;
     width: 100%;
 }
 
@@ -78,7 +75,6 @@ body.default {
 
 .container-galleries li {
     display: table-cell;
-    padding: 7px;
     position: relative;
     text-align: center;
 }
@@ -100,12 +96,13 @@ body.default {
     border-radius: 50%;
     display: block;
     font-family: $glyph-font;
-    font-size: 70px;
-    height: 91px;
+    font-size: 49px;
+    height: 63px;
     font-weight: 100;
     margin: 0 auto;
-    padding: 7px 0;
-    width: 91px;
+    padding: 7px 0 0;
+    width: 70px;
+    text-align: center;
 }
 
 .container-galleries .mountains:before {
@@ -157,7 +154,7 @@ body.default {
 
 .container-contrast .call-to-action.secondary, .article .call-to-action.secondary {
     background: none;
-    border: solid 3px $text-grey;
+    border: solid 3px;
 }
 
 .container-contrast .call-to-action.secondary:hover, .article .call-to-action.secondary:hover {
@@ -244,16 +241,6 @@ p.tip:before {
         white-space: normal;
     }
 
-    .container-galleries {
-        bottom: auto;
-        position: relative;
-        width: 91%;
-    }
-
-    .container-galleries .title {
-        display: block!important;
-    }
-
     .container-galleries ul {
         display: block;
         margin: 0 auto;
@@ -267,6 +254,7 @@ p.tip:before {
         float: left;
         position: relative;
         width: 33%;
+        width: calc( 100% / 3);
     }
 
     .container-galleries a {

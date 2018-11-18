@@ -699,6 +699,10 @@
     margin-left: 0%;
   }
 }
+.clearfix {
+  clear: both;
+}
+
 .clearfix:before,
 .clearfix:after,
 .container:before,
