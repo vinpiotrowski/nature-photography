@@ -133,8 +133,8 @@ body, html {
 .page-main {
   background: $black;
   border-radius: 14px 14px 0 0;
-  box-shadow: 0 0 7px $pure-black;
-  box-shadow: 0 0 1px $border;
+  /*box-shadow: 0 0 7px $pure-black;
+  box-shadow: 0 0 1px $border;*/
   position: relative;
   z-index:14;
 }
@@ -293,7 +293,7 @@ hr {
 }
 
 .footer a, .footer span {
-  color: $grey;
+  color: $text-grey;
   padding: 0 14px;
   text-decoration: none;
 }
@@ -318,13 +318,7 @@ hr {
 }
 
 .container-copyright {
-  color: $grey;
-}
-
-@media(max-width: 1200px) {
-  .page-main {
-    box-shadow: none;
-  }
+  color: $text-grey;
 }
 
 @media(max-width: 767px) {

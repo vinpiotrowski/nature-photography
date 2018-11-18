@@ -1,4 +1,4 @@
-body {
+body.default {
     background-image: url('/content/images/cover.jpg');
     background-position: center -7VW;
     background-repeat: no-repeat;
@@ -43,11 +43,9 @@ body {
 }
 
 .container-galleries {
-    bottom: 49px;
-    left: 50%;
-    position: absolute;
-    transform: translateX(-50%);
-    width: 77%;
+    background: $blue;
+    border-radius: 14px 14px 0 0;
+    width: 100%;
 }
 
 .container-galleries ul {
@@ -175,6 +173,10 @@ section .title:after {
     height: 7px;
     margin: 14px auto 0;
     width: 140px;
+}
+
+.container-galleries .title:before, .container-galleries .title:after {
+    background: $black;
 }
 
 section .title + p {

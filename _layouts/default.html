@@ -3,9 +3,11 @@
 
   {% include head.html %}
 
-  <body class="{{page.section}}">
+  <body class="default {{page.section}}">
 
-    <div class="page-wide">
+  <div class="decoration" style="background-image: url({{ '/content/images/' | prepend: site.baseurl | append: page.photo | append: '.jpg' }});"></div>
+
+  <div class="page-wide">
 
       {% include header.html %}
 
