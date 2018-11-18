@@ -5,6 +5,19 @@ body {
     background-size: 100% auto;
 }
 
+.decoration {
+    background-position: center 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    bottom: -7px;
+    filter: blur(7px) brightness(35%);
+    left: -7px;
+    position: fixed;
+    right: -7px;
+    top: -7px;
+    z-index: 0;
+}
+
 .headline {
     left: 50%;
     position: absolute;

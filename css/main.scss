@@ -135,6 +135,12 @@ body, html {
   border-radius: 14px 14px 0 0;
   box-shadow: 0 0 7px $pure-black;
   box-shadow: 0 0 1px $border;
+  position: relative;
+  z-index:14;
+}
+
+body.photos .page-main {
+  box-shadow: none;
 }
 
 .container-logo {
