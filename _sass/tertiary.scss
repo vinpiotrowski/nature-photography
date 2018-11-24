@@ -26,9 +26,15 @@
 
 .container-tertiary a {
     border-radius: 7px;
+    color: $text-grey;
     display: block;
     margin: 6px;
     padding: 8px;
+    text-decoration: none;
+}
+
+.container-tertiary a:hover {
+    color: $orange;
 }
 
 body.overview .container-tertiary .overview a,

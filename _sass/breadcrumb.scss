@@ -26,10 +26,16 @@
 }
 
 .breadcrumb a {
+    color: $text-grey;
     display: block;
     float: left;
     padding: 14px 0 14px 35px;
     position: relative;
+    text-decoration: none;
+}
+
+.breadcrumb a:hover {
+    color: $orange;
 }
 
 .breadcrumb li:first-child a {
