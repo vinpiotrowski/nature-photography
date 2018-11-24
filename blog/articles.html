@@ -14,20 +14,6 @@ pagination:
 
 {% include tertiary-articles.html %}
 
-<div class="col-xs-12 no-gutter-xs">
-
-    {% for post in site.posts %}
-        {% if post.layout == 'article' %}
-            <section class="article clearfix">
-                <a href="{{ post.permalink }}" class="link-permalink call-to-action secondary">Permalink</a>
-                {{ post.content }}
-            </section>
-            <hr />
-        {% endif %}
-    {% endfor %}
-
-</div>
-
 {% for post in paginator.posts %}
 <div class="col-xs-12 no-gutter-xs">
     <section class="article clearfix">
