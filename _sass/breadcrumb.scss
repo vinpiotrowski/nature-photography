@@ -26,18 +26,10 @@
 }
 
 .breadcrumb a {
-    color: $text-grey;
     display: block;
     float: left;
-    font-size: 13px;
-    font-weight: 700;
     padding: 14px 0 14px 35px;
     position: relative;
-    text-decoration: none;
-}
-
-.breadcrumb a:hover {
-    color: $orange;
 }
 
 .breadcrumb li:first-child a {
@@ -78,7 +70,6 @@
 .breadcrumb li.active {
     background: none;
     color: $white;
-    font-size: 13px;
     font-weight: 700;
     padding: 13px 35px 0;
 }
@@ -87,7 +78,11 @@
     margin-top: 0;
 }
 
-
+@media(max-width: 991px) {
+    .breadcrumb li {
+        font-size: .77em;
+    }
+}
 
 @media(max-width: 767px) {
 

@@ -1,0 +1,42 @@
+.pagination ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+.pagination ul li {
+    display: inline-block;
+    font-size: 21px;
+    font-weight: 700;
+    margin: 0 5px;
+}
+
+.pagination ul li:first-of-type {
+    margin: 0;
+}
+
+.pagination ul li.active {
+    border-radius: 3px;
+    padding: 7px;
+    background-color: $orange;
+    color: $white;
+}
+
+.pagination a {
+    text-decoration: none;
+}
+
+@media(max-width: 767px) {
+
+    .container-breadcrumb {
+        border-radius: 0;
+        display: block;
+    }
+
+    .breadcrumb li.active {
+        display:none
+    }
+
+    .breadcrumb > li:first-child {
+        display:none
+    }
+}

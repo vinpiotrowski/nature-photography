@@ -1,0 +1,88 @@
+---
+layout: default
+permalink: /blog/
+section: "blog overview"
+title: "Articles Overview"
+pagination:
+  enabled: true
+  category: blog
+  permalink: '/:num/'
+  trail:
+    before: 2
+    after: 4
+---
+
+{% include tertiary-articles.html %}
+
+<!--
+
+    {% for post in site.posts %}
+        {% if post.layout == 'article' %}
+
+
+        {% endif %}
+    {% endfor %}
+
+</div>-->
+
+{% for post in paginator.posts %}
+<div class="col-xs-12 no-gutter-xs">
+    <section class="article clearfix">
+        <a href="{{ post.permalink }}" class="link-permalink call-to-action secondary">Permalink</a>
+        {{ post.content }}
+    </section>
+    <hr />
+</div>
+{% endfor %}
+
+<section class="section-padding clearfix">
+    <div class="col-xs-12">
+        <div class="inner-page clearfix">
+
+            {% if paginator.total_pages > 1 %}
+            <div class="pagination col-xs-12 center">
+                <ul>
+                    {% if paginator.previous_page %}
+                    <li><a class="pagination__prev" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}"><span class="icon chevron-left"></span>Prev</a> </li>
+                    {% else %}
+                    <li><span class="pagination__prev">Prev</span> </li>
+                    {% endif %}
+
+                    {% if paginator.page_trail %}
+                    {% for trail in paginator.page_trail %}
+
+                    {% if page.url == trail.path %}
+                    <li class="active">
+                        {{ trail.num }}
+                    </li>
+                    {% else %}
+                    <li>
+                        <a href="{{ trail.path | prepend: site.baseurl | remove: 'index.html'}}" title="{{trail.title}}">{{ trail.num }}</a>
+                    </li>
+                    {% endif %}
+
+                    {% endfor %}
+                    {% endif %}
+
+                    {% if paginator.next_page %}
+                    <li><a class="pagination__next" href="{{ paginator.next_page_path | append: '/' | prepend: site.baseurl | replace: '//', '/' }}">Next<span class="icon chevron-right"></span></a></li>
+                    {% else %}
+                    <li><span class="pagination__next">Next</span></li>
+                    {% endif %}
+                </ul>
+            </div>
+            {% endif %}
+
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+

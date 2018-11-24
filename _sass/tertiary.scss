@@ -26,15 +26,9 @@
 
 .container-tertiary a {
     border-radius: 7px;
-    color: $text-grey;
     display: block;
     margin: 6px;
     padding: 8px;
-    text-decoration: none;
-}
-
-.container-tertiary a:hover {
-    color: $orange;
 }
 
 body.overview .container-tertiary .overview a,
@@ -52,11 +46,11 @@ body.links .container-tertiary .links a
     color: $white;
     font-weight: 700;
     /*pointer-events: none;*/
+    text-decoration: none;
 }
 
 @media(max-width: 960px) {
     .container-tertiary {
-        background: $dark-grey;
         border-radius: 0;
     }
 

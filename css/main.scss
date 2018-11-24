@@ -280,7 +280,6 @@ a {
 
 a:hover {
   color: $orange;
-  text-decoration: none;
 }
 
 strong {
@@ -312,9 +311,16 @@ hr {
 }
 
 .footer a, .footer span {
-  color: $text-grey;
   padding: 0 14px;
   text-decoration: none;
+}
+
+.footer a {
+  color: $text-grey;
+}
+
+.footer a:hover {
+  color: $orange;
 }
 
 .footer a:before {
@@ -381,6 +387,7 @@ hr {
 @import "navigation";
 @import "home";
 @import "breadcrumb";
+@import "pagination";
 @import "photo";
 @import "article";
 @import "tertiary";
