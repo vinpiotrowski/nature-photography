@@ -35,9 +35,6 @@ body, html {
   position: relative;
   z-index: 14; }
 
-body.photos .page-main {
-  box-shadow: none; }
-
 .container-logo {
   float: left;
   max-width: 310px;
@@ -548,12 +545,12 @@ p.tip:before {
     padding-left: 0; } }
 .container-breadcrumb {
   background: #212121;
+  background: rgba(33, 33, 33, 0.49);
   clear: both;
   margin: 0 auto 14px;
   overflow: auto; }
 
 .breadcrumb {
-  background: #212121;
   overflow: auto; }
 
 .breadcrumb ul {
@@ -565,7 +562,6 @@ p.tip:before {
   padding: 0; }
 
 .breadcrumb li {
-  background: #212121;
   float: left;
   list-style: none; }
 
@@ -573,7 +569,7 @@ p.tip:before {
   color: #989898;
   display: block;
   float: left;
-  padding: 14px 0 14px 35px;
+  padding: 14px 0 14px 28px;
   position: relative;
   text-decoration: none; }
 
@@ -583,40 +579,21 @@ p.tip:before {
 .breadcrumb li:first-child a {
   padding: 14px 0 14px 21px; }
 
-.breadcrumb li a:before {
-  content: " ";
-  display: block;
-  width: 0;
-  height: 0;
-  border-top: 50px solid transparent;
-  border-bottom: 50px solid transparent;
-  border-left: 21px solid #333333;
+.breadcrumb a:after {
+  color: #555555;
+  content: "";
+  font-family: "np-glyphs";
+  font-size: 21px;
+  font-weight: 100;
   position: absolute;
   top: 50%;
-  margin-top: -50px;
-  margin-left: 1px;
-  left: 100%;
-  z-index: 1; }
-
-.breadcrumb li a:after {
-  content: " ";
-  display: block;
-  width: 0;
-  height: 0;
-  border-top: 50px solid transparent;
-  border-bottom: 50px solid transparent;
-  border-left: 19px solid #212121;
-  position: absolute;
-  top: 50%;
-  margin-top: -50px;
-  left: 100%;
-  z-index: 2; }
+  transform: translateY(-50%); }
 
 .breadcrumb li.active {
   background: none;
   color: #f1f1f1;
   font-weight: 700;
-  padding: 13px 35px 0; }
+  padding: 13px 28px 0; }
 
 .container-tertiary + div .container-breadcrumb {
   margin-top: 0; }
@@ -666,6 +643,9 @@ p.tip:before {
 
   .breadcrumb > li:first-child {
     display: none; } }
+.photograph .page-main {
+  background: rgba(33, 33, 33, 0.49); }
+
 .location:after {
   content: "|"; }
 
@@ -708,6 +688,7 @@ p.tip:before {
 
 .link-prev:before, .link-next:after {
   background: #212121;
+  background: rgba(33, 33, 33, 0.49);
   border-radius: 7px;
   color: #f1f1f1;
   content: "";
@@ -734,7 +715,7 @@ p.tip:before {
 
 .container-image.photo {
   background: #333333;
-  background: rgba(33, 33, 33, 0.49); }
+  background: rgba(77, 77, 77, 0.49); }
 
 @media (max-width: 767px) {
   .tiles {
