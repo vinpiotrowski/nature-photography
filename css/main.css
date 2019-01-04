@@ -30,10 +30,13 @@ body, html {
 .page-main {
   background: #212121;
   border-radius: 14px 14px 0 0;
-  /*box-shadow: 0 0 7px $pure-black;
-  box-shadow: 0 0 1px $border;*/
+  /*box-shadow: 0 0 7px $pure-black;*/
+  box-shadow: 0 0 1px #555555;
   position: relative;
   z-index: 14; }
+
+body.photograph .page-main {
+  box-shadow: none; }
 
 .container-logo {
   float: left;
@@ -165,9 +168,14 @@ hr {
   text-align: center; }
 
 .footer {
-  background: #212121;
+  background: #333333;
+  margin-left: -1px;
+  margin-right: -1px;
   padding: 49px 0 35px;
   text-align: center; }
+
+body.photograph .footer {
+  background: none; }
 
 .footer a, .footer span {
   padding: 0 14px;
@@ -218,6 +226,10 @@ hr {
   .container-pull-right {
     float: left !important;
     margin-top: 0; }
+
+  .footer {
+    margin-left: 0;
+    margin-right: 0; }
 
   .footer a:before {
     font-size: 35px; }
