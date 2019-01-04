@@ -139,10 +139,14 @@ body, html {
 .page-main {
   background: $black;
   border-radius: 14px 14px 0 0;
-  /*box-shadow: 0 0 7px $pure-black;
-  box-shadow: 0 0 1px $border;*/
+  /*box-shadow: 0 0 7px $pure-black;*/
+  box-shadow: 0 0 1px $grey;
   position: relative;
   z-index:14;
+}
+
+body.photograph .page-main {
+  box-shadow: none;
 }
 
 .container-logo {
@@ -307,9 +311,15 @@ hr {
 }
 
 .footer {
-  background: $black;
+  background: $dark-grey;
+  margin-left: -1px;
+  margin-right: -1px;
   padding: 49px 0 35px;
   text-align: center;
+}
+
+body.photograph .footer {
+  background: none;
 }
 
 .footer a, .footer span {
@@ -375,6 +385,11 @@ hr {
   .container-pull-right {
     float: left!important;
     margin-top: 0;
+  }
+
+  .footer {
+    margin-left: 0;
+    margin-right: 0;
   }
 
   .footer a:before {
