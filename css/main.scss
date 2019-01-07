@@ -360,6 +360,11 @@ body.photograph .footer {
 
 @media(max-width: 767px) {
 
+  .page-main {
+    border-radius: 0px;
+    box-shadow: none;
+  }
+
   .container-logo {
     image-rendering: auto;
     padding: 17px 0 21px;
@@ -388,6 +393,7 @@ body.photograph .footer {
   }
 
   .footer {
+    background: none;
     margin-left: 0;
     margin-right: 0;
   }

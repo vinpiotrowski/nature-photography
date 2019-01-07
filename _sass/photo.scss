@@ -7,7 +7,7 @@
 }
 
 .tiles {
-    padding: 14px;
+    padding: 14px 14px 35px;
 }
 
 .tile {
@@ -107,6 +107,10 @@
         float: none;
         margin: 0 auto 21px;
         max-width: 84%;
+    }
+
+    .container-image.photo img {
+        max-height: 420px;
     }
 
     .link-prev, .link-next {

@@ -15,6 +15,18 @@ url: "http://nature-photography.ca/"
 # Build settings
 markdown: kramdown
 
+plugins:
+  - jekyll-paginate-v2
+
+# Produces a cleaner folder structure when using categories
+#permalink: /:year/:month/:title.html
+#permalink: /:year/:month/:title.html
+
+
+# Explicitly turn off the old code
+#paginate: nil
+#paginate_path:
+
 # Pagination Settings
 pagination:
   enabled: true

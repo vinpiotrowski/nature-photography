@@ -206,6 +206,10 @@ body.photograph .footer {
   color: #989898; }
 
 @media (max-width: 767px) {
+  .page-main {
+    border-radius: 0px;
+    box-shadow: none; }
+
   .container-logo {
     image-rendering: auto;
     padding: 17px 0 21px;
@@ -228,6 +232,7 @@ body.photograph .footer {
     margin-top: 0; }
 
   .footer {
+    background: none;
     margin-left: 0;
     margin-right: 0; }
 
@@ -662,7 +667,7 @@ p.tip:before {
   content: "|"; }
 
 .tiles {
-  padding: 14px; }
+  padding: 14px 14px 35px; }
 
 .tile {
   line-height: 1.5;
@@ -747,6 +752,9 @@ p.tip:before {
     float: none;
     margin: 0 auto 21px;
     max-width: 84%; }
+
+  .container-image.photo img {
+    max-height: 420px; }
 
   .link-prev, .link-next {
     top: 50%;

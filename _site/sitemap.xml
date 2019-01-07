@@ -44,12 +44,6 @@
         </url>
     
         <url>
-        <loc>http://localhost:4000/blog/</loc>
-        <changefreq>Monthly</changefreq>
-        <priority>0.8</priority>
-        </url>
-    
-        <url>
         <loc>http://localhost:4000/contact</loc>
         <changefreq>Monthly</changefreq>
         <priority>0.8</priority>
@@ -87,6 +81,30 @@
     
         <url>
         <loc>http://localhost:4000/sitemap.xml</loc>
+        <changefreq>Monthly</changefreq>
+        <priority>0.8</priority>
+        </url>
+    
+        <url>
+        <loc>http://localhost:4000/blog/index.html</loc>
+        <changefreq>Monthly</changefreq>
+        <priority>0.8</priority>
+        </url>
+    
+        <url>
+        <loc>http://localhost:4000/blog/2/index.html</loc>
+        <changefreq>Monthly</changefreq>
+        <priority>0.8</priority>
+        </url>
+    
+        <url>
+        <loc>http://localhost:4000/blog/3/index.html</loc>
+        <changefreq>Monthly</changefreq>
+        <priority>0.8</priority>
+        </url>
+    
+        <url>
+        <loc>http://localhost:4000/blog/4/index.html</loc>
         <changefreq>Monthly</changefreq>
         <priority>0.8</priority>
         </url>
