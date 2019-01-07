@@ -1,0 +1,635 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    
+        <url>
+        <loc>http://localhost:4000/about/</loc>
+        <changefreq>Monthly</changefreq>
+        <priority>0.8</priority>
+        </url>
+    
+        <url>
+        <loc>http://localhost:4000/blog/inspiring-photographers</loc>
+        <changefreq>Monthly</changefreq>
+        <priority>0.8</priority>
+        </url>
+    
+        <url>
+        <loc>http://localhost:4000/blog/inspiring-photographers</loc>
+        <changefreq>Monthly</changefreq>
+        <priority>0.8</priority>
+        </url>
+    
+        <url>
+        <loc>http://localhost:4000/blog/news-and-updates</loc>
+        <changefreq>Monthly</changefreq>
+        <priority>0.8</priority>
+        </url>
+    
+        <url>
+        <loc>http://localhost:4000/blog/news-and-updates</loc>
+        <changefreq>Monthly</changefreq>
+        <priority>0.8</priority>
+        </url>
+    
+        <url>
+        <loc>http://localhost:4000/blog/nature-and-landscape-photography-tips-and-techniques</loc>
+        <changefreq>Monthly</changefreq>
+        <priority>0.8</priority>
+        </url>
+    
+        <url>
+        <loc>http://localhost:4000/blog/nature-and-landscape-photography-tips-and-techniques</loc>
+        <changefreq>Monthly</changefreq>
+        <priority>0.8</priority>
+        </url>
+    
+        <url>
+        <loc>http://localhost:4000/contact</loc>
+        <changefreq>Monthly</changefreq>
+        <priority>0.8</priority>
+        </url>
+    
+        <url>
+        <loc>http://localhost:4000/photos/</loc>
+        <changefreq>Monthly</changefreq>
+        <priority>0.8</priority>
+        </url>
+    
+        <url>
+        <loc>http://localhost:4000/</loc>
+        <changefreq>Monthly</changefreq>
+        <priority>0.8</priority>
+        </url>
+    
+        <url>
+        <loc>http://localhost:4000/about/my-reading-list</loc>
+        <changefreq>Monthly</changefreq>
+        <priority>0.8</priority>
+        </url>
+    
+        <url>
+        <loc>http://localhost:4000/css/main.css</loc>
+        <changefreq>Monthly</changefreq>
+        <priority>0.8</priority>
+        </url>
+    
+        <url>
+        <loc>http://localhost:4000/shop</loc>
+        <changefreq>Monthly</changefreq>
+        <priority>0.8</priority>
+        </url>
+    
+        <url>
+        <loc>http://localhost:4000/sitemap.xml</loc>
+        <changefreq>Monthly</changefreq>
+        <priority>0.8</priority>
+        </url>
+    
+        <url>
+        <loc>http://localhost:4000/blog/index.html</loc>
+        <changefreq>Monthly</changefreq>
+        <priority>0.8</priority>
+        </url>
+    
+        <url>
+        <loc>http://localhost:4000/blog/2/index.html</loc>
+        <changefreq>Monthly</changefreq>
+        <priority>0.8</priority>
+        </url>
+    
+        <url>
+        <loc>http://localhost:4000/blog/3/index.html</loc>
+        <changefreq>Monthly</changefreq>
+        <priority>0.8</priority>
+        </url>
+    
+        <url>
+        <loc>http://localhost:4000/blog/4/index.html</loc>
+        <changefreq>Monthly</changefreq>
+        <priority>0.8</priority>
+        </url>
+    
+
+    
+        <url>
+        <loc>http://localhost:4000/blog/lake-o-hara-fall-2013-trip</loc>
+        <priority>0.7</priority>
+        </url>
+    
+        <url>
+        <loc>http://localhost:4000/blog/dan-jurak-inspiring-photographer</loc>
+        <priority>0.7</priority>
+        </url>
+    
+        <url>
+        <loc>http://localhost:4000/blog/trip-to-tofino-british-columbia</loc>
+        <priority>0.7</priority>
+        </url>
+    
+        <url>
+        <loc>http://localhost:4000/blog/how-to-get-your-photos-noticed</loc>
+        <priority>0.7</priority>
+        </url>
+    
+        <url>
+        <loc>http://localhost:4000/blog/our-four-legged-forest-friends</loc>
+        <priority>0.7</priority>
+        </url>
+    
+        <url>
+        <loc>http://localhost:4000/blog/published-in-landscape-photography-magazine</loc>
+        <priority>0.7</priority>
+        </url>
+    
+        <url>
+        <loc>http://localhost:4000/blog/moving-to-bragg-creek</loc>
+        <priority>0.7</priority>
+        </url>
+    
+        <url>
+        <loc>http://localhost:4000/blog/why-spring-is-the-worst-season</loc>
+        <priority>0.7</priority>
+        </url>
+    
+        <url>
+        <loc>http://localhost:4000/blog/alone-in-the-wilderness-documentary</loc>
+        <priority>0.7</priority>
+        </url>
+    
+        <url>
+        <loc>http://localhost:4000/blog/jason-edlund-inspiring-photographer</loc>
+        <priority>0.7</priority>
+        </url>
+    
+        <url>
+        <loc>http://localhost:4000/blog/choosing-between-lighting-and-scenery</loc>
+        <priority>0.7</priority>
+        </url>
+    
+        <url>
+        <loc>http://localhost:4000/blog/shoot-to-post-ratio</loc>
+        <priority>0.7</priority>
+        </url>
+    
+        <url>
+        <loc>http://localhost:4000/blog/hand-blending-vs-hdr-software</loc>
+        <priority>0.7</priority>
+        </url>
+    
+        <url>
+        <loc>http://localhost:4000/blog/benefits-of-bracketing-and-multiple-exposures</loc>
+        <priority>0.7</priority>
+        </url>
+    
+        <url>
+        <loc>http://localhost:4000/photos/tofino-canada-tide-pools</loc>
+        <priority>0.7</priority>
+        </url>
+    
+        <url>
+        <loc>http://localhost:4000/photos/tofino-british-columbia-looking-out</loc>
+        <priority>0.7</priority>
+        </url>
+    
+        <url>
+        <loc>http://localhost:4000/photos/red-barn-in-palouse-washington</loc>
+        <priority>0.7</priority>
+        </url>
+    
+        <url>
+        <loc>http://localhost:4000/photos/wild-balsamroot-flowers-from-palouse-washington</loc>
+        <priority>0.7</priority>
+        </url>
+    
+        <url>
+        <loc>http://localhost:4000/photos/spring-fields-in-palouse-washington</loc>
+        <priority>0.7</priority>
+        </url>
+    
+        <url>
+        <loc>http://localhost:4000/photos/tofino-bullwhip-kelp</loc>
+        <priority>0.7</priority>
+        </url>
+    
+        <url>
+        <loc>http://localhost:4000/photos/palouse-green-abstract</loc>
+        <priority>0.7</priority>
+        </url>
+    
+        <url>
+        <loc>http://localhost:4000/photos/pacific-rim-ocean-sunset</loc>
+        <priority>0.7</priority>
+        </url>
+    
+        <url>
+        <loc>http://localhost:4000/photos/pacific-rim-full-moon</loc>
+        <priority>0.7</priority>
+        </url>
+    
+        <url>
+        <loc>http://localhost:4000/photos/bright-sunlight-over-palouse-washington</loc>
+        <priority>0.7</priority>
+        </url>
+    
+        <url>
+        <loc>http://localhost:4000/photos/colorado-river-arizona-horseshoe-bend</loc>
+        <priority>0.7</priority>
+        </url>
+    
+        <url>
+        <loc>http://localhost:4000/photos/tofino-british-columbia-west-coast-beach</loc>
+        <priority>0.7</priority>
+        </url>
+    
+        <url>
+        <loc>http://localhost:4000/photos/palouse-washington-collapsed-barn</loc>
+        <priority>0.7</priority>
+        </url>
+    
+        <url>
+        <loc>http://localhost:4000/photos/sunrise-from-steptoe-butte-in-palouse-washington</loc>
+        <priority>0.7</priority>
+        </url>
+    
+        <url>
+        <loc>http://localhost:4000/photos/british-columbia-vancouver-island-moon-rise</loc>
+        <priority>0.7</priority>
+        </url>
+    
+        <url>
+        <loc>http://localhost:4000/photos/palouse-falls-in-washington</loc>
+        <priority>0.7</priority>
+        </url>
+    
+        <url>
+        <loc>http://localhost:4000/photos/lone-tree-palouse</loc>
+        <priority>0.7</priority>
+        </url>
+    
+        <url>
+        <loc>http://localhost:4000/photos/monument-valley-sunrise-in-antelope-canyon</loc>
+        <priority>0.7</priority>
+        </url>
+    
+        <url>
+        <loc>http://localhost:4000/photos/upper-antelope-canyon-arizona</loc>
+        <priority>0.7</priority>
+        </url>
+    
+        <url>
+        <loc>http://localhost:4000/photos/portland-oregon-metlako-falls-on-eagle-creek</loc>
+        <priority>0.7</priority>
+        </url>
+    
+        <url>
+        <loc>http://localhost:4000/photos/pacific-northwest-and-united-states-photo-gallery</loc>
+        <priority>0.7</priority>
+        </url>
+    
+        <url>
+        <loc>http://localhost:4000/photos/star-trails-and-rocks-in-dinosaur-provincial-park-alberta</loc>
+        <priority>0.7</priority>
+        </url>
+    
+        <url>
+        <loc>http://localhost:4000/photos/dinosaur-provincial-park-alberta-badlands-wrinkled-rocks</loc>
+        <priority>0.7</priority>
+        </url>
+    
+        <url>
+        <loc>http://localhost:4000/photos/dinosaur-park-world-heritage-site-breaking-bad</loc>
+        <priority>0.7</priority>
+        </url>
+    
+        <url>
+        <loc>http://localhost:4000/photos/dinosaur-provincial-park-landscape-in-alberta</loc>
+        <priority>0.7</priority>
+        </url>
+    
+        <url>
+        <loc>http://localhost:4000/photos/dinosaur-provincial-park-alberta-hoodoos-bw</loc>
+        <priority>0.7</priority>
+        </url>
+    
+        <url>
+        <loc>http://localhost:4000/photos/dinosaur-provincial-park-alberta-cool-hoodoo-hues</loc>
+        <priority>0.7</priority>
+        </url>
+    
+        <url>
+        <loc>http://localhost:4000/photos/alberta-badlands-photo-gallery</loc>
+        <priority>0.7</priority>
+        </url>
+    
+        <url>
+        <loc>http://localhost:4000/photos/southern-alberta-prairie-storm-chasing</loc>
+        <priority>0.7</priority>
+        </url>
+    
+        <url>
+        <loc>http://localhost:4000/photos/prairie-storm-at-sunset</loc>
+        <priority>0.7</priority>
+        </url>
+    
+        <url>
+        <loc>http://localhost:4000/photos/round-hay-bales-at-sunset-near-calgary</loc>
+        <priority>0.7</priority>
+        </url>
+    
+        <url>
+        <loc>http://localhost:4000/photos/grain-silos-with-graffiti-near-calgary-alberta</loc>
+        <priority>0.7</priority>
+        </url>
+    
+        <url>
+        <loc>http://localhost:4000/photos/metal-silos-and-prairie-thunder-storms-near-drumheller</loc>
+        <priority>0.7</priority>
+        </url>
+    
+        <url>
+        <loc>http://localhost:4000/photos/alberta-lupine-meadow-at-sunset</loc>
+        <priority>0.7</priority>
+        </url>
+    
+        <url>
+        <loc>http://localhost:4000/photos/priddis-alberta-storm-a-brewing</loc>
+        <priority>0.7</priority>
+        </url>
+    
+        <url>
+        <loc>http://localhost:4000/photos/abstract-windy-prairies</loc>
+        <priority>0.7</priority>
+        </url>
+    
+        <url>
+        <loc>http://localhost:4000/photos/calgary-alberta-chinook-skyline</loc>
+        <priority>0.7</priority>
+        </url>
+    
+        <url>
+        <loc>http://localhost:4000/photos/old-59-chevy-truck-in-prairie-fields-near-calgary</loc>
+        <priority>0.7</priority>
+        </url>
+    
+        <url>
+        <loc>http://localhost:4000/photos/road-with-rainbow-near-ft-mcleod-alberta</loc>
+        <priority>0.7</priority>
+        </url>
+    
+        <url>
+        <loc>http://localhost:4000/photos/willow-creek-sunset-near-stavely-alberta</loc>
+        <priority>0.7</priority>
+        </url>
+    
+        <url>
+        <loc>http://localhost:4000/photos/prairie-puddle-with-grass-and-ripples</loc>
+        <priority>0.7</priority>
+        </url>
+    
+        <url>
+        <loc>http://localhost:4000/photos/rowley-alberta-spooky-barn-in-infrared</loc>
+        <priority>0.7</priority>
+        </url>
+    
+        <url>
+        <loc>http://localhost:4000/photos/rowley-alberta-grain-elevators-and-tractor</loc>
+        <priority>0.7</priority>
+        </url>
+    
+        <url>
+        <loc>http://localhost:4000/photos/alberta-prairies-photo-gallery</loc>
+        <priority>0.7</priority>
+        </url>
+    
+        <url>
+        <loc>http://localhost:4000/photos/bragg-creek-alberta-allen-bill-pond</loc>
+        <priority>0.7</priority>
+        </url>
+    
+        <url>
+        <loc>http://localhost:4000/photos/bragg-creek-alberta-foothills-chinook-arch</loc>
+        <priority>0.7</priority>
+        </url>
+    
+        <url>
+        <loc>http://localhost:4000/photos/bragg-creek-alberta-highway-66-winter-sunrise</loc>
+        <priority>0.7</priority>
+        </url>
+    
+        <url>
+        <loc>http://localhost:4000/photos/kananaskis-alberta-elbow-falls-abstract</loc>
+        <priority>0.7</priority>
+        </url>
+    
+        <url>
+        <loc>http://localhost:4000/photos/kananaskis-alberta-forget-me-not-pond</loc>
+        <priority>0.7</priority>
+        </url>
+    
+        <url>
+        <loc>http://localhost:4000/photos/millarville-alberta-foothills-flare</loc>
+        <priority>0.7</priority>
+        </url>
+    
+        <url>
+        <loc>http://localhost:4000/photos/alberta-foothills-archetypes</loc>
+        <priority>0.7</priority>
+        </url>
+    
+        <url>
+        <loc>http://localhost:4000/photos/bragg-creek-aurora-borealis-northern-lights</loc>
+        <priority>0.7</priority>
+        </url>
+    
+        <url>
+        <loc>http://localhost:4000/photos/foothills-alberta-supercell</loc>
+        <priority>0.7</priority>
+        </url>
+    
+        <url>
+        <loc>http://localhost:4000/photos/bragg-creek-elbow-falls</loc>
+        <priority>0.7</priority>
+        </url>
+    
+        <url>
+        <loc>http://localhost:4000/photos/alberta-summertime-in-the-foothills</loc>
+        <priority>0.7</priority>
+        </url>
+    
+        <url>
+        <loc>http://localhost:4000/photos/alberta-foothills-photo-gallery</loc>
+        <priority>0.7</priority>
+        </url>
+    
+        <url>
+        <loc>http://localhost:4000/photos/icefields-parkway-fall-on-bow</loc>
+        <priority>0.7</priority>
+        </url>
+    
+        <url>
+        <loc>http://localhost:4000/photos/waterton-valley</loc>
+        <priority>0.7</priority>
+        </url>
+    
+        <url>
+        <loc>http://localhost:4000/photos/kayaks-and-canoes-on-moraine-lake-in-banff-national-park</loc>
+        <priority>0.7</priority>
+        </url>
+    
+        <url>
+        <loc>http://localhost:4000/photos/kananaskis-alberta-barrier-lake-fissures</loc>
+        <priority>0.7</priority>
+        </url>
+    
+        <url>
+        <loc>http://localhost:4000/photos/mt-baldy-from-barrier-lake</loc>
+        <priority>0.7</priority>
+        </url>
+    
+        <url>
+        <loc>http://localhost:4000/photos/abraham-lake-trapped-ice-bubbles</loc>
+        <priority>0.7</priority>
+        </url>
+    
+        <url>
+        <loc>http://localhost:4000/photos/banff-national-park-canada-tower-of-babel</loc>
+        <priority>0.7</priority>
+        </url>
+    
+        <url>
+        <loc>http://localhost:4000/photos/canmore-alberta-grassi-lakes-colours</loc>
+        <priority>0.7</priority>
+        </url>
+    
+        <url>
+        <loc>http://localhost:4000/photos/banff-canada-two-jack-lake</loc>
+        <priority>0.7</priority>
+        </url>
+    
+        <url>
+        <loc>http://localhost:4000/photos/banff-canada-frozen-falls-under-stars</loc>
+        <priority>0.7</priority>
+        </url>
+    
+        <url>
+        <loc>http://localhost:4000/photos/emerald-lake-every-morning-the-world-is-created</loc>
+        <priority>0.7</priority>
+        </url>
+    
+        <url>
+        <loc>http://localhost:4000/photos/alberta-kananaskis-falls-in-autumn</loc>
+        <priority>0.7</priority>
+        </url>
+    
+        <url>
+        <loc>http://localhost:4000/photos/banff-canada-louise-creek-winter-sunrise</loc>
+        <priority>0.7</priority>
+        </url>
+    
+        <url>
+        <loc>http://localhost:4000/photos/lake-o-hara-early-winter</loc>
+        <priority>0.7</priority>
+        </url>
+    
+        <url>
+        <loc>http://localhost:4000/photos/kananskis-alberta-mt-kidd-in-clouds</loc>
+        <priority>0.7</priority>
+        </url>
+    
+        <url>
+        <loc>http://localhost:4000/photos/banff-rundle-sunrise-on-vermillion-lakes</loc>
+        <priority>0.7</priority>
+        </url>
+    
+        <url>
+        <loc>http://localhost:4000/photos/kananaskis-morning-at-wedge-pond</loc>
+        <priority>0.7</priority>
+        </url>
+    
+        <url>
+        <loc>http://localhost:4000/photos/banff-national-park-turquoise-glacier-water-at-lake-louise</loc>
+        <priority>0.7</priority>
+        </url>
+    
+        <url>
+        <loc>http://localhost:4000/photos/kananaskis-highway-forty-tribute</loc>
+        <priority>0.7</priority>
+        </url>
+    
+        <url>
+        <loc>http://localhost:4000/photos/banff-national-park-cascade-mountain-cracked-ice</loc>
+        <priority>0.7</priority>
+        </url>
+    
+        <url>
+        <loc>http://localhost:4000/photos/banff-national-park-johnstons-canyon-waterfalls</loc>
+        <priority>0.7</priority>
+        </url>
+    
+        <url>
+        <loc>http://localhost:4000/photos/yoho-national-park-hourglass-figure-in-emerald-lake</loc>
+        <priority>0.7</priority>
+        </url>
+    
+        <url>
+        <loc>http://localhost:4000/photos/lake-o-hara-mt-cathedral</loc>
+        <priority>0.7</priority>
+        </url>
+    
+        <url>
+        <loc>http://localhost:4000/photos/yoho-national-park-rushing-kicking-horse-river</loc>
+        <priority>0.7</priority>
+        </url>
+    
+        <url>
+        <loc>http://localhost:4000/photos/banff-alberta-yellow-autumn-leaves</loc>
+        <priority>0.7</priority>
+        </url>
+    
+        <url>
+        <loc>http://localhost:4000/photos/waterton-national-park-cameron-lake-sunrise</loc>
+        <priority>0.7</priority>
+        </url>
+    
+        <url>
+        <loc>http://localhost:4000/photos/kananaskis-alberta-wedge-mountain</loc>
+        <priority>0.7</priority>
+        </url>
+    
+        <url>
+        <loc>http://localhost:4000/photos/kananaskis-alberta-mt-kidd-reflecting-pools</loc>
+        <priority>0.7</priority>
+        </url>
+    
+        <url>
+        <loc>http://localhost:4000/photos/banff-national-park-cascade-ponds-pink-sunrise</loc>
+        <priority>0.7</priority>
+        </url>
+    
+        <url>
+        <loc>http://localhost:4000/photos/banff-national-park-moraine-lake-on-canada-day</loc>
+        <priority>0.7</priority>
+        </url>
+    
+        <url>
+        <loc>http://localhost:4000/photos/jasper-national-park-annette-lake-black-and-white</loc>
+        <priority>0.7</priority>
+        </url>
+    
+        <url>
+        <loc>http://localhost:4000/photos/cascade-meadows-wild-flowers-in-banff-national-park</loc>
+        <priority>0.7</priority>
+        </url>
+    
+        <url>
+        <loc>http://localhost:4000/photos/kananaskis-alberta-abstract-aspen-trees</loc>
+        <priority>0.7</priority>
+        </url>
+    
+        <url>
+        <loc>http://localhost:4000/photos/canadian-rockies-photo-gallery</loc>
+        <priority>0.7</priority>
+        </url>
+    
+
+</urlset>
