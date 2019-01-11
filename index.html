@@ -7,30 +7,26 @@ title: "Home"
 
     <section class="col-xs-12 clearfix">
 
-        <div class="hero homepage col-xs-12 clearfix">
-            <div class="container-image">
-                <img src="{{ '/content/images/hero-homepage-lg.jpg' | prepend: site.baseurl }}" alt="">
-            </div>
+        <div class="hero homepage clearfix">
             <div class="headline">
                 <h1>An exhibition of <strong>nature</strong> and <strong>light</strong>;</h1>
                 <h3>now with 50% more sticks and rocks.</h3>
+
+                <div class="container-galleries">
+                    <ul>
+                        <li><a class="mountains" href="{{ '/photos/canadian-rockies-photo-gallery' | prepend: site.baseURL}}">Mountains</a></li>
+                        <li><a class="foothills" href="{{ '/photos/alberta-foothills-photo-gallery' | prepend: site.baseURL}}">Foothills</a></li>
+                        <li><a class="prairies" href="{{ '/photos/alberta-prairies-photo-gallery' | prepend: site.baseURL}}">Prairies</a></li>
+                        <li><a class="badlands" href="{{ '/photos/alberta-badlands-photo-gallery' | prepend: site.baseURL}}">Badlands</a></li>
+                        <li><a class="travel" href="{{ '/photos/pacific-northwest-and-united-states-photo-gallery' | prepend: site.baseURL}}">Travel</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
 
     </section>
 
-    <section class="container-galleries clearfix" style="display: none;">
-        <div class="col-xs-12">
-            <h2 class="title">The galleries</h2>
-        </div>
-        <ul>
-            <li><a class="mountains" href="{{ '/photos/canadian-rockies-photo-gallery' | prepend: site.baseURL}}">Mountains</a></li>
-            <li><a class="foothills" href="{{ '/photos/alberta-foothills-photo-gallery' | prepend: site.baseURL}}">Foothills</a></li>
-            <li><a class="prairies" href="{{ '/photos/alberta-prairies-photo-gallery' | prepend: site.baseURL}}">Prairies</a></li>
-            <li><a class="badlands" href="{{ '/photos/alberta-badlands-photo-gallery' | prepend: site.baseURL}}">Badlands</a></li>
-            <li><a class="travel" href="{{ '/photos/pacific-northwest-and-united-states-photo-gallery' | prepend: site.baseURL}}">Travel</a></li>
-        </ul>
-    </section>
+
 
     <section class="homepage clearfix">
         <div class="col-xs-12">

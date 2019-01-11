@@ -7,14 +7,15 @@ title: "Photo Galleries"
 
 <div class="clearfix">
 
-    {% include tertiary-landscapes.html %}
 
-    <div class="page-narrow">
-        <div class="col-xs-12">
-            <h1>Photo Galleries</h1>
-            <p>Photographing Western Canada is about more than taking pictures for me.  It's about the stories, experiences, and journeys of discovery in an unspoiled part of the world.  In Alberta, changing your location by a hundred kilometers presents a different set of adventures and stories.  My discovery of beauty and nature has grown to include other parts of the world in the <em>travel gallery</em>.  Regardless of where my travels take me I still consider myself a student and am continually learning and exploring.</p>
-            <br />
-        </div>
+        <section>
+            <div class="col-xs-12">
+                <h1 class="title">Photo Galleries</h1>
+                <p>Photography is about the stories, experiences, and adventures of our objective reality.  Each of the places I've been to present a different history and emanation.  A camera can't capture everything but these galleries serve as reminders of the sites I've explored.</p>
+                <br />
+            </div>
+        </section>
+
 
         {% for post in site.posts reversed %}
         {% if post.layout == 'gallery' %}
@@ -35,7 +36,7 @@ title: "Photo Galleries"
         </div>
         {% endif %}
         {% endfor %}
-    </div>
+
 
 </div>
 

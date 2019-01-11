@@ -1,5 +1,10 @@
+.photograph .site-header {
+    background: none;
+    margin-bottom: 21px;
+}
+
 .photograph .page-main {
-    background: $black-alpha;
+    /*background: $black-alpha;*/
 }
 
 .location:after {
@@ -30,7 +35,7 @@
 }
 
 .container-image.photo img {
-    max-height: 840px;
+    max-height: 880px;
 }
 
 .link-prev, .link-next {
@@ -87,6 +92,10 @@
 }
 
 @media(max-width: 767px) {
+    .photograph .site-header {
+        margin-bottom: 0;
+    }
+
     .tiles {
         padding: 7px;
     }

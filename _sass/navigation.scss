@@ -21,7 +21,7 @@
 
 .container-menu {
     float: right;
-    padding: 39px 0;
+    padding: 10px 0 7px;
     text-align: right;
 }
 
@@ -38,9 +38,9 @@
     color: $white;
     display: inline-block;
     font-size: $extra-large;
-    padding: 3px 14px;
+    padding: 1px 14px;
     text-decoration: none;
-    text-shadow: 0 0 21px $pure-black;
+    /*text-shadow: 0 0 21px $pure-black;*/
 }
 
 .container-menu .primary a:hover {
@@ -71,6 +71,7 @@
 }
 
 .container-mobile-menu .call-to-action.secondary {
+    border: solid 2px;
     color: $white;
     margin-bottom: 0;
     text-align: center;
@@ -83,9 +84,9 @@ body.photos .primary .photos,
 body.blog .primary .blog,
 body.shop .primary .shop,
 body.about .primary .about {
-    /*border-radius: $border-radius;
+    border-radius: $border-radius;
     box-shadow: inset 0 0 0 3px $blue;
-    pointer-events: none;*/
+    /*pointer-events: none;*/
 }
 
 @media(max-width: 960px) {

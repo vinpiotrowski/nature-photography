@@ -1,6 +1,6 @@
 body.default {
     background-image: url('/content/images/cover.jpg');
-    background-position: center -7VW;
+    background-position: center 0;
     background-repeat: no-repeat;
     background-size: 100% auto;
 }
@@ -37,20 +37,28 @@ body.default {
     display: none;
 }
 
-.hero {
-    margin-top: 30px;
-}
-
-.headline {
-    left: 50%;
-    position: absolute;
-    top: 42%;
-    transform: translate(-50%, -50%);
-}
-
 .homepage .headline {
+    margin: 49px auto 35px;
+    padding: 21px 0 0;
     text-align: center;
-    width: 70%;
+    width: 100%;
+}
+
+.homepage .headline:before, .homepage .headline:after {
+    background: $orange;
+    content: ' ';
+    height: 2px;
+    position: absolute;
+    top: 140px;
+    width: 14vw;
+}
+
+.homepage .headline:before {
+    left: 7vw;
+}
+
+.homepage .headline:after {
+    right: 7vw;
 }
 
 .headline h1 {
@@ -61,7 +69,6 @@ body.default {
 
 .headline h3 {
     display: inline;
-    font-weight: 400;
     margin: 7px 0;
 }
 
@@ -72,9 +79,10 @@ body.default {
 .container-galleries ul {
     display: table;
     list-style: none;
-    margin: 14px auto;
+    margin: 35px auto 0;
     padding: 0;
     table-layout: fixed;
+    width: 49%;
 }
 
 .container-galleries li {
@@ -87,6 +95,7 @@ body.default {
     border-radius: 7px;
     color: $white;
     display: block;
+    font-size: 0;
     padding: 7px 0;
     text-align: center;
     text-decoration: none;
@@ -98,15 +107,21 @@ body.default {
 
 .container-galleries a:before {
     border-radius: 50%;
+    color: $white;
     display: block;
     font-family: $glyph-font;
-    font-size: 49px;
-    height: 63px;
+    font-size: 63px;
+    height: 77px;
     font-weight: 100;
-    margin: 0 auto;
+    margin: 0 auto 7px;
     padding: 7px 0 0;
-    width: 70px;
+    width: 77px;
     text-align: center;
+}
+
+.homepage .container-galleries a:before {
+    /*background: $grey;
+    color: $orange;*/
 }
 
 .container-galleries .mountains:before {
@@ -155,55 +170,6 @@ body.default {
     color: $white!important;
 }
 
-.tip {
-    border-radius: $border-radius $border-radius 0 0;
-    color: $white;
-}
-
-
-.title, .title + p {
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 700px;
-    text-align: center;
-}
-
-section .title:before {
-    background: $blue;
-    content: " ";
-    display: block;
-    height: 7px;
-    margin: 7px auto;
-    width: 140px;
-}
-
-section .title:after {
-    background: $blue;
-    content: " ";
-    display: block;
-    height: 7px;
-    margin: 14px auto 0;
-    width: 140px;
-}
-
-.container-galleries .title:before, .container-galleries .title:after {
-    background: $black;
-}
-
-section .title + p {
-    margin-bottom: 21px;
-}
-
-.title + p {
-    margin-bottom: 49px;
-}
-
-
-p.tip:before {
-    content: $tip;
-    font-family: $glyph-font;
-    margin-right: 7px;
-}
 
 @media(max-width: 991px) {
     .container-galleries {
@@ -220,19 +186,29 @@ p.tip:before {
         background-image: none;
     }
 
-    .hero .container-image {
-        overflow: hidden;
+    .homepage.hero {
+        background: url('/content/images/hero-homepage-lg.jpg');
+        background-repeat: no-repeat;
+        background-position: center 0;
+        background-size: cover;
+        height: 460px;
+        margin: 15px;
     }
 
-    .hero img {
-        margin-left: 50%;
-        max-height: 500px;
-        max-width: 1200px;
-        transform: translateX(-50%);
+    .homepage .headline {
+        width: 70%;
     }
 
     .headline h1 {
         white-space: normal;
+    }
+
+    .homepage .headline:before, .homepage .headline:after {
+        display: none;
+    }
+
+    .homepage .headline .container-galleries {
+        display: none;
     }
 
     .container-galleries ul {
