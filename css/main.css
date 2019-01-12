@@ -9,7 +9,7 @@ body, html {
   background: #212121;
   color: #989898;
   font-family: "Raleway", sans-serif;
-  font-size: 16px;
+  font-size: 17px;
   font-weight: 400;
   image-rendering: -webkit-optimize-contrast;
   min-height: 100vh;
@@ -35,11 +35,6 @@ body, html {
   max-width: 960px; }
 
 .page-main {
-  /*background: $black;
-  border-radius: 14px 14px 0 0;
-  box-shadow: 0 0 7px $pure-black;
-  box-shadow: 0 0 1px $grey;
-  background: rgba(33,33,33,.49);*/
   position: relative;
   z-index: 14; }
 
@@ -134,7 +129,7 @@ h1 {
   font-size: 28px; }
 
 h1 strong {
-  font-size: 49px; }
+  font-size: 63px; }
 
 h2 {
   font-size: 28px; }
@@ -242,6 +237,7 @@ section .title:after {
     max-width: 280px; } }
 @media (max-width: 767px) {
   .site-header {
+    background: none;
     margin-bottom: 0; }
 
   .container-logo {
@@ -413,21 +409,22 @@ body.default {
   content: ' ';
   height: 2px;
   position: absolute;
-  top: 140px;
+  top: 163px;
   width: 14vw; }
 
 .homepage .headline:before {
-  left: 7vw; }
+  left: 0; }
 
 .homepage .headline:after {
-  right: 7vw; }
+  right: 0; }
 
 .headline h1 {
+  font-size: 35px;
   font-weight: 100;
   margin: 7px 0;
   white-space: nowrap; }
 
-.headline h3 {
+.headline h2 {
   display: inline;
   margin: 7px 0; }
 
@@ -535,7 +532,11 @@ body.default {
     width: 70%; }
 
   .headline h1 {
+    font-size: 28px;
     white-space: normal; }
+
+  .headline h2 {
+    font-size: 21px; }
 
   .homepage .headline:before, .homepage .headline:after {
     display: none; }
