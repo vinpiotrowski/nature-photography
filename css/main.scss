@@ -16,9 +16,22 @@ $alt-font: 'Helvetica Neue', Helvetica,Arial, sans-serif;
 
 $glyph-font: 'np-glyphs';
 
+
+
 $border-radius: 14px;
 
+$small: 11px;
+
+$regular: 17px;
+
+$large: 21px;
+
 $extra-large: 28px;
+
+$extra-extra-large: 35px;
+
+$huge: 63px;
+
 
 
 $black:            #212121;
@@ -115,7 +128,7 @@ body, html {
   background: $black;
   color: $text-grey;
   font-family: $base-font;
-  font-size: 16px;
+  font-size: $regular;
   font-weight: 400;
   image-rendering: -webkit-optimize-contrast;
   min-height: 100vh;
@@ -147,11 +160,6 @@ body, html {
 }
 
 .page-main {
-  /*background: $black;
-  border-radius: 14px 14px 0 0;
-  box-shadow: 0 0 7px $pure-black;
-  box-shadow: 0 0 1px $grey;
-  background: rgba(33,33,33,.49);*/
   position: relative;
   z-index:14;
 }
@@ -169,8 +177,6 @@ body.shop .container-logo,
 body.about .container-logo {
   padding: 32px 0 0;
 }
-
-
 
 .container-contrast {
   background: $dark-grey;
@@ -269,15 +275,15 @@ h1 {
 }
 
 h1 strong {
-  font-size: 49px;
+  font-size: $huge;
 }
 
 h2 {
-  font-size: 28px;
+  font-size: $extra-large;
 }
 
 h3 {
-  font-size: 21px;
+  font-size: $large;
 }
 
 h2 + p {
@@ -407,6 +413,7 @@ section .title:after {
 @media(max-width: 767px) {
 
   .site-header {
+    background: none;
     margin-bottom: 0;
   }
 

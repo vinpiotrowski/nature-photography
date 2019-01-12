@@ -49,25 +49,26 @@ body.default {
     content: ' ';
     height: 2px;
     position: absolute;
-    top: 140px;
+    top: 163px;
     width: 14vw;
 }
 
 .homepage .headline:before {
-    left: 7vw;
+    left: 0;
 }
 
 .homepage .headline:after {
-    right: 7vw;
+    right: 0;
 }
 
 .headline h1 {
+    font-size: $extra-extra-large;
     font-weight: 100;
     margin: 7px 0;
     white-space: nowrap;
 }
 
-.headline h3 {
+.headline h2 {
     display: inline;
     margin: 7px 0;
 }
@@ -200,7 +201,12 @@ body.default {
     }
 
     .headline h1 {
+        font-size: $extra-large;
         white-space: normal;
+    }
+
+    .headline h2 {
+        font-size: $large;
     }
 
     .homepage .headline:before, .homepage .headline:after {
