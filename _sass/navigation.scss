@@ -21,7 +21,7 @@
 
 .container-menu {
     float: right;
-    padding: 10px 0 7px;
+    padding: 10px 15px 7px 0;
     text-align: right;
 }
 
@@ -40,7 +40,6 @@
     font-size: $extra-large;
     padding: 1px 14px;
     text-decoration: none;
-    /*text-shadow: 0 0 21px $pure-black;*/
 }
 
 .container-menu .primary a:hover {

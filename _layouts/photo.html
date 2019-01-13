@@ -9,7 +9,7 @@
 
       {% include header.html %}
 
-      <div class="page-wide clearfix">
+      <div class="clearfix" style="max-width: 1500px; margin: 0 auto;">
 
           <div class="col-xs-12 no-gutter-xs">
               <div class="container-image photo">
@@ -27,13 +27,19 @@
               <a class="link-next" href="#" onclick="window.location.replace( '{{page.next.url | prepend: site.baseurl}}' );">Next</a>
               {% endif %}
           </div>
-          <div class="col-xs-12 no-gutter-xs">
-              {% include breadcrumb.html %}
-          </div>
+
           <div class="col-xs-12">
-              {% assign words = page.title | split: '|' %}
-              <h1><span class="location">{{ words[0] }}</span><span class="name">{{ words[1] }}</span></h1>
-              <p><strong>{{ words[0] }}</strong>&nbsp;&nbsp;{{ page.description}}</p>
+              <div class="page-wide">
+                  {% assign words = page.title | split: '|' %}
+                  <h1><span class="location">{{ words[0] }}</span><span class="name">{{ words[1] }}</span></h1>
+                  <p><strong>{{ words[0] }}</strong>&nbsp;&nbsp;{{ page.description}}</p>
+              </div>
+          </div>
+
+          <div class="col-xs-12 no-gutter-xs">
+              <div class="page-wide">
+                  {% include breadcrumb.html %}
+              </div>
           </div>
 
           {% include footer.html %}

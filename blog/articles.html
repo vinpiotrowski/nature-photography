@@ -12,26 +12,23 @@ pagination:
     after: 4
 ---
 
-<section>
+<section class="page-wide clearfix">
     <div class="col-xs-12">
         <h1 class="title">Articles</h1>
         <p>In the tradition of the early explorers I have been penning my field notes and thoughts.  It helps me feel more like an intrepid adventurer after reading too much National Geographic.</p>
         <br />
     </div>
-</section>
 
+    {% for post in paginator.posts %}
+    <div class="col-xs-12 no-gutter-xs">
+        <section class="article clearfix">
+            <a href="{{ post.permalink }}" class="link-permalink call-to-action secondary">Permalink</a>
+            {{ post.content }}
+        </section>
+        <hr />
+    </div>
+    {% endfor %}
 
-{% for post in paginator.posts %}
-<div class="col-xs-12 no-gutter-xs">
-    <section class="article clearfix">
-        <a href="{{ post.permalink }}" class="link-permalink call-to-action secondary">Permalink</a>
-        {{ post.content }}
-    </section>
-    <hr />
-</div>
-{% endfor %}
-
-<section class="section-padding clearfix">
     <div class="col-xs-12">
         <div class="inner-page clearfix">
 

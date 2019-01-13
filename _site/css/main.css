@@ -41,12 +41,11 @@ body, html {
 .container-logo {
   float: left;
   max-width: 350px;
-  padding: 3.5px 0 7px;
+  padding: 3.5px 0 7px 30px;
   position: absolute; }
 
 body.photos .container-logo,
 body.articles .container-logo,
-body.shop .container-logo,
 body.about .container-logo {
   padding: 32px 0 0; }
 
@@ -200,6 +199,12 @@ section .title:after {
   margin: 14px auto 0;
   width: 140px; }
 
+section .title.left {
+  text-align: left; }
+
+section .title.left:before, section .title.left:after {
+  margin: 14px 0 7px; }
+
 .footer {
   padding: 49px 0 35px;
   text-align: center; }
@@ -234,7 +239,8 @@ section .title:after {
 
 @media (max-width: 991px) {
   .container-logo {
-    max-width: 280px; } }
+    max-width: 280px;
+    padding: 5px 0 0 30px; } }
 @media (max-width: 767px) {
   .site-header {
     background: none;
@@ -282,7 +288,7 @@ section .title:after {
 
 .container-menu {
   float: right;
-  padding: 10px 0 7px;
+  padding: 10px 15px 7px 0;
   text-align: right; }
 
 .container-menu ul {
@@ -297,8 +303,7 @@ section .title:after {
   display: inline-block;
   font-size: 28px;
   padding: 1px 14px;
-  text-decoration: none;
-  /*text-shadow: 0 0 21px $pure-black;*/ }
+  text-decoration: none; }
 
 .container-menu .primary a:hover {
   color: #eb8f00; }
@@ -413,10 +418,10 @@ body.default {
   width: 14vw; }
 
 .homepage .headline:before {
-  left: 0; }
+  left: 30px; }
 
 .homepage .headline:after {
-  right: 0; }
+  right: 30px; }
 
 .headline h1 {
   font-size: 35px;
@@ -511,25 +516,20 @@ body.default {
   color: #fcfcfc !important; }
 
 @media (max-width: 991px) {
+  .homepage .headline {
+    margin: 0 auto; }
+
+  .homepage .headline:before, .homepage .headline:after {
+    display: none; }
+
   .container-galleries {
     bottom: 14px; }
 
   .container-galleries ul {
-    width: 100%; } }
+    width: 91%; } }
 @media (max-width: 767px) {
-  body {
-    background-image: none; }
-
-  .homepage.hero {
-    background: url("/content/images/hero-homepage-lg.jpg");
-    background-repeat: no-repeat;
-    background-position: center 0;
-    background-size: cover;
-    height: 460px;
-    margin: 15px; }
-
   .homepage .headline {
-    width: 70%; }
+    margin: 49px auto 0; }
 
   .headline h1 {
     font-size: 28px;
@@ -537,9 +537,6 @@ body.default {
 
   .headline h2 {
     font-size: 21px; }
-
-  .homepage .headline:before, .homepage .headline:after {
-    display: none; }
 
   .homepage .headline .container-galleries {
     display: none; }
@@ -563,9 +560,21 @@ body.default {
 
   .container-galleries a:after {
     padding-left: 0; } }
+@media (max-width: 479px) {
+  body.default {
+    background-image: url("/content/images/cover-sm.jpg"); }
+
+  .homepage.hero {
+    background: url("/content/images/hero-homepage-lg.jpg");
+    background-repeat: no-repeat;
+    background-position: center 0;
+    background-size: cover;
+    height: 460px;
+    margin: 15px; }
+
+  .homepage .headline {
+    width: 70%; } }
 .container-breadcrumb {
-  /*background: $black;
-  background: $black-alpha;*/
   clear: both;
   margin: 0 auto 14px;
   overflow: auto; }
@@ -595,7 +604,7 @@ body.default {
   color: #eb8f00; }
 
 .breadcrumb li:first-child a {
-  padding: 14px 0 14px 21px; }
+  padding: 14px 0; }
 
 .breadcrumb a:after {
   color: #555555;
@@ -616,18 +625,13 @@ body.default {
 .container-tertiary + div .container-breadcrumb {
   margin-top: 0; }
 
-@media (max-width: 991px) {
-  .breadcrumb li {
-    font-size: .77em; } }
 @media (max-width: 767px) {
   .container-breadcrumb {
     border-radius: 0;
-    display: block; }
+    display: block;
+    margin-left: 15px; }
 
   .breadcrumb li.active {
-    display: none; }
-
-  .breadcrumb > li:first-child {
     display: none; } }
 .pagination ul {
   padding: 0;
@@ -663,7 +667,7 @@ body.default {
     display: none; } }
 .photograph .site-header {
   background: none;
-  margin-bottom: 21px; }
+  margin-bottom: 7px; }
 
 .photograph .page-main {
   /*background: $black-alpha;*/ }
@@ -690,7 +694,7 @@ body.default {
   padding: 14px 49px; }
 
 .container-image.photo img {
-  max-height: 880px; }
+  max-height: 1000px; }
 
 .link-prev, .link-next {
   display: block;
@@ -809,7 +813,7 @@ body.default {
 
 body.photos .container-tertiary.photos,
 body.articles .container-tertiary.articles,
-body.shop .container-tertiary.shop,
+body.article .container-tertiary.articles,
 body.about .container-tertiary.about {
   display: block; }
 

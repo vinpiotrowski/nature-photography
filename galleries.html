@@ -5,40 +5,35 @@ section: "photos overview"
 title: "Photo Galleries"
 ---
 
-<div class="clearfix">
-
-
-        <section>
-            <div class="col-xs-12">
-                <h1 class="title">Photo Galleries</h1>
-                <p>Photography is about the stories, experiences, and adventures of our objective reality.  Each of the places I've been to present a different history and emanation.  A camera can't capture everything but these galleries serve as reminders of the sites I've explored.</p>
-                <br />
-            </div>
-        </section>
-
-
-        {% for post in site.posts reversed %}
-        {% if post.layout == 'gallery' %}
-        <div class="gallery tile">
-            <div class="col-xs-12 col-sm-6">
-                <a href="{{ post.permalink | prepend: site.baseurl }}">
-                    <div class="container-image">
-                        <img src="{{ '/content/images/' | prepend: site.baseurl | append: post.thumbnail | append: '-500x500.jpg' }}" alt="">
-                    </div>
-                </a>
-            </div>
-            <div class="col-xs-12 col-sm-6 description">
-                <h3>{{ post.title }}</h3>
-                <div>{{ post.summary }}</div>
-                <a href="{{ post.permalink | prepend: site.baseurl }}" title="View gallery" class="call-to-action secondary">View gallery</a>
-            </div>
-            <div class="clearfix"></div>
+<section class="page-wide clearfix">
+    <div class="col-xs-12">
+        <h1 class="title">Photo Galleries</h1>
+        <p>Photography is about the stories, experiences, and adventures of our objective reality.  Each of the places I've been to present a different history and emanation.  A camera can't capture everything but these galleries serve as reminders of the sites I've explored.</p>
+        <br />
+    </div>
+    {% for post in site.posts reversed %}
+    {% if post.layout == 'gallery' %}
+    <div class="gallery tile">
+        <div class="col-xs-12 col-sm-5">
+            <a href="{{ post.permalink | prepend: site.baseurl }}">
+                <div class="container-image">
+                    <img src="{{ '/content/images/' | prepend: site.baseurl | append: post.thumbnail | append: '-500x500.jpg' }}" alt="">
+                </div>
+            </a>
         </div>
-        {% endif %}
-        {% endfor %}
+        <div class="col-xs-12 col-sm-6 description">
+            <h3>{{ post.title }}</h3>
+            <div>{{ post.summary }}</div>
+            <a href="{{ post.permalink | prepend: site.baseurl }}" title="View gallery" class="call-to-action secondary">View gallery</a>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+    {% endif %}
+    {% endfor %}
+</section>
 
 
-</div>
+
 
 
 

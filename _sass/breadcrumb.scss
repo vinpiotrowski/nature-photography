@@ -1,6 +1,4 @@
 .container-breadcrumb {
-    /*background: $black;
-    background: $black-alpha;*/
     clear: both;
     margin: 0 auto 14px;
     overflow: auto;
@@ -36,7 +34,7 @@
 }
 
 .breadcrumb li:first-child a {
-    padding: 14px 0 14px 21px;
+    padding: 14px 0;
 }
 
 .breadcrumb a:after {
@@ -61,24 +59,15 @@
     margin-top: 0;
 }
 
-@media(max-width: 991px) {
-    .breadcrumb li {
-        font-size: .77em;
-    }
-}
-
 @media(max-width: 767px) {
 
     .container-breadcrumb {
         border-radius: 0;
         display: block;
+        margin-left: 15px;
     }
 
     .breadcrumb li.active {
-        display:none
-    }
-
-    .breadcrumb > li:first-child {
         display:none
     }
 }
