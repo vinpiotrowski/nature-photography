@@ -494,7 +494,7 @@ body.default {
   content: ""; }
 
 .call-to-action.secondary {
-  background: #555555;
+  border: solid 1px;
   color: #eb8f00;
   display: inline-block;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -686,6 +686,12 @@ body.default {
 .tile h3, .tile h4 {
   margin: 10px 0; }
 
+.photos .tile {
+  margin-bottom: 7px;
+  padding-left: 7px !important;
+  padding-right: 7px !important;
+  margin-top: 7px; }
+
 .tile.gallery {
   margin-bottom: 49px; }
 
@@ -856,6 +862,7 @@ body.techniques .container-tertiary .techniques a,
 body.news .container-tertiary .news a,
 body.inspiration .container-tertiary .inspiration a,
 body.links .container-tertiary .links a {
+  background: #2d759b;
   box-shadow: inset 0 0 0 3px #2d759b;
   color: #fcfcfc;
   font-weight: 700;

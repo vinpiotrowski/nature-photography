@@ -464,7 +464,17 @@
         </url>
     
         <url>
+        <loc>http://localhost:4000/photos/banff-national-park-castle-mountain</loc>
+        <priority>0.7</priority>
+        </url>
+    
+        <url>
         <loc>http://localhost:4000/photos/mt-baldy-from-barrier-lake</loc>
+        <priority>0.7</priority>
+        </url>
+    
+        <url>
+        <loc>http://localhost:4000/photos/kananaskis-country-black-and-white</loc>
         <priority>0.7</priority>
         </url>
     
@@ -534,7 +544,7 @@
         </url>
     
         <url>
-        <loc>http://localhost:4000/photos/kananaskis-highway-forty-tribute</loc>
+        <loc>http://localhost:4000/photos/herbert-lake-red-leaves</loc>
         <priority>0.7</priority>
         </url>
     
