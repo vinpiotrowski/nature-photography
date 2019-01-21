@@ -573,8 +573,7 @@ body.default {
     background-position: center 0;
     background-size: cover;
     height: 460px;
-    margin: 15px auto;
-    max-width: 84%; }
+    margin: 0 auto; }
 
   .homepage .headline {
     width: 70%; }
