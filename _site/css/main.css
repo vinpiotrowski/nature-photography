@@ -20,6 +20,9 @@ body, html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%; }
 
+body {
+  overflow-y: scroll; }
+
 .site-header {
   background: rgba(21, 21, 21, 0.7);
   margin-bottom: 70px;
@@ -570,10 +573,18 @@ body.default {
     background-position: center 0;
     background-size: cover;
     height: 460px;
-    margin: 15px; }
+    margin: 15px auto;
+    max-width: 84%; }
 
   .homepage .headline {
-    width: 70%; } }
+    width: 70%; }
+
+  .call-to-action.secondary {
+    background: #555555;
+    border: none; } }
+@media (max-width: 321px) {
+  .homepage .headline {
+    width: auto; } }
 .container-breadcrumb {
   clear: both;
   margin: 0 auto 14px;

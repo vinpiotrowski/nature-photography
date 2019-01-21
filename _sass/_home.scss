@@ -246,10 +246,22 @@ body.default {
         background-position: center 0;
         background-size: cover;
         height: 460px;
-        margin: 15px;
+        margin: 15px auto;
+        max-width: 84%;
     }
 
     .homepage .headline {
         width: 70%;
+    }
+
+    .call-to-action.secondary {
+        background: $grey;
+        border: none;
+    }
+}
+
+@media(max-width: 321px) {
+    .homepage .headline {
+        width: auto;
     }
 }

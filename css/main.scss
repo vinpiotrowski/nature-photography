@@ -142,6 +142,10 @@ body, html {
   -webkit-text-size-adjust: 100%;
 }
 
+body {
+  overflow-y: scroll;
+}
+
 .site-header {
   background: $black-alpha;
   margin-bottom: 70px;
