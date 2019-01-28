@@ -78,6 +78,30 @@
     width: 100%;
 }
 
+.container-mobile-menu .container-galleries ul {
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+    position: static;
+    table-layout: auto;
+}
+
+.container-mobile-menu .container-galleries li {
+    display: inline-block;
+    float: left;
+    position: relative;
+    width: 33%;
+    width: calc( 100% / 3);
+}
+
+.container-mobile-menu .container-galleries a {
+    padding: 0 0 14px;
+}
+
+.container-mobile-menu .container-galleries a:after {
+    padding-left: 0;
+}
+
 body.home .primary .home,
 body.photos .primary .photos,
 body.blog .primary .blog,

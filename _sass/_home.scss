@@ -204,35 +204,6 @@ body.default {
     .headline h2 {
         font-size: $large;
     }
-
-    .homepage .headline .container-galleries {
-        display: none;
-    }
-
-    .container-galleries ul {
-        display: block;
-        margin: 0 auto;
-        padding: 0;
-        position: static;
-        table-layout: auto;
-    }
-
-    .container-galleries li {
-        display: inline-block;
-        float: left;
-        position: relative;
-        width: 33%;
-        width: calc( 100% / 3);
-    }
-
-    .container-galleries a {
-        padding: 0 0 14px;
-    }
-
-    .container-galleries a:after {
-        padding-left: 0;
-    }
-
 }
 
 @media(max-width: 479px) {
@@ -241,26 +212,31 @@ body.default {
     }
 
     .homepage.hero {
-        background: url('/content/images/hero-homepage-lg.jpg');
-        background-repeat: no-repeat;
-        background-position: center 0;
-        background-size: cover;
-        height: 460px;
-        margin: 0 auto;
+        background: $blue-alpha;
     }
 
     .homepage .headline {
-        width: 70%;
+        padding: 0 0 35px;
+        width: 91%;
+    }
+
+    .homepage .headline h1,
+    .homepage .headline h2,
+    .homepage .headline strong {
+        display: inline;
+        font-size: 35px;
+    }
+
+    .homepage .container-galleries ul {
+        margin: 7px auto;
+    }
+
+    .homepage .container-galleries a {
+        transform: scale(0.77);
     }
 
     .call-to-action.secondary {
         background: $grey;
         border: none;
-    }
-}
-
-@media(max-width: 321px) {
-    .homepage .headline {
-        width: auto;
     }
 }
