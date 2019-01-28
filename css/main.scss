@@ -435,9 +435,9 @@ section .title.left:before, section .title.left:after {
 
   .container-logo {
     image-rendering: auto;
-    padding: 14px 15px 21px!important;
+    padding: 7px 15px 21px!important;
     position: relative;
-    max-width: 245px;
+    max-width: 301px;
   }
 
   .container-pull-right {
@@ -462,6 +462,13 @@ section .title.left:before, section .title.left:after {
   section .title + p {
     color: $text-grey;
     padding: 0 14px;
+  }
+}
+
+@media(max-width: 370px) {
+  .container-logo {
+    padding: 14px 15px 21px!important;
+    max-width: 245px;
   }
 }
 

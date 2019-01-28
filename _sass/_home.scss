@@ -211,10 +211,6 @@ body.default {
         background-image: url('/content/images/cover-sm.jpg');
     }
 
-    .homepage.hero {
-        background: $blue-alpha;
-    }
-
     .homepage .headline {
         padding: 0 0 35px;
         width: 91%;
@@ -231,8 +227,10 @@ body.default {
         margin: 7px auto;
     }
 
-    .homepage .container-galleries a {
-        transform: scale(0.77);
+    .homepage .container-galleries a:before {
+        font-size: 42px;
+        height: 49px;
+        width: 49px;
     }
 
     .call-to-action.secondary {

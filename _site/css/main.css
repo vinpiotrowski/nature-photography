@@ -251,9 +251,9 @@ section .title.left:before, section .title.left:after {
 
   .container-logo {
     image-rendering: auto;
-    padding: 14px 15px 21px !important;
+    padding: 7px 15px 21px !important;
     position: relative;
-    max-width: 245px; }
+    max-width: 301px; }
 
   .container-pull-right {
     float: left !important;
@@ -271,6 +271,10 @@ section .title.left:before, section .title.left:after {
   section .title + p {
     color: #989898;
     padding: 0 14px; } }
+@media (max-width: 370px) {
+  .container-logo {
+    padding: 14px 15px 21px !important;
+    max-width: 245px; } }
 .toggle-navigation {
   color: #fcfcfc;
   display: none;
@@ -564,9 +568,6 @@ body.default {
   body.default {
     background-image: url("/content/images/cover-sm.jpg"); }
 
-  .homepage.hero {
-    background: rgba(45, 117, 155, 0.7); }
-
   .homepage .headline {
     padding: 0 0 35px;
     width: 91%; }
@@ -580,8 +581,10 @@ body.default {
   .homepage .container-galleries ul {
     margin: 7px auto; }
 
-  .homepage .container-galleries a {
-    transform: scale(0.77); }
+  .homepage .container-galleries a:before {
+    font-size: 42px;
+    height: 49px;
+    width: 49px; }
 
   .call-to-action.secondary {
     background: #555555;
