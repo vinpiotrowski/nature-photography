@@ -60,13 +60,15 @@ $grey-alpha:       rgba(77,77,77,0.49);
 
 $pure-black:       #141414;
 
+$orange:           #CFA100;
+
 $orange:           #eb8f00;
 
 $orange-alpha:     rgba(235,143,0, 0.7);
 
 $text-grey:        #989898;
 
-$white:            #fcfcfc;
+$white:            #FFFFFF;
 
 $border:           #CCCCCC;
 
@@ -435,7 +437,7 @@ section .title.left:before, section .title.left:after {
 
   .container-logo {
     image-rendering: auto;
-    padding: 7px 15px 21px!important;
+    padding: 9px 15px 21px!important;
     position: relative;
     max-width: 301px;
   }
@@ -463,11 +465,15 @@ section .title.left:before, section .title.left:after {
     color: $text-grey;
     padding: 0 14px;
   }
+
+  .photos section .title + p {
+    color: $white;
+  }
 }
 
 @media(max-width: 370px) {
   .container-logo {
-    padding: 14px 15px 21px!important;
+    padding: 9px 15px 21px!important;
     max-width: 245px;
   }
 }

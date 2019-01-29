@@ -74,7 +74,7 @@ body.about .container-logo {
   z-index: 1; }
 
 .container-quote p {
-  color: #fcfcfc;
+  color: #FFFFFF;
   font-size: 14pt;
   line-height: 2em;
   position: relative;
@@ -123,7 +123,7 @@ body.about .container-logo {
   max-width: 100%; }
 
 h1, h2, h3 {
-  color: #fcfcfc;
+  color: #FFFFFF;
   font-family: "Raleway", sans-serif;
   font-weight: 400; }
 
@@ -168,7 +168,7 @@ hr {
   width: 60%; }
 
 .reverse {
-  color: #fcfcfc !important; }
+  color: #FFFFFF !important; }
 
 .center {
   text-align: center; }
@@ -179,7 +179,7 @@ hr {
   text-align: center; }
 
 section .title + p {
-  color: #fcfcfc;
+  color: #FFFFFF;
   font-size: 21px;
   margin-bottom: 21px; }
 
@@ -251,7 +251,7 @@ section .title.left:before, section .title.left:after {
 
   .container-logo {
     image-rendering: auto;
-    padding: 7px 15px 21px !important;
+    padding: 9px 15px 21px !important;
     position: relative;
     max-width: 301px; }
 
@@ -270,14 +270,18 @@ section .title.left:before, section .title.left:after {
 @media (max-width: 479px) {
   section .title + p {
     color: #989898;
-    padding: 0 14px; } }
+    padding: 0 14px; }
+
+  .photos section .title + p {
+    color: #FFFFFF; } }
 @media (max-width: 370px) {
   .container-logo {
-    padding: 14px 15px 21px !important;
+    padding: 9px 15px 21px !important;
     max-width: 245px; } }
 .toggle-navigation {
-  color: #fcfcfc;
+  color: #FFFFFF;
   display: none;
+  font-size: 14px;
   height: 49px;
   position: relative;
   text-align: center;
@@ -290,8 +294,7 @@ section .title.left:before, section .title.left:after {
   display: block;
   font-family: "np-glyphs";
   font-weight: 100;
-  font-size: 21px;
-  margin-top: 7px; }
+  font-size: 28px; }
 
 .container-menu {
   float: right;
@@ -306,7 +309,7 @@ section .title.left:before, section .title.left:after {
   display: inline-block; }
 
 .container-menu .primary a {
-  color: #fcfcfc;
+  color: #FFFFFF;
   display: inline-block;
   font-size: 28px;
   padding: 1px 14px;
@@ -337,7 +340,7 @@ section .title.left:before, section .title.left:after {
 
 .container-mobile-menu .call-to-action.secondary {
   border: solid 2px;
-  color: #fcfcfc;
+  color: #FFFFFF;
   margin-bottom: 0;
   text-align: center;
   text-transform: uppercase;
@@ -478,7 +481,7 @@ body.default {
 
 .container-galleries a {
   border-radius: 7px;
-  color: #fcfcfc;
+  color: #FFFFFF;
   display: block;
   font-size: 0;
   padding: 7px 0;
@@ -490,7 +493,7 @@ body.default {
 
 .container-galleries a:before {
   border-radius: 50%;
-  color: #fcfcfc;
+  color: #FFFFFF;
   display: block;
   font-family: "np-glyphs";
   font-size: 63px;
@@ -540,7 +543,7 @@ body.default {
 
 .call-to-action.secondary:hover {
   background: #eb8f00 !important;
-  color: #fcfcfc !important; }
+  color: #FFFFFF !important; }
 
 @media (max-width: 991px) {
   .homepage .headline {
@@ -550,13 +553,13 @@ body.default {
     display: none; }
 
   .container-galleries {
-    bottom: 14px; }
+    margin-top: 21px; }
 
   .container-galleries ul {
     width: 91%; } }
 @media (max-width: 767px) {
   .homepage .headline {
-    margin: 49px auto 0; }
+    margin: 21px auto 0; }
 
   .headline h1 {
     font-size: 28px;
@@ -633,7 +636,7 @@ body.default {
 
 .breadcrumb li.active {
   background: none;
-  color: #fcfcfc;
+  color: #FFFFFF;
   font-weight: 700;
   padding: 13px 28px 0; }
 
@@ -665,7 +668,7 @@ body.default {
   border-radius: 3px;
   padding: 7px;
   background-color: #eb8f00;
-  color: #fcfcfc; }
+  color: #FFFFFF; }
 
 .pagination a {
   text-decoration: none; }
@@ -737,7 +740,7 @@ body.default {
   background: #212121;
   background: rgba(21, 21, 21, 0.7);
   border-radius: 7px;
-  color: #fcfcfc;
+  color: #FFFFFF;
   content: "";
   display: block;
   font-family: "np-glyphs";
@@ -839,7 +842,7 @@ body.about .container-tertiary.about {
   display: block; }
 
 .container-tertiary h3 {
-  color: #fcfcfc;
+  color: #FFFFFF;
   display: none;
   float: left;
   font-weight: 700;
@@ -857,7 +860,7 @@ body.about .container-tertiary.about {
 
 .container-tertiary a {
   border-radius: 14px;
-  color: #fcfcfc;
+  color: #FFFFFF;
   display: block;
   font-weight: 700;
   margin: 6px;
@@ -879,7 +882,7 @@ body.inspiration .container-tertiary .inspiration a,
 body.links .container-tertiary .links a {
   background: #2d759b;
   box-shadow: inset 0 0 0 3px #2d759b;
-  color: #fcfcfc;
+  color: #FFFFFF;
   font-weight: 700;
   /*pointer-events: none;*/
   text-decoration: none; }

@@ -2,6 +2,7 @@
 .toggle-navigation {
     color: $white;
     display: none;
+    font-size: $border-radius;
     height: 49px;
     position: relative;
     text-align: center;
@@ -15,8 +16,7 @@
     display: block;
     font-family: $glyph-font;
     font-weight: 100;
-    font-size: 21px;
-    margin-top: 7px;
+    font-size: 28px;
 }
 
 .container-menu {
