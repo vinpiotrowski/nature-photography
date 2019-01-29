@@ -153,7 +153,7 @@ a {
   transition: all .3s ease-in-out; }
 
 a:hover {
-  color: #eb8f00; }
+  color: #ffa500; }
 
 strong {
   font-size: 1.05em;
@@ -220,7 +220,7 @@ section .title.left:before, section .title.left:after {
   color: #989898; }
 
 .footer a:hover {
-  color: #eb8f00; }
+  color: #ffa500; }
 
 .footer a:before {
   font-family: "np-glyphs";
@@ -316,7 +316,7 @@ section .title.left:before, section .title.left:after {
   text-decoration: none; }
 
 .container-menu .primary a:hover {
-  color: #eb8f00; }
+  color: #ffa500; }
 
 .container-mobile-menu {
   background: #555555;
@@ -440,7 +440,7 @@ body.default {
   width: 100%; }
 
 .homepage .headline:before, .homepage .headline:after {
-  background: #eb8f00;
+  background: #ffa500;
   content: ' ';
   height: 2px;
   position: absolute;
@@ -489,7 +489,7 @@ body.default {
   text-decoration: none; }
 
 .container-galleries a:hover {
-  background: #eb8f00; }
+  background: #ffa500; }
 
 .container-galleries a:before {
   border-radius: 50%;
@@ -525,7 +525,7 @@ body.default {
 
 .call-to-action.secondary {
   border: solid 1px;
-  color: #eb8f00;
+  color: #ffa500;
   display: inline-block;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 700;
@@ -542,7 +542,7 @@ body.default {
   vertical-align: bottom; }
 
 .call-to-action.secondary:hover {
-  background: #eb8f00 !important;
+  background: #ffa500 !important;
   color: #FFFFFF !important; }
 
 @media (max-width: 991px) {
@@ -570,6 +570,10 @@ body.default {
 @media (max-width: 479px) {
   body.default {
     background-image: url("/content/images/cover-sm.jpg"); }
+
+  .hero.homepage {
+    border: solid 3px #ffa500;
+    margin: 21px auto; }
 
   .homepage .headline {
     padding: 0 0 35px;
@@ -619,7 +623,7 @@ body.default {
   position: relative; }
 
 .breadcrumb a:hover {
-  color: #eb8f00; }
+  color: #ffa500; }
 
 .breadcrumb li:first-child a {
   padding: 14px 0; }
@@ -667,7 +671,7 @@ body.default {
 .pagination ul li.active {
   border-radius: 3px;
   padding: 7px;
-  background-color: #eb8f00;
+  background-color: #ffa500;
   color: #FFFFFF; }
 
 .pagination a {
@@ -761,7 +765,7 @@ body.default {
   right: 14px; }
 
 .link-next:hover:after, .link-prev:hover:before {
-  color: #eb8f00; }
+  color: #ffa500; }
 
 .container-image.photo {
   background: #292929;
@@ -868,7 +872,7 @@ body.about .container-tertiary.about {
   text-decoration: none; }
 
 .container-tertiary a:hover {
-  color: #eb8f00; }
+  color: #ffa500; }
 
 body.overview .container-tertiary .overview a,
 body.mountains .container-tertiary .mountains a,

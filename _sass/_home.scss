@@ -211,6 +211,11 @@ body.default {
         background-image: url('/content/images/cover-sm.jpg');
     }
 
+    .hero.homepage {
+        border: solid 3px $orange;
+        margin: 21px auto;
+    }
+
     .homepage .headline {
         padding: 0 0 35px;
         width: 91%;
