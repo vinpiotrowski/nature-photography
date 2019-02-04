@@ -151,7 +151,6 @@ body.default {
     color: $orange;
     display: inline-block;
     font-family: $alt-font;
-    font-weight: 700;
     margin: 21px auto;
     padding: 10px 14px;
     text-decoration: none;
@@ -168,6 +167,7 @@ body.default {
 
 .call-to-action.secondary:hover {
     background: $orange!important;
+    border-color: $orange;
     color: $white!important;
 }
 
@@ -211,8 +211,11 @@ body.default {
         background-image: url('/content/images/cover-sm.jpg');
     }
 
+    body.default.home {
+        background-size: 140% auto;
+    }
+
     .hero.homepage {
-        border: solid 3px $orange;
         margin: 21px auto;
     }
 
