@@ -190,7 +190,7 @@ section .title:before {
   background: #2d759b;
   content: " ";
   display: block;
-  height: 7px;
+  height: 3px;
   margin: 7px auto;
   width: 140px; }
 
@@ -198,7 +198,7 @@ section .title:after {
   background: #2d759b;
   content: " ";
   display: block;
-  height: 7px;
+  height: 3px;
   margin: 14px auto 0;
   width: 140px; }
 
@@ -528,7 +528,6 @@ body.default {
   color: #ffa500;
   display: inline-block;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 700;
   margin: 21px auto;
   padding: 10px 14px;
   text-decoration: none; }
@@ -543,6 +542,7 @@ body.default {
 
 .call-to-action.secondary:hover {
   background: #ffa500 !important;
+  border-color: #ffa500;
   color: #FFFFFF !important; }
 
 @media (max-width: 991px) {
@@ -571,8 +571,10 @@ body.default {
   body.default {
     background-image: url("/content/images/cover-sm.jpg"); }
 
+  body.default.home {
+    background-size: 140% auto; }
+
   .hero.homepage {
-    border: solid 3px #ffa500;
     margin: 21px auto; }
 
   .homepage .headline {
