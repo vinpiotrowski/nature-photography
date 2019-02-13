@@ -31,7 +31,7 @@ body {
 
 .page-wide {
   margin: 0 auto;
-  max-width: 1100px; }
+  max-width: 1200px; }
 
 .page-narrow {
   margin: 0 auto;
@@ -53,7 +53,7 @@ body.about .container-logo {
   padding: 32px 0 0; }
 
 .container-contrast {
-  background: #292929; }
+  background: #333333; }
 
 .container-quote {
   padding-left: 21px;
@@ -187,18 +187,18 @@ section .title + p {
   margin-bottom: 49px; }
 
 section .title:before {
-  background: #2d759b;
+  background: #358faa;
   content: " ";
   display: block;
-  height: 3px;
+  height: 5px;
   margin: 7px auto;
   width: 140px; }
 
 section .title:after {
-  background: #2d759b;
+  background: #358faa;
   content: " ";
   display: block;
-  height: 3px;
+  height: 5px;
   margin: 14px auto 0;
   width: 140px; }
 
@@ -339,6 +339,7 @@ section .title.left:before, section .title.left:after {
   padding: 0; }
 
 .container-mobile-menu .call-to-action.secondary {
+  background: none;
   border: solid 2px;
   color: #FFFFFF;
   margin-bottom: 0;
@@ -434,7 +435,7 @@ body.default {
   display: none; }
 
 .homepage .headline {
-  margin: 49px auto 35px;
+  margin: 49px auto 70px;
   padding: 21px 0 0;
   text-align: center;
   width: 100%; }
@@ -524,12 +525,13 @@ body.default {
   content: ""; }
 
 .call-to-action.secondary {
-  border: solid 1px;
-  color: #ffa500;
+  background: #358faa;
+  color: #FFFFFF;
   display: inline-block;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 700;
   margin: 21px auto;
-  padding: 10px 14px;
+  padding: 10px 21px;
   text-decoration: none; }
 
 .call-to-action.secondary:after {
@@ -593,11 +595,7 @@ body.default {
   .homepage .container-galleries a:before {
     font-size: 42px;
     height: 49px;
-    width: 49px; }
-
-  .call-to-action.secondary {
-    background: #555555;
-    border: none; } }
+    width: 49px; } }
 .container-breadcrumb {
   clear: both;
   margin: 0 auto 14px;
@@ -620,12 +618,10 @@ body.default {
 
 .breadcrumb a {
   display: block;
+  font-weight: 700;
   float: left;
   padding: 14px 0 14px 28px;
   position: relative; }
-
-.breadcrumb a:hover {
-  color: #ffa500; }
 
 .breadcrumb li:first-child a {
   padding: 14px 0; }
@@ -716,6 +712,13 @@ body.default {
   padding-right: 7px !important;
   margin-top: 7px; }
 
+.home .tile {
+  text-align: center; }
+
+.home .tile > div {
+  margin: 0 auto;
+  max-width: 900px; }
+
 .tile.gallery {
   margin-bottom: 49px; }
 
@@ -770,7 +773,7 @@ body.default {
   color: #ffa500; }
 
 .container-image.photo {
-  background: #292929;
+  background: #333333;
   background: rgba(77, 77, 77, 0.49); }
 
 @media (max-width: 767px) {
