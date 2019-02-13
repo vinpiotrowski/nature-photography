@@ -46,7 +46,7 @@ $blue-3:           #33aebe;
 
 $blue-4:           #43cede;
 
-$dark-grey:        #292929;
+$dark-grey:        #333333;
 
 $blue-alpha:       rgba(45,117,155, 0.7);
 
@@ -69,6 +69,8 @@ $orange-alpha:     rgba(235,143,0, 0.7);
 $text-grey:        #989898;
 
 $white:            #FFFFFF;
+
+$white-alpha:      rgba(255,255,255,0.77);
 
 $border:           #CCCCCC;
 
@@ -161,7 +163,7 @@ body {
 
 .page-wide {
   margin: 0 auto;
-  max-width: 1100px;
+  max-width: 1200px;
 }
 
 .page-narrow {
@@ -355,19 +357,19 @@ section .title + p {
 }
 
 section .title:before {
-  background: $blue;
+  background: $link-blue;
   content: " ";
   display: block;
-  height: 3px;
+  height: 5px;
   margin: 7px auto;
   width: 140px;
 }
 
 section .title:after {
-  background: $blue;
+  background: $link-blue;
   content: " ";
   display: block;
-  height: 3px;
+  height: 5px;
   margin: 14px auto 0;
   width: 140px;
 }

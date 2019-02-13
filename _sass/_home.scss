@@ -38,7 +38,7 @@ body.default {
 }
 
 .homepage .headline {
-    margin: 49px auto 35px;
+    margin: 49px auto 70px;
     padding: 21px 0 0;
     text-align: center;
     width: 100%;
@@ -147,12 +147,13 @@ body.default {
 
 
 .call-to-action.secondary {
-    border: solid 1px;
-    color: $orange;
+    background: $link-blue;
+    color: $white;
     display: inline-block;
     font-family: $alt-font;
+    font-weight: 700;
     margin: 21px auto;
-    padding: 10px 14px;
+    padding: 10px 21px;
     text-decoration: none;
 }
 
@@ -239,10 +240,5 @@ body.default {
         font-size: 42px;
         height: 49px;
         width: 49px;
-    }
-
-    .call-to-action.secondary {
-        background: $grey;
-        border: none;
     }
 }

@@ -32,6 +32,15 @@
     margin-top: 7px;
 }
 
+.home .tile {
+    text-align: center;
+}
+
+.home .tile > div {
+    margin: 0 auto;
+    max-width: 900px;
+}
+
 .tile.gallery {
     margin-bottom: 49px;
 }

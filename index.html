@@ -74,22 +74,22 @@ title: "Home"
         {% assign sortedPosts = site.posts %}
         {% for post in sortedPosts %}
         {% if post.section contains 'blog' %}
-        <div class="col-xs-12 col-sm-6 tile">
+        <div class="col-xs-12 tile">
             <a href="{{ post.permalink | prepend: site.baseurl }}">
                 <div class="container-image">
-                    <img src="{{'/content/images/' | prepend: site.baseurl | append: post.thumbnail | append: '-500x500.jpg'}}" alt="">
+                    <img src="{{'/content/images/' | prepend: site.baseurl | append: post.thumbnail | append: '.jpg'}}" alt="">
                 </div>
             </a>
             <div>
                 <h4><time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%b %-d, %Y" }}</time></h4>
-                <h3>{{ post.title | truncate: 35 }}</h3>
-                {{ post.description | truncate: 105 }}
+                <h3>{{ post.title | truncate: 70 }}</h3>
+                {{ post.description | truncate: 280 }}
             </div>
             <a href="{{ post.permalink | prepend: site.baseurl }}" title="Read more" class="call-to-action secondary">Read more</a>
         </div>
         {% assign idx = idx | plus:1 %}
         {% endif %}
-        {% if idx == 2 %}
+        {% if idx == 1 %}
           {% break %}
         {% endif %}
         {% endfor %}

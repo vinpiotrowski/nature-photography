@@ -24,13 +24,10 @@
 
 .breadcrumb a {
     display: block;
+    font-weight: 700;
     float: left;
     padding: 14px 0 14px 28px;
     position: relative;
-}
-
-.breadcrumb a:hover {
-    color: $orange;
 }
 
 .breadcrumb li:first-child a {
