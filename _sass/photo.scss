@@ -42,7 +42,13 @@
 }
 
 .tile.gallery {
+    clear: both;
+    padding: 21px;
     margin-bottom: 49px;
+}
+
+.tile.gallery:nth-child(even) {
+    background: $black-alpha;
 }
 
 .tile.gallery .description {

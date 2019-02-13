@@ -16,8 +16,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/main.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="348" column="5" selection-start-line="348" selection-start-column="5" selection-end-line="348" selection-end-column="5" />
+            <state relative-caret-position="629">
+              <caret line="154" column="1" selection-start-line="154" selection-start-column="1" selection-end-line="154" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -58,11 +58,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_sass/navigation.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="281">
-              <caret line="72" column="21" selection-start-line="72" selection-start-column="21" selection-end-line="72" selection-end-column="21" />
+            <state relative-caret-position="723">
+              <caret line="98" column="22" selection-start-line="98" selection-start-column="22" selection-end-line="98" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -85,11 +85,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/_sass/photo.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="714">
-              <caret line="48" column="21" selection-start-line="48" selection-start-column="21" selection-end-line="48" selection-end-column="21" />
+            <state relative-caret-position="281">
+              <caret line="50" column="28" selection-start-line="50" selection-start-column="28" selection-end-line="50" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -107,8 +107,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>border-</find>
-      <find>hero</find>
       <find>con</find>
       <find>.site-</find>
       <find>headline</find>
@@ -136,7 +134,9 @@
       <find>primary</find>
       <find>sec</find>
       <find>secondary</find>
+      <find>.secondary</find>
       <find>tile</find>
+      <find>odd</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -176,13 +176,13 @@
         <option value="$PROJECT_DIR$/_posts/0000-01-11-photo-09-annette-lake-bw.html" />
         <option value="$PROJECT_DIR$/_posts/0000-01-11-photo-36-herbert-lake-red-leaves.html" />
         <option value="$PROJECT_DIR$/_includes/header.html" />
-        <option value="$PROJECT_DIR$/css/main.scss" />
         <option value="$PROJECT_DIR$/blog/_posts/2013-12-21-article-lake-ohara.html" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/_sass/photo.scss" />
         <option value="$PROJECT_DIR$/_sass/breadcrumb.scss" />
         <option value="$PROJECT_DIR$/_sass/_home.scss" />
         <option value="$PROJECT_DIR$/_sass/navigation.scss" />
+        <option value="$PROJECT_DIR$/css/main.scss" />
+        <option value="$PROJECT_DIR$/_sass/photo.scss" />
       </list>
     </option>
   </component>
@@ -266,12 +266,12 @@
       <option name="presentableId" value="Default" />
       <updated>1546838874397</updated>
       <workItem from="1546838875541" duration="8063000" />
-      <workItem from="1547043478218" duration="75924000" />
+      <workItem from="1547043478218" duration="76815000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="83987000" />
+    <option name="totallyTimeSpent" value="84878000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="626" y="377" width="1400" height="1000" extended-state="0" />
@@ -521,20 +521,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/main.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="348" column="5" selection-start-line="348" selection-start-column="5" selection-end-line="348" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_sass/photo.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="714">
-          <caret line="48" column="21" selection-start-line="48" selection-start-column="21" selection-end-line="48" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_sass/breadcrumb.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="697">
@@ -551,8 +537,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/_sass/navigation.scss">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="723">
+          <caret line="98" column="22" selection-start-line="98" selection-start-column="22" selection-end-line="98" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/main.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="629">
+          <caret line="154" column="1" selection-start-line="154" selection-start-column="1" selection-end-line="154" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_sass/photo.scss">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="281">
-          <caret line="72" column="21" selection-start-line="72" selection-start-column="21" selection-end-line="72" selection-end-column="21" />
+          <caret line="50" column="28" selection-start-line="50" selection-start-column="28" selection-end-line="50" selection-end-column="28" />
         </state>
       </provider>
     </entry>
