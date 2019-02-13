@@ -720,7 +720,12 @@ body.default {
   max-width: 900px; }
 
 .tile.gallery {
+  clear: both;
+  padding: 21px;
   margin-bottom: 49px; }
+
+.tile.gallery:nth-child(even) {
+  background: rgba(21, 21, 21, 0.7); }
 
 .tile.gallery .description {
   line-height: 1.5;
