@@ -7,29 +7,121 @@ title: "Photo Galleries"
 
 <section class="page-wide clearfix">
     <div class="col-xs-12">
-        <h1 class="title">Photo Galleries</h1>
-        <p>Photography is about the stories, experiences, and adventures of our objective reality.  Each of the places I've been to present a different history and emanation.  A camera can't capture everything but these galleries serve as reminders of the sites I've explored.</p>
-        <br />
+        <div class="headline">
+            <h1 class="title">Photos</h1>
+            <p>The best photos capture subjective influences to tell a story.  When a picture conveys the experience I enjoyed outdoors I am happy.</p>
+        </div>
     </div>
-    {% for post in site.posts reversed %}
-    {% if post.layout == 'gallery' %}
-    <div class="gallery tile">
-        <div class="col-xs-12 col-sm-5">
-            <a href="{{ post.permalink | prepend: site.baseurl }}">
-                <div class="container-image">
-                    <img src="{{ '/content/images/' | prepend: site.baseurl | append: post.thumbnail | append: '-500x500.jpg' }}" alt="">
+</section>
+
+<section class="container-light">
+        {% for post in site.posts reversed %}
+        {% if post.layout == 'gallery' %}
+
+
+        {% if post.tag == 'mountains' %}
+        <div class="page-wide">
+            <div class="gallery tile container-pull-top clearfix">
+                <div class="col-xs-12 col-sm-5">
+                    <a href="{{ post.permalink | prepend: site.baseurl }}">
+                        <div class="container-image">
+                            <img src="{{ '/content/images/' | prepend: site.baseurl | append: post.thumbnail | append: '-500x500.jpg' }}" alt="">
+                        </div>
+                    </a>
                 </div>
-            </a>
+                <div class="col-xs-12 col-sm-7 description">
+                    <h2 class="sub-title">{{ post.title }}</h2>
+                    <div>{{ post.summary }}</div>
+                    <a href="{{ post.permalink | prepend: site.baseurl }}" title="View gallery" class="call-to-action secondary">View gallery</a>
+                </div>
+            </div>
         </div>
-        <div class="col-xs-12 col-sm-6 description">
-            <h3>{{ post.title }}</h3>
-            <div>{{ post.summary }}</div>
-            <a href="{{ post.permalink | prepend: site.baseurl }}" title="View gallery" class="call-to-action secondary">View gallery</a>
+        {% endif %}
+
+
+        {% if post.tag == 'foothills' %}
+        <div class="page-wide">
+            <div class="gallery tile container-stretch clearfix">
+                <a href="{{ post.permalink | prepend: site.baseurl }}">
+                    <div class="container-image">
+                        <img src="{{ '/content/images/' | prepend: site.baseurl | append: post.thumbnail | append: '-500x500.jpg' }}" alt="">
+                    </div>
+                </a>
+                <div class="col-xs-12 description">
+                    <h2 class="sub-title">{{ post.title }}</h2>
+                    <div>{{ post.summary }}</div>
+                    <a href="{{ post.permalink | prepend: site.baseurl }}" title="View gallery" class="call-to-action secondary">View gallery</a>
+                </div>
+            </div>
         </div>
-        <div class="clearfix"></div>
+        {% endif %}
+
+
+        {% if post.tag == 'badlands' %}
+        <div class="page-wide">
+            <div class="gallery tile container-pull-bottom clearfix">
+                <div class="col-xs-12 col-sm-5 pull-right">
+                    <a href="{{ post.permalink | prepend: site.baseurl }}">
+                        <div class="container-image">
+                            <img src="{{ '/content/images/' | prepend: site.baseurl | append: post.thumbnail | append: '-500x500.jpg' }}" alt="">
+                        </div>
+                    </a>
+                </div>
+                <div class="col-xs-12 col-sm-7 description">
+                    <h2 class="sub-title">{{ post.title }}</h2>
+                    <div>{{ post.summary }}</div>
+                    <a href="{{ post.permalink | prepend: site.baseurl }}" title="View gallery" class="call-to-action secondary">View gallery</a>
+                </div>
+            </div>
+        </div>
+        {% endif %}
+
+
+    {% if post.tag == 'prairies' %}
+    <div class="container-grey">
+        <div class="page-wide">
+            <div class="gallery tile container-stretch stretch-right clearfix">
+                <a href="{{ post.permalink | prepend: site.baseurl }}">
+                    <div class="container-image">
+                        <img src="{{ '/content/images/' | prepend: site.baseurl | append: post.thumbnail | append: '-500x500.jpg' }}" alt="">
+                    </div>
+                </a>
+                <div class="col-xs-12 description">
+                    <h2 class="sub-title">{{ post.title }}</h2>
+                    <div>{{ post.summary }}</div>
+                    <a href="{{ post.permalink | prepend: site.baseurl }}" title="View gallery" class="call-to-action secondary">View gallery</a>
+                </div>
+            </div>
+        </div>
     </div>
     {% endif %}
-    {% endfor %}
+
+
+    {% if post.tag == 'northwest' %}
+    <div class="page-wide">
+        <div class="gallery tile container-pull-top clearfix">
+            <div class="col-xs-12 col-sm-5">
+                <a href="{{ post.permalink | prepend: site.baseurl }}">
+                    <div class="container-image">
+                        <img src="{{ '/content/images/' | prepend: site.baseurl | append: post.thumbnail | append: '-500x500.jpg' }}" alt="">
+                    </div>
+                </a>
+            </div>
+            <div class="col-xs-12 col-sm-7 description">
+                <h2 class="sub-title">{{ post.title }}</h2>
+                <div>{{ post.summary }}</div>
+                <a href="{{ post.permalink | prepend: site.baseurl }}" title="View gallery" class="call-to-action secondary">View gallery</a>
+            </div>
+        </div>
+    </div>
+    {% endif %}
+
+        {% endif %}
+        {% endfor %}
+    </div>
+
+
+
 </section>
 
 

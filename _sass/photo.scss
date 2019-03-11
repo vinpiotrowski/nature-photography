@@ -1,10 +1,5 @@
 .photograph .site-header {
-    background: none;
     margin-bottom: 7px;
-}
-
-.photograph .page-main {
-    /*background: $black-alpha;*/
 }
 
 .location:after {
@@ -22,7 +17,18 @@
 }
 
 .tile h3, .tile h4 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.tile h3, .tile h4, .tile p {
     margin: 10px 0;
+}
+
+.tile.container-stretch > div {
+    background: $dark-grey;
+    padding: 7px 14px;
 }
 
 .photos .tile {
@@ -36,28 +42,18 @@
     text-align: center;
 }
 
-.home .tile > div {
-    margin: 0 auto;
-    max-width: 900px;
-}
-
 .tile.gallery {
     clear: both;
-    padding: 21px;
-    margin-bottom: 49px;
-}
-
-.tile.gallery:nth-child(even) {
-    background: $black-alpha;
+    padding: 0 21px;
+    margin-bottom: 105px;
 }
 
 .tile.gallery .description {
-    line-height: 1.5;
-    padding: 14px 49px;
+    padding: 14px 70px;
 }
 
 .container-image.photo img {
-    max-height: 1000px;
+    max-height: 98vh;
 }
 
 .link-prev, .link-next {
@@ -113,56 +109,139 @@
     background: $grey-alpha;
 }
 
-@media(max-width: 767px) {
-    .photograph .site-header {
-        margin-bottom: 0;
+
+body.photos {
+    &.mountains, &.foothills, &.prairies,
+    &.badlands, &.northwest {
+        .headline:before {
+            border-radius: 50%;
+            color: $white;
+            display: block;
+            font-family: $glyph-font;
+            font-size: 70px;
+            height: 77px;
+            font-weight: 100;
+            margin: 0 auto 14px;
+            padding: 11px 0 0;
+            width: 77px;
+            text-align: center;
+        }
+    }
+}
+
+    body.photos.mountains .headline:before {
+        content: $mountains;
     }
 
-    .tiles {
-        padding: 7px;
+    body.photos.foothills .headline:before {
+        content: $foothills;
     }
 
+    body.photos.prairies .headline:before {
+        content: $prairies;
+    }
+
+    body.photos.badlands .headline:before {
+        content: $badlands;
+    }
+
+    body.photos.northwest .headline:before {
+        content: $travel;
+    }
+
+
+    @media(max-width: 767px) {
+        .photograph .site-header {
+            margin-bottom: 0;
+        }
+
+        .tiles {
+            padding: 7px;
+        }
+
+        .tile {
+            margin-bottom: 35px;
+            margin-top: 7px;
+        }
+
+        .homepage .tile {
+            float: none;
+            margin: 0 auto 21px;
+            max-width: 84%;
+        }
+
+        .container-image.photo img {
+            max-height: 420px;
+        }
+
+        .tile.gallery {
+            margin-bottom: 70px;
+        }
+
+        .tile.gallery .description {
+            padding: 21px 21px 35px;
+            text-align: center;
+        }
+
+        .link-prev, .link-next {
+            top: 50%;
+            top: calc(50% - 24px);
+        }
+
+        .link-prev:before, .link-next:after {
+            border-radius: 0 7px 7px 0;
+            left: 0px;
+            font-size: 35px;
+            width: 35px;
+        }
+
+        .link-next:after {
+            border-radius: 7px 0 0 7px;
+            left: auto;
+            right: 0px;
+        }
+
+        .location {
+            display: none;
+        }
+    }
+
+
+@include media-breakpoint-only(md) {
     .tile {
         padding-left: 7px!important;
         padding-right: 7px!important;
-        margin-bottom: 7px;
-        margin-top: 7px;
+    }
+}
+
+@include media-breakpoint-up(lg) {
+    .tile.featured > div {
+        background: $white;
+        padding: 7px;
+
+        h3, h4 {
+            color: $grey;
+        }
     }
 
-    .tile.gallery .description {
-        padding: 21px 21px 35px;
-        text-align: center;
+    .tile.container-stretch {
+        position: relative;
     }
 
-    .homepage .tile {
-        float: none;
-        margin: 0 auto 21px;
-        max-width: 84%;
+    .tile.container-stretch > div {
+        background: rgba(42,42,42,0.91);
+        background: $dark-grey;
+        left: 0;
+        padding: 35px;
+        position: absolute;
+        transform: translate(84px, -91%);
+        width: 42%;
     }
 
-    .container-image.photo img {
-        max-height: 420px;
-    }
-
-    .link-prev, .link-next {
-        top: 50%;
-        top: calc(50% - 24px);
-    }
-
-    .link-prev:before, .link-next:after {
-        border-radius: 0 7px 7px 0;
-        left: 0px;
-        font-size: 35px;
-        width: 35px;
-    }
-
-    .link-next:after {
-        border-radius: 7px 0 0 7px;
+    .tile.container-stretch.stretch-right > div {
         left: auto;
-        right: 0px;
+        right: 0;
+        transform: translate(-84px, -91%);
     }
 
-    .location {
-        display: none;
-    }
 }

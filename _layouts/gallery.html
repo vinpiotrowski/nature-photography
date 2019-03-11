@@ -2,24 +2,53 @@
 layout: default
 ---
 
-<section class="page-wide clearfix">
-    <div class="col-xs-12">
-        <h1 class="title">{{ page.title }}</h1>
-        <p>{{ page.description}}</p>
+<section style="position: relative;">
+    <div class="page-wide clearfix">
+        <div class="col-xs-12 headline">
+            <h1 class="title">{{ page.sub-title }}</h1>
+        </div>
+    </div>
+    <div class="polygon">
+        <!--
+          preserveAspectRatio: makes sure the triangle is scalable
+          viewbox: points stretches from the parent
+        -->
+        <svg preserveAspectRatio="none" viewBox="0 0 100 100">
+            <polygon points="0,77 0,100 50,100" opacity="1"></polygon>
+        </svg>
+
+    </div>
+    <div class="polygon">
+        <!--
+          preserveAspectRatio: makes sure the triangle is scalable
+          viewbox: points stretches from the parent
+        -->
+        <svg preserveAspectRatio="none" viewBox="0 0 100 100">
+            <polygon points="100,100 100,77 50,100" opacity="1"></polygon>
+        </svg>
     </div>
 
-    <div class="tiles clearfix">
-        {% assign test = page.tag %}
-        {% for post in site.posts reversed %}
+
+</section>
+
+<section class="container-light">
+    <div class="page-wide">
+        <div class="tiles clearfix">
+            <div class="col-xs-12">
+                <p class="lead-paragraph">{{ page.description }}</p>
+            </div>
+            {% assign test = page.tag %}
+            {% for post in site.posts reversed %}
             {% if post.subsection contains test %}
-                <div class="col-xs-4 col-sm-2 tile">
-                    <a href="{{ post.permalink | prepend: site.baseurl }}">
-                        <div class="container-image">
-                            <img src="{{ '/content/images/' | prepend: site.baseurl | append: post.photo | append: '-240x240.jpg' }}" alt="{{ post.alt }}">
-                        </div>
-                    </a>
-                </div>
+            <div class="col-xs-4 col-sm-2 tile">
+                <a href="{{ post.permalink | prepend: site.baseurl }}">
+                    <div class="container-image">
+                        <img src="{{ '/content/images/' | prepend: site.baseurl | append: post.photo | append: '-240x240.jpg' }}" alt="{{ post.alt }}">
+                    </div>
+                </a>
+            </div>
             {% endif %}
-        {% endfor %}
+            {% endfor %}
+        </div>
     </div>
 </section>

@@ -269,41 +269,6 @@
         </url>
     
         <url>
-        <loc>http://localhost:4000/photos/star-trails-and-rocks-in-dinosaur-provincial-park-alberta</loc>
-        <priority>0.7</priority>
-        </url>
-    
-        <url>
-        <loc>http://localhost:4000/photos/dinosaur-provincial-park-alberta-badlands-wrinkled-rocks</loc>
-        <priority>0.7</priority>
-        </url>
-    
-        <url>
-        <loc>http://localhost:4000/photos/dinosaur-park-world-heritage-site-breaking-bad</loc>
-        <priority>0.7</priority>
-        </url>
-    
-        <url>
-        <loc>http://localhost:4000/photos/dinosaur-provincial-park-landscape-in-alberta</loc>
-        <priority>0.7</priority>
-        </url>
-    
-        <url>
-        <loc>http://localhost:4000/photos/dinosaur-provincial-park-alberta-hoodoos-bw</loc>
-        <priority>0.7</priority>
-        </url>
-    
-        <url>
-        <loc>http://localhost:4000/photos/dinosaur-provincial-park-alberta-cool-hoodoo-hues</loc>
-        <priority>0.7</priority>
-        </url>
-    
-        <url>
-        <loc>http://localhost:4000/photos/alberta-badlands-photo-gallery</loc>
-        <priority>0.7</priority>
-        </url>
-    
-        <url>
         <loc>http://localhost:4000/photos/southern-alberta-prairie-storm-chasing</loc>
         <priority>0.7</priority>
         </url>
@@ -380,6 +345,41 @@
     
         <url>
         <loc>http://localhost:4000/photos/alberta-prairies-photo-gallery</loc>
+        <priority>0.7</priority>
+        </url>
+    
+        <url>
+        <loc>http://localhost:4000/photos/star-trails-and-rocks-in-dinosaur-provincial-park-alberta</loc>
+        <priority>0.7</priority>
+        </url>
+    
+        <url>
+        <loc>http://localhost:4000/photos/dinosaur-provincial-park-alberta-badlands-wrinkled-rocks</loc>
+        <priority>0.7</priority>
+        </url>
+    
+        <url>
+        <loc>http://localhost:4000/photos/dinosaur-park-world-heritage-site-breaking-bad</loc>
+        <priority>0.7</priority>
+        </url>
+    
+        <url>
+        <loc>http://localhost:4000/photos/dinosaur-provincial-park-landscape-in-alberta</loc>
+        <priority>0.7</priority>
+        </url>
+    
+        <url>
+        <loc>http://localhost:4000/photos/dinosaur-provincial-park-alberta-hoodoos-bw</loc>
+        <priority>0.7</priority>
+        </url>
+    
+        <url>
+        <loc>http://localhost:4000/photos/dinosaur-provincial-park-alberta-cool-hoodoo-hues</loc>
+        <priority>0.7</priority>
+        </url>
+    
+        <url>
+        <loc>http://localhost:4000/photos/alberta-badlands-photo-gallery</loc>
         <priority>0.7</priority>
         </url>
     
