@@ -504,10 +504,27 @@ hr {
 
 }
 
-@include media-breakpoint-up(xl) {
+@media (min-width: 1200px) {
+  .container-stretch {
+    margin-left: calc( (100VW - 1217px) / 2 * -1);
+    margin-right: calc( (100VW - 1217px) / 2 * -1);
+  }
+
+  body.default .tile.container-stretch {
+    padding-left: 0!important;
+    padding-right: 0!important;
+  }
+}
+
+@media (min-width: 1400px) {
   .container-stretch {
     margin-left: -70px;
     margin-right: -70px;
+  }
+
+  body.default .tile.container-stretch {
+    padding-left: 0!important;
+    padding-right: 0!important;
   }
 }
 

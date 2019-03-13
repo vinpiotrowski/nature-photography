@@ -274,10 +274,22 @@ hr {
 @media (min-width: 992px) {
   .container-grey {
     padding: 140px 0 49px; } }
+@media (min-width: 1200px) {
+  .container-stretch {
+    margin-left: calc( (100VW - 1217px) / 2 * -1);
+    margin-right: calc( (100VW - 1217px) / 2 * -1); }
+
+  body.default .tile.container-stretch {
+    padding-left: 0 !important;
+    padding-right: 0 !important; } }
 @media (min-width: 1400px) {
   .container-stretch {
     margin-left: -70px;
-    margin-right: -70px; } }
+    margin-right: -70px; }
+
+  body.default .tile.container-stretch {
+    padding-left: 0 !important;
+    padding-right: 0 !important; } }
 h1, h2, h3 {
   color: #FFFFFF;
   font-family: "Josefin Sans", sans-serif;
@@ -394,13 +406,12 @@ section .title.left:before, section .title.left:after {
 
 .lead-paragraph {
   font-size: 21px;
-  margin: 21px auto 49px;
+  margin: 21px auto 70px;
   text-align: center;
   width: 91%; }
 
 .polygon {
   z-index: 0;
-  display: none;
   height: 100%;
   width: 100%;
   position: absolute;
@@ -409,6 +420,8 @@ section .title.left:before, section .title.left:after {
   .polygon svg {
     width: 100%;
     height: 100%; }
+    .polygon svg polygon {
+      fill: #FFFFFF; }
 
 @media (max-width: 991.98px) {
   section .title + p {
@@ -821,7 +834,7 @@ body.default {
   padding: 14px 70px; }
 
 .container-image.photo img {
-  max-height: 98vh; }
+  max-height: 84vh; }
 
 .link-prev, .link-next {
   display: block;
@@ -875,12 +888,13 @@ body.photos.mountains .headline:before, body.photos.foothills .headline:before, 
   color: #FFFFFF;
   display: block;
   font-family: "np-glyphs";
-  font-size: 70px;
-  height: 77px;
+  font-size: 98px;
+  height: 105px;
   font-weight: 100;
+  left: 50%;
   margin: 0 auto 14px;
   padding: 11px 0 0;
-  width: 77px;
+  width: 105px;
   text-align: center; }
 
 body.photos.mountains .headline:before {
@@ -923,6 +937,10 @@ body.photos.northwest .headline:before {
   .tile.gallery .description {
     padding: 21px 21px 35px;
     text-align: center; }
+
+  body.photos.mountains .headline:before, body.photos.foothills .headline:before, body.photos.prairies .headline:before, body.photos.badlands .headline:before, body.photos.northwest .headline:before {
+    font-size: 63px;
+    height: 63px; }
 
   .link-prev, .link-next {
     top: 50%;
