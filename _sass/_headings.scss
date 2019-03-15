@@ -29,7 +29,7 @@ h4 {
 }
 
 .headline {
-    margin: 14px auto 140px;
+    margin: 14px auto 70px;
     padding: 0;
     text-align: center;
     width: 100%;
@@ -65,6 +65,10 @@ section .headline .title + p {
 }
 
 @include media-breakpoint-up(md) {
+
+    .headline {
+        margin: 14px auto 140px;
+    }
 
     .headline h1 {
         font-size: 98px;
@@ -168,7 +172,15 @@ section .title.left:before, section .title.left:after {
         height: 100%;
 
         polygon {
-            fill: #FFFFFF;
+            fill: $blue;
+        }
+    }
+}
+
+.polygon + .polygon {
+    svg {
+        polygon {
+            fill: $white;
         }
     }
 }

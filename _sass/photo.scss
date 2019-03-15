@@ -109,6 +109,45 @@
     background: $grey-alpha;
 }
 
+body.photos.overview {
+
+    .sub-title:before {
+        border-radius: 50%;
+        color: #555;
+        content: '\e907';
+        display: block;
+        font-family: np-glyphs;
+        font-size: 70px;
+        height: 91px;
+        font-weight: 100;
+        left: 50%;
+        margin: 0;
+        padding: 11px 0 0;
+        width: 100%;
+    }
+
+    .mountains .sub-title:before {
+        content: $mountains;
+    }
+
+    .foothills .sub-title:before {
+        content: $foothills;
+    }
+
+    .prairies .sub-title:before {
+        content: $prairies;
+    }
+
+    .badlands .sub-title:before {
+        content: $badlands;
+    }
+
+    .northwest .sub-title:before {
+        content: $travel;
+    }
+
+}
+
 
 body.photos {
     &.mountains, &.foothills, &.prairies,
@@ -246,7 +285,7 @@ body.photos {
         padding: 35px;
         position: absolute;
         transform: translate(84px, -91%);
-        width: 42%;
+        width: 49%;
     }
 
     .tile.container-stretch.stretch-right > div {

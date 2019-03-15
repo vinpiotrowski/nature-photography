@@ -21,7 +21,7 @@ title: "Photo Galleries"
 
         {% if post.tag == 'mountains' %}
         <div class="page-wide">
-            <div class="gallery tile container-pull-top clearfix">
+            <div class="gallery tile container-pull-top {{ post.tag }} clearfix">
                 <div class="col-xs-12 col-sm-5">
                     <a href="{{ post.permalink | prepend: site.baseurl }}">
                         <div class="container-image">
@@ -41,7 +41,7 @@ title: "Photo Galleries"
 
         {% if post.tag == 'foothills' %}
         <div class="page-wide">
-            <div class="gallery tile container-stretch clearfix">
+            <div class="gallery tile container-stretch {{ post.tag }} clearfix">
                 <a href="{{ post.permalink | prepend: site.baseurl }}">
                     <div class="container-image">
                         <img src="{{ '/content/images/' | prepend: site.baseurl | append: post.thumbnail | append: '-500x500.jpg' }}" alt="">
@@ -59,7 +59,7 @@ title: "Photo Galleries"
 
         {% if post.tag == 'badlands' %}
         <div class="page-wide">
-            <div class="gallery tile container-pull-bottom clearfix">
+            <div class="gallery tile container-pull-bottom {{ post.tag }} clearfix">
                 <div class="col-xs-12 col-sm-5 pull-right">
                     <a href="{{ post.permalink | prepend: site.baseurl }}">
                         <div class="container-image">
@@ -80,7 +80,7 @@ title: "Photo Galleries"
     {% if post.tag == 'prairies' %}
     <div class="container-grey">
         <div class="page-wide">
-            <div class="gallery tile container-stretch stretch-right clearfix">
+            <div class="gallery tile container-stretch stretch-right {{ post.tag }} clearfix">
                 <a href="{{ post.permalink | prepend: site.baseurl }}">
                     <div class="container-image">
                         <img src="{{ '/content/images/' | prepend: site.baseurl | append: post.thumbnail | append: '-500x500.jpg' }}" alt="">
@@ -99,7 +99,7 @@ title: "Photo Galleries"
 
     {% if post.tag == 'northwest' %}
     <div class="page-wide">
-        <div class="gallery tile container-pull-top clearfix">
+        <div class="gallery tile container-pull-top {{ post.tag }} clearfix">
             <div class="col-xs-12 col-sm-5">
                 <a href="{{ post.permalink | prepend: site.baseurl }}">
                     <div class="container-image">

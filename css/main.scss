@@ -218,7 +218,7 @@ body.about .container-logo {
 .container-grey {
   background: $dark-grey;
   background: $border;
-  padding: 49px 0 140px;
+  padding: 49px 0 70px;
 }
 
 .container-contrast {
@@ -332,8 +332,8 @@ body.about .container-logo {
     }
 
     .container-image {
-      margin-top: -105px;
-      transform: translateY(105px);
+      margin-top: -91px;
+      transform: translateY(91px);
     }
   }
 }
@@ -342,11 +342,17 @@ body.about .container-logo {
   margin-top: 0!important;
 
   .container-image {
-    margin-bottom: -105px;
-    transform: translateY(-105px);
+    margin-bottom: -91px;
+    transform: translateY(-91px);
   }
 
   @include media-breakpoint-down(sm) {
+
+    .container-image {
+      margin-bottom: -70px;
+      transform: translateY(-70px);
+    }
+
     .container-image img {
       max-height: 70vh;
     }

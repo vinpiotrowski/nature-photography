@@ -67,7 +67,7 @@ body.about .container-logo {
 .container-grey {
   background: #333333;
   background: #DADADD;
-  padding: 49px 0 140px; }
+  padding: 49px 0 70px; }
 
 .container-contrast {
   background: #333333; }
@@ -153,15 +153,18 @@ body.about .container-logo {
     .container-pull-bottom .description {
       padding-top: 70px !important; }
     .container-pull-bottom .container-image {
-      margin-top: -105px;
-      transform: translateY(105px); } }
+      margin-top: -91px;
+      transform: translateY(91px); } }
 
 .container-pull-top {
   margin-top: 0 !important; }
   .container-pull-top .container-image {
-    margin-bottom: -105px;
-    transform: translateY(-105px); }
+    margin-bottom: -91px;
+    transform: translateY(-91px); }
   @media (max-width: 767.98px) {
+    .container-pull-top .container-image {
+      margin-bottom: -70px;
+      transform: translateY(-70px); }
     .container-pull-top .container-image img {
       max-height: 70vh; } }
   @media (min-width: 992px) {
@@ -314,7 +317,7 @@ h4 {
   margin: 0; }
 
 .headline {
-  margin: 14px auto 140px;
+  margin: 14px auto 70px;
   padding: 0;
   text-align: center;
   width: 100%; }
@@ -343,6 +346,9 @@ section .headline .title + p {
   margin: 70px auto; }
 
 @media (min-width: 768px) {
+  .headline {
+    margin: 14px auto 140px; }
+
   .headline h1 {
     font-size: 98px; }
 
@@ -421,7 +427,10 @@ section .title.left:before, section .title.left:after {
     width: 100%;
     height: 100%; }
     .polygon svg polygon {
-      fill: #FFFFFF; }
+      fill: #2d759b; }
+
+.polygon + .polygon svg polygon {
+  fill: #FFFFFF; }
 
 @media (max-width: 991.98px) {
   section .title + p {
@@ -883,6 +892,30 @@ body.default {
   background: #333333;
   background: rgba(77, 77, 77, 0.49); }
 
+body.photos.overview .sub-title:before {
+  border-radius: 50%;
+  color: #555;
+  content: '\e907';
+  display: block;
+  font-family: np-glyphs;
+  font-size: 70px;
+  height: 91px;
+  font-weight: 100;
+  left: 50%;
+  margin: 0;
+  padding: 11px 0 0;
+  width: 100%; }
+body.photos.overview .mountains .sub-title:before {
+  content: ""; }
+body.photos.overview .foothills .sub-title:before {
+  content: ""; }
+body.photos.overview .prairies .sub-title:before {
+  content: ""; }
+body.photos.overview .badlands .sub-title:before {
+  content: ""; }
+body.photos.overview .northwest .sub-title:before {
+  content: ""; }
+
 body.photos.mountains .headline:before, body.photos.foothills .headline:before, body.photos.prairies .headline:before, body.photos.badlands .headline:before, body.photos.northwest .headline:before {
   border-radius: 50%;
   color: #FFFFFF;
@@ -980,7 +1013,7 @@ body.photos.northwest .headline:before {
     padding: 35px;
     position: absolute;
     transform: translate(84px, -91%);
-    width: 42%; }
+    width: 49%; }
 
   .tile.container-stretch.stretch-right > div {
     left: auto;
