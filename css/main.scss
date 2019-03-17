@@ -205,14 +205,8 @@ body {
 .container-logo {
   float: left;
   max-width: 350px;
-  padding: 3.5px 0 7px 30px;
+  padding: 21px 0 0 15px;
   position: absolute;
-}
-
-body.photos .container-logo,
-body.articles .container-logo,
-body.about .container-logo {
-  padding: 32px 0 0;
 }
 
 .container-grey {
@@ -450,7 +444,7 @@ hr {
 @media(max-width: 991px) {
   .container-logo {
     max-width: 280px;
-    padding: 5px 0 0 30px;
+    padding: 14px 0 0 15px;
   }
 }
 
@@ -463,9 +457,8 @@ hr {
 
   .container-logo {
     image-rendering: auto;
-    padding: 9px 15px 21px!important;
+    padding: 7px 0 0 7px;
     position: relative;
-    max-width: 301px;
   }
 
   .container-pull-right {
@@ -484,7 +477,7 @@ hr {
 
 @media(max-width: 370px) {
   .container-logo {
-    padding: 9px 15px 21px!important;
+    padding: 9px 0 21px 7px;
     max-width: 245px;
   }
 }

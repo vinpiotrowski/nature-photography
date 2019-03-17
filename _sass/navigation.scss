@@ -21,8 +21,14 @@
 
 .container-menu {
     float: right;
-    padding: 10px 15px 7px 0;
+    padding: 35px 15px 7px 0;
     text-align: right;
+}
+
+body.photos .container-menu,
+body.articles .container-menu,
+body.about .container-menu {
+    padding: 7px 15px 7px 0;
 }
 
 .container-menu ul {
@@ -128,7 +134,7 @@ body.about .primary .about {
     .toggle-navigation {
         display: block;
         position: absolute;
-        top: 7px;
+        top: 14px;
         right: 7px;
         transition: all .3s ease-in-out;
     }

@@ -22,36 +22,39 @@ title: "Home"
 </section>
 
 
-<section class="page-wide clearfix">
-    <div class="col-xs-12">
-        <h2 class="title">Featured photographs</h2>
-        <p>Views of nature's good side captured in Alberta and Western Canada.</p>
-    </div>
-    <div class="tiles clearfix">
-        {% assign idx = 0 %}
-        {% assign sortedPosts = site.posts | sort: 'featured' | reverse %}
-        {% for post in sortedPosts %}
-        {% if post.categories contains 'photo' %}
-        <div class="col-xs-12 col-sm-4 tile featured">
-            <a href="{{ post.permalink | prepend: site.baseurl }}">
-                <div class="container-image">
-                    <img src="{{'/content/images/' | prepend: site.baseurl | append: post.photo | append: '-240x240.jpg'}}" alt="">
-                </div>
-            </a>
-            <div>
-                {% assign words = post.title | split: '|' %}
-                <h4>{{ words[0] }}</h4>
-                <h3>{{ words[1] }}</h3>
-                <p>{{ post.alt | truncate: 98 }}</p>
-                <a href="{{ post.permalink | prepend: site.baseurl }}" title="View photo {{ post.title }}" class="call-to-action secondary">View photo</a>
-            </div>
+<section style="position: relative;">
+
+    <div class="page-wide clearfix">
+        <div class="col-xs-12">
+            <h2 class="title">Featured photographs</h2>
+            <p>Views of nature's good side captured in Alberta and Western Canada.</p>
         </div>
-        {% assign idx = idx | plus:1 %}
-        {% endif %}
-        {% if idx == 3 %}
-          {% break %}
-        {% endif %}
-        {% endfor %}
+        <div class="tiles clearfix">
+            {% assign idx = 0 %}
+            {% assign sortedPosts = site.posts | sort: 'featured' | reverse %}
+            {% for post in sortedPosts %}
+            {% if post.categories contains 'photo' %}
+            <div class="col-xs-12 col-sm-4 tile featured">
+                <a href="{{ post.permalink | prepend: site.baseurl }}">
+                    <div class="container-image">
+                        <img src="{{'/content/images/' | prepend: site.baseurl | append: post.photo | append: '-240x240.jpg'}}" alt="">
+                    </div>
+                </a>
+                <div>
+                    {% assign words = post.title | split: '|' %}
+                    <h4>{{ words[0] }}</h4>
+                    <h3>{{ words[1] }}</h3>
+                    <p>{{ post.alt | truncate: 98 }}</p>
+                    <a href="{{ post.permalink | prepend: site.baseurl }}" title="View photo {{ post.title }}" class="call-to-action secondary">View photo</a>
+                </div>
+            </div>
+            {% assign idx = idx | plus:1 %}
+            {% endif %}
+            {% if idx == 3 %}
+            {% break %}
+            {% endif %}
+            {% endfor %}
+        </div>
     </div>
 </section>
 
@@ -111,6 +114,7 @@ title: "Home"
             </div>
         </div>
     </div>
+
 </section>
 
 
