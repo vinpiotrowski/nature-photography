@@ -56,13 +56,8 @@ body {
 .container-logo {
   float: left;
   max-width: 350px;
-  padding: 3.5px 0 7px 30px;
+  padding: 21px 0 0 15px;
   position: absolute; }
-
-body.photos .container-logo,
-body.articles .container-logo,
-body.about .container-logo {
-  padding: 32px 0 0; }
 
 .container-grey {
   background: #333333;
@@ -239,7 +234,7 @@ hr {
 @media (max-width: 991px) {
   .container-logo {
     max-width: 280px;
-    padding: 5px 0 0 30px; } }
+    padding: 14px 0 0 15px; } }
 @media (max-width: 767px) {
   .site-header {
     background: none;
@@ -247,9 +242,8 @@ hr {
 
   .container-logo {
     image-rendering: auto;
-    padding: 9px 15px 21px !important;
-    position: relative;
-    max-width: 301px; }
+    padding: 7px 0 0 7px;
+    position: relative; }
 
   .container-pull-right {
     float: left !important;
@@ -262,7 +256,7 @@ hr {
     display: none; } }
 @media (max-width: 370px) {
   .container-logo {
-    padding: 9px 15px 21px !important;
+    padding: 9px 0 21px 7px;
     max-width: 245px; } }
 @media (max-width: 575.98px) {
   .container-stretch .container-image {
@@ -465,8 +459,13 @@ section .title.left:before, section .title.left:after {
 
 .container-menu {
   float: right;
-  padding: 10px 15px 7px 0;
+  padding: 35px 15px 7px 0;
   text-align: right; }
+
+body.photos .container-menu,
+body.articles .container-menu,
+body.about .container-menu {
+  padding: 7px 15px 7px 0; }
 
 .container-menu ul {
   margin: 0;
@@ -552,7 +551,7 @@ body.about .primary .about {
   .toggle-navigation {
     display: block;
     position: absolute;
-    top: 7px;
+    top: 14px;
     right: 7px;
     transition: all .3s ease-in-out; }
 
