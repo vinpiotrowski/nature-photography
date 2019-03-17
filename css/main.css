@@ -242,7 +242,7 @@ hr {
 
   .container-logo {
     image-rendering: auto;
-    padding: 7px 0 0 7px;
+    padding: 7px 0 7px 7px;
     position: relative; }
 
   .container-pull-right {
@@ -761,8 +761,7 @@ body.default {
 @media (max-width: 767px) {
   .container-breadcrumb {
     border-radius: 0;
-    display: block;
-    margin-left: 15px; }
+    display: block; }
 
   .breadcrumb li.active {
     display: none; } }
@@ -1104,7 +1103,11 @@ body.links .container-tertiary .links a {
     border-radius: 0; }
 
   .container-tertiary li {
-    font-size: .77em; } }
+    font-size: 14px; }
+
+  .container-tertiary a {
+    margin: 5px;
+    padding: 5px; } }
 @media (max-width: 767px) {
   .container-tertiary {
     display: none; }
