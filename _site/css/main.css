@@ -77,6 +77,19 @@ body {
   .container-stretch .sub-title {
     color: #FFFFFF !important; }
 
+.container-disruptor {
+  background-image: url(/content/images/disruptor-bg.jpg);
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  text-align: right; }
+
+.container-disruptor .cluster {
+  padding: 140px 14px 91px 0;
+  position: relative;
+  z-index: 14; }
+
 .container-quote {
   padding-left: 21px;
   position: relative; }
