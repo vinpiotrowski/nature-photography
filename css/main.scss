@@ -186,6 +186,12 @@ body {
   z-index:14;
 }
 
+
+.container-dark {
+  background: $black;
+  padding: 70px 0 35px;
+}
+
 .container-light {
   background: $white;
   padding: 21px 0;

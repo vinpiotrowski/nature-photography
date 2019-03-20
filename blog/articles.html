@@ -12,13 +12,19 @@ pagination:
     after: 4
 ---
 
+
 <section class="page-wide clearfix">
     <div class="col-xs-12">
-        <h1 class="title">Articles</h1>
-        <p>In the tradition of the early explorers I have been penning my field notes and thoughts.  It helps me feel more like an intrepid adventurer after reading too much National Geographic.</p>
-        <br />
+        <div class="headline">
+            <h1 class="title">Articles</h1>
+            <p>In the tradition of the early explorers I have been penning my field notes and thoughts.  It helps me feel more like an intrepid adventurer after reading too much National Geographic.</p>
+        </div>
     </div>
+</section>
 
+
+<section class="container-dark">
+    <div  class="page-wide clearfix">
     {% for post in paginator.posts %}
     <div class="col-xs-12 no-gutter-xs">
         <section class="article clearfix">
@@ -67,6 +73,7 @@ pagination:
             {% endif %}
 
         </div>
+    </div>
     </div>
 </section>
 
