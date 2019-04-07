@@ -108,6 +108,35 @@ body.default {
 }
 
 
+#traits .sub-title:before {
+    border-radius: 50%;
+    display: block;
+    font-family: $glyph-font;
+    font-size: 63px;
+    height: 77px;
+    font-weight: 100;
+    margin: 0 auto;
+    padding: 7px 0 0;
+    width: 77px;
+    text-align: center;
+}
+
+#traits .sub-title.canadian:before {
+    content: $canadian;
+}
+
+#traits .sub-title.local:before {
+    content: $landscapes;
+}
+
+#traits .sub-title.articles:before {
+    content: $articles;
+}
+
+#traits .sub-title.conservation:before {
+    content: $conservation;
+}
+
 .call-to-action.secondary {
     background: $link-blue;
     color: $white;
@@ -144,6 +173,10 @@ body.default {
         font-size: 49px;
         height: 56px;
         width: 56px;
+    }
+
+    #traits {
+        text-align: center;
     }
 }
 
