@@ -64,8 +64,7 @@ body {
   position: absolute; }
 
 .container-grey {
-  background: #333333;
-  background: #DADADD;
+  background: #dddddf;
   padding: 49px 0 70px; }
 
 .container-contrast {
@@ -356,6 +355,9 @@ section .headline .title + p {
 .homepage .headline {
   margin: 70px auto; }
 
+section.homepage + section polygon {
+  display: none; }
+
 @media (min-width: 768px) {
   .headline {
     margin: 14px auto 140px; }
@@ -371,7 +373,13 @@ section .headline .title + p {
     transform: translate(0, -49%); }
 
   .homepage .headline {
-    margin: 49px auto; } }
+    margin: 14px auto 105px; }
+
+  section.homepage + section {
+    padding-top: 49px; }
+
+  section.homepage + section polygon {
+    display: block; } }
 @media (min-width: 1400px) {
   .headline h1 {
     font-size: 126px; }
@@ -380,11 +388,17 @@ section .headline .title + p {
     font-size: 42px; }
 
   .homepage .headline {
-    margin: 105px auto; } }
+    margin: 105px auto 175px; }
+
+  section.homepage + section {
+    padding-top: 70px; } }
 .title, .sub-title {
   letter-spacing: 0.07em;
   line-height: 1.2em;
   text-transform: uppercase; }
+
+.sub-title {
+  line-height: 2em; }
 
 .title, .title + p {
   margin-left: auto;
@@ -556,7 +570,7 @@ body.blog .primary .blog,
 body.shop .primary .shop,
 body.about .primary .about {
   border-radius: 14px;
-  box-shadow: inset 0 0 0 2px #2d759b; }
+  box-shadow: inset 0 0 0 2px #358faa; }
 
 @media (max-width: 960px) {
   .container-menu {
@@ -676,6 +690,7 @@ body.default {
 
 #traits .sub-title:before {
   border-radius: 50%;
+  color: #358faa;
   display: block;
   font-family: "np-glyphs";
   font-size: 63px;
@@ -936,7 +951,7 @@ body.default {
 
 body.photos.overview .sub-title:before {
   border-radius: 50%;
-  color: #555;
+  color: #777;
   content: '\e907';
   display: block;
   font-family: np-glyphs;
@@ -1132,8 +1147,8 @@ body.techniques .container-tertiary .techniques a,
 body.news .container-tertiary .news a,
 body.inspiration .container-tertiary .inspiration a,
 body.links .container-tertiary .links a {
-  background: #2d759b;
-  box-shadow: inset 0 0 0 3px #2d759b;
+  background: #358faa;
+  box-shadow: inset 0 0 0 3px #358faa;
   color: #FFFFFF;
   font-weight: 700;
   /*pointer-events: none;*/
@@ -1221,8 +1236,8 @@ body.links .container-tertiary .links a {
 .col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
   position: relative;
   min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px; }
+  padding-left: 21px;
+  padding-right: 21px; }
 
 .col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12 {
   float: left; }

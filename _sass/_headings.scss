@@ -64,6 +64,10 @@ section .headline .title + p {
     margin: 70px auto;
 }
 
+section.homepage + section polygon {
+    display: none;
+}
+
 @include media-breakpoint-up(md) {
 
     .headline {
@@ -84,7 +88,15 @@ section .headline .title + p {
     }
 
     .homepage .headline {
-        margin: 49px auto;
+        margin: 14px auto 105px;
+    }
+
+    section.homepage + section {
+        padding-top: 49px;
+    }
+
+    section.homepage + section polygon {
+        display: block;
     }
 }
 
@@ -98,7 +110,11 @@ section .headline .title + p {
     }
 
     .homepage .headline {
-        margin: 105px auto;
+        margin: 105px auto 175px;
+    }
+
+    section.homepage + section {
+        padding-top: 70px;
     }
 }
 
@@ -107,6 +123,10 @@ section .headline .title + p {
     letter-spacing: 0.07em;
     line-height: 1.2em;
     text-transform: uppercase;
+}
+
+.sub-title {
+    line-height: 2em;
 }
 
 .title, .title + p {

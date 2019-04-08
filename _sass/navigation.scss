@@ -115,7 +115,7 @@ body.blog .primary .blog,
 body.shop .primary .shop,
 body.about .primary .about {
     border-radius: $border-radius;
-    box-shadow: inset 0 0 0 2px $blue;
+    box-shadow: inset 0 0 0 2px $link-blue;
 }
 
 @media(max-width: 960px) {

@@ -58,8 +58,8 @@ body.news .container-tertiary .news a,
 body.inspiration .container-tertiary .inspiration a,
 body.links .container-tertiary .links a
 {
-    background: $blue;
-    box-shadow: inset 0 0 0 3px $blue;
+    background: $link-blue;
+    box-shadow: inset 0 0 0 3px $link-blue;
     color: $white;
     font-weight: 700;
     /*pointer-events: none;*/
