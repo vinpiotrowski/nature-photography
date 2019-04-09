@@ -61,11 +61,7 @@ section .headline .title + p {
 }
 
 .homepage .headline {
-    margin: 70px auto;
-}
-
-section.homepage + section polygon {
-    display: none;
+    margin: 35px auto 140px;
 }
 
 @include media-breakpoint-up(md) {
@@ -88,11 +84,7 @@ section.homepage + section polygon {
     }
 
     .homepage .headline {
-        margin: 14px auto 105px;
-    }
-
-    section.homepage + section {
-        padding-top: 49px;
+        margin: 14px auto 175px;
     }
 
     section.homepage + section polygon {
@@ -110,11 +102,7 @@ section.homepage + section polygon {
     }
 
     .homepage .headline {
-        margin: 105px auto 175px;
-    }
-
-    section.homepage + section {
-        padding-top: 70px;
+        margin: 105px auto 280px;
     }
 }
 
