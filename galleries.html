@@ -11,7 +11,7 @@ title: "Photo Galleries"
     <div class="col-xs-12">
         <div class="headline">
             <h1 class="title">Photos</h1>
-            <p>We are the result of our experiences and thoughts.  I'm grateful to live in an untamed part of the world where the land, wildlife, and people remain connected.</p>
+            <p>We are the result of our experiences and thoughts. For me that's a lot of nature and stuff.</p>
         </div>
     </div>
     <div class="polygon">
@@ -20,7 +20,7 @@ title: "Photo Galleries"
           viewbox: points stretches from the parent
         -->
         <svg preserveAspectRatio="none" viewBox="0 0 100 100">
-            <polygon points="0,100 0,77 70,100" opacity="1" style="fill: #333333; z-index: 14;"></polygon>
+            <polygon points="0,100 0,84 70,100" opacity="1"></polygon>
         </svg>
     </div>
     <div class="polygon">
@@ -29,7 +29,7 @@ title: "Photo Galleries"
           viewbox: points stretches from the parent
         -->
         <svg preserveAspectRatio="none" viewBox="0 0 100 100">
-            <polygon points="100,100 100,84 70,100" opacity="1" style="fill: #FFFFFF; z-index: 14;"></polygon>
+            <polygon points="100,100 100,84 70,100" opacity="1"></polygon>
         </svg>
     </div>
 </section>
@@ -64,6 +64,16 @@ title: "Photo Galleries"
 
 
         {% if post.tag == 'foothills' %}
+    <div style="position: relative">
+    <div class="polygon">
+        <!--
+          preserveAspectRatio: makes sure the triangle is scalable
+          viewbox: points stretches from the parent
+        -->
+        <svg preserveAspectRatio="none" viewBox="0 0 100 100">
+            <polygon points="100,70 100,35 0,70 0,63" opacity="1" style="fill: #dddddf; z-index: 14;"></polygon>
+        </svg>
+    </div>
         <div class="page-wide">
             <div class="gallery tile container-stretch {{ post.tag }} clearfix">
                 <a href="{{ post.permalink | prepend: site.baseurl }}">
@@ -78,6 +88,7 @@ title: "Photo Galleries"
                 </div>
             </div>
         </div>
+    </div>
         {% endif %}
 
 
