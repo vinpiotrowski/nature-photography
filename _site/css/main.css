@@ -966,6 +966,14 @@ body.default {
 body.photograph .footer {
   background: none; }
 
+body.photograph .footer .site-logo {
+  display: none; }
+
+body.photograph .container-social {
+  float: none;
+  position: static;
+  text-align: center; }
+
 body.photos.overview .sub-title:before {
   border-radius: 50%;
   color: #777;
