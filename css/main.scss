@@ -433,28 +433,36 @@ hr {
 }
 
 .footer {
-  padding: 49px 0 35px;
-  text-align: center;
+  background: $dark-grey;
+  padding: 49px 0;
+  position: relative;
 }
 
 .footer a, .footer span {
-  padding: 0 14px;
+  color: $text-grey;
+  line-height: 35px;
   text-decoration: none;
 }
 
 .footer a {
-  color: $text-grey;
+  margin: 0 14px;
 }
 
-.footer a:hover {
+.footer span {
+  padding: 0 14px;
+}
+
+.footer a:hover, .footer a:hover span {
   color: $orange;
 }
 
 .footer a:before {
   font-family: $glyph-font;
-  font-size: 21px;
+  font-size: 28px;
   font-weight: 100;
+  line-height: 35px;
   padding: 0;
+  vertical-align: middle;
 }
 
 .footer a.fb:before {
@@ -469,8 +477,20 @@ hr {
   content: $instagram;
 }
 
+.footer .site-logo {
+  float: left;
+  max-width: 77px;
+}
+
+.container-social {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
 .container-copyright {
-  color: $text-grey;
+  display: none;
 }
 
 @media(max-width: 991px) {
@@ -496,6 +516,17 @@ hr {
   .container-pull-right {
     float: left!important;
     margin-top: 0;
+  }
+
+  .container-social {
+    float: none;
+    position: static;
+    text-align: center;
+  }
+
+  .footer .site-logo {
+    display: none;
+    max-width: 49px;
   }
 
   .footer a:before {

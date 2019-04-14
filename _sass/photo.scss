@@ -109,6 +109,11 @@
     background: $grey-alpha;
 }
 
+body.photograph .footer {
+    background: none;
+}
+
+
 body.photos.overview {
 
     .sub-title:before {

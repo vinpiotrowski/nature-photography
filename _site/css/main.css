@@ -216,24 +216,31 @@ hr {
   text-align: center; }
 
 .footer {
-  padding: 49px 0 35px;
-  text-align: center; }
+  background: #333333;
+  padding: 49px 0;
+  position: relative; }
 
 .footer a, .footer span {
-  padding: 0 14px;
+  color: #989898;
+  line-height: 35px;
   text-decoration: none; }
 
 .footer a {
-  color: #989898; }
+  margin: 0 14px; }
 
-.footer a:hover {
+.footer span {
+  padding: 0 14px; }
+
+.footer a:hover, .footer a:hover span {
   color: #eeb600; }
 
 .footer a:before {
   font-family: "np-glyphs";
-  font-size: 21px;
+  font-size: 28px;
   font-weight: 100;
-  padding: 0; }
+  line-height: 35px;
+  padding: 0;
+  vertical-align: middle; }
 
 .footer a.fb:before {
   content: ""; }
@@ -244,8 +251,18 @@ hr {
 .footer a.insta:before {
   content: ""; }
 
+.footer .site-logo {
+  float: left;
+  max-width: 77px; }
+
+.container-social {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%); }
+
 .container-copyright {
-  color: #989898; }
+  display: none; }
 
 @media (max-width: 991px) {
   .container-logo {
@@ -264,6 +281,15 @@ hr {
   .container-pull-right {
     float: left !important;
     margin-top: 0; }
+
+  .container-social {
+    float: none;
+    position: static;
+    text-align: center; }
+
+  .footer .site-logo {
+    display: none;
+    max-width: 49px; }
 
   .footer a:before {
     font-size: 35px; }
@@ -443,7 +469,7 @@ section .title.left:before, section .title.left:after {
     width: 100%;
     height: 100%; }
     .polygon svg polygon {
-      fill: #2d759b; }
+      fill: #358faa; }
 
 .polygon + .polygon svg polygon {
   fill: #FFFFFF; }
@@ -507,7 +533,7 @@ body.about .container-menu {
   color: #eeb600; }
 
 .container-mobile-menu {
-  background: #777777;
+  background: #333333;
   bottom: 0;
   right: 0;
   margin: 0;
@@ -582,7 +608,7 @@ body.about .primary .about {
 
   .toggle-navigation.active + .container-mobile-menu {
     left: 35px;
-    padding: 21px 35px; }
+    padding: 70px 14px 21px 35px; }
 
   .container-menu {
     display: none; } }
@@ -936,6 +962,9 @@ body.default {
 .container-image.photo {
   background: #333333;
   background: rgba(77, 77, 77, 0.49); }
+
+body.photograph .footer {
+  background: none; }
 
 body.photos.overview .sub-title:before {
   border-radius: 50%;
