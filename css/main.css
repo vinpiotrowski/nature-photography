@@ -429,7 +429,8 @@ section .title + p {
   margin-bottom: 21px; }
 
 .title + p {
-  margin-bottom: 49px; }
+  margin-bottom: 49px;
+  max-width: 77%; }
 
 section .title:before {
   background: #358faa;
