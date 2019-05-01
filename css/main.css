@@ -64,8 +64,7 @@ body {
   position: absolute; }
 
 .container-grey {
-  background: #dddddf;
-  padding: 49px 0 70px; }
+  padding: 0 0 70px; }
 
 .container-contrast {
   background: #333333; }
@@ -311,9 +310,12 @@ hr {
     max-height: 320px;
     max-width: none;
     transform: translateX(-50%); } }
+@media (min-width: 768px) {
+  .container-grey {
+    padding: 49px 0 70px; } }
 @media (min-width: 992px) {
   .container-grey {
-    padding: 140px 0 49px; } }
+    padding: 140px 0 84px; } }
 @media (min-width: 1200px) {
   .container-stretch {
     margin-left: calc( (100VW - 1217px) / 2 * -1);
@@ -913,7 +915,7 @@ body.default {
   margin-bottom: 105px; }
 
 .tile.gallery .description {
-  padding: 14px 70px; }
+  padding: 0 21px 0 35px; }
 
 .container-image.photo img {
   max-height: 84vh; }
@@ -976,14 +978,16 @@ body.photograph .container-social {
   position: static;
   text-align: center; }
 
+body.photos.overview .sub-title {
+  margin-bottom: 0; }
 body.photos.overview .sub-title:before {
   border-radius: 50%;
   color: #777;
   content: '\e907';
   display: block;
   font-family: np-glyphs;
-  font-size: 70px;
-  height: 91px;
+  font-size: 63px;
+  height: 77px;
   font-weight: 100;
   left: 50%;
   margin: 0;
@@ -1029,6 +1033,9 @@ body.photos.badlands .headline:before {
 body.photos.northwest .headline:before {
   content: ""; }
 
+@media (min-width: 1200px) {
+  .tile.gallery .description {
+    padding: 35px 70px; } }
 @media (max-width: 767px) {
   .photograph .site-header {
     margin-bottom: 0; }
@@ -1096,13 +1103,23 @@ body.photos.northwest .headline:before {
     left: 0;
     padding: 35px;
     position: absolute;
-    transform: translate(84px, -91%);
-    width: 49%; }
+    transform: translate(70px, -91%);
+    width: 49%;
+    width: calc((100% - 140px) * (7 / 12)); }
 
   .tile.container-stretch.stretch-right > div {
     left: auto;
     right: 0;
-    transform: translate(-84px, -91%); } }
+    transform: translate(-70px, -91%); } }
+@media (min-width: 768px) and (max-width: 1399.98px) {
+  .gallery.tile.mountains .container-image {
+    margin-left: 35px; }
+
+  .gallery.tile.badlands .container-image {
+    margin-right: 35px; }
+
+  .gallery.tile.travel.container-image {
+    margin-left: 35px; } }
 .article + .article {
   margin-top: 49px; }
 
