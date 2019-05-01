@@ -228,8 +228,7 @@ body {
 }
 
 .container-grey {
-  background: #dddddf;
-  padding: 49px 0 70px;
+  padding: 0 0 70px;
 }
 
 .container-contrast {
@@ -560,9 +559,15 @@ hr {
   }
 }
 
+@include media-breakpoint-up(md) {
+  .container-grey {
+    padding: 49px 0 70px;
+  }
+}
+
 @include media-breakpoint-up(lg) {
   .container-grey {
-    padding: 140px 0 49px;
+    padding: 140px 0 84px;
   }
 
 }

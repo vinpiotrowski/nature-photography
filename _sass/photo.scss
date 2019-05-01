@@ -49,7 +49,7 @@
 }
 
 .tile.gallery .description {
-    padding: 14px 70px;
+    padding: 0 21px 0 35px;
 }
 
 .container-image.photo img {
@@ -126,14 +126,18 @@ body.photograph .container-social {
 
 body.photos.overview {
 
+    .sub-title {
+        margin-bottom: 0;
+    }
+
     .sub-title:before {
         border-radius: 50%;
         color: #777;
         content: '\e907';
         display: block;
         font-family: np-glyphs;
-        font-size: 70px;
-        height: 91px;
+        font-size: 63px;
+        height: 77px;
         font-weight: 100;
         left: 50%;
         margin: 0;
@@ -204,6 +208,11 @@ body.photos {
         content: $travel;
     }
 
+    @media(min-width: 1200px) {
+        .tile.gallery .description {
+            padding: 35px 70px;
+        }
+    }
 
     @media(max-width: 767px) {
         .photograph .site-header {
@@ -299,14 +308,29 @@ body.photos {
         left: 0;
         padding: 35px;
         position: absolute;
-        transform: translate(84px, -91%);
+        transform: translate(70px, -91%);
         width: 49%;
+        width: calc((100% - 140px) * (7 / 12));
     }
 
     .tile.container-stretch.stretch-right > div {
         left: auto;
         right: 0;
-        transform: translate(-84px, -91%);
+        transform: translate(-70px, -91%);
     }
 
+}
+
+@include media-breakpoint-between(md, lg) {
+    .gallery.tile.mountains .container-image {
+        margin-left: 35px;
+    }
+
+    .gallery.tile.badlands .container-image{
+        margin-right: 35px;
+    }
+
+    .gallery.tile.travel.container-image{
+        margin-left: 35px;
+    }
 }

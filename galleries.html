@@ -14,24 +14,6 @@ title: "Photo Galleries"
             <p>We are the result of our experiences and thoughts. For me that's a lot of sticks and rocks.</p>
         </div>
     </div>
-    <div class="polygon">
-        <!--
-          preserveAspectRatio: makes sure the triangle is scalable
-          viewbox: points stretches from the parent
-        -->
-        <svg preserveAspectRatio="none" viewBox="0 0 100 100">
-            <polygon points="0,100 0,84 70,100" opacity="1"></polygon>
-        </svg>
-    </div>
-    <div class="polygon">
-        <!--
-          preserveAspectRatio: makes sure the triangle is scalable
-          viewbox: points stretches from the parent
-        -->
-        <svg preserveAspectRatio="none" viewBox="0 0 100 100">
-            <polygon points="100,100 100,84 70,100" opacity="1"></polygon>
-        </svg>
-    </div>
 </section>
 </div>
 
@@ -64,16 +46,6 @@ title: "Photo Galleries"
 
 
         {% if post.tag == 'foothills' %}
-    <div style="position: relative">
-    <div class="polygon">
-        <!--
-          preserveAspectRatio: makes sure the triangle is scalable
-          viewbox: points stretches from the parent
-        -->
-        <svg preserveAspectRatio="none" viewBox="0 0 100 100">
-            <polygon points="100,70 100,35 0,70 0,63" opacity="1" style="fill: #dddddf; z-index: 14;"></polygon>
-        </svg>
-    </div>
         <div class="page-wide">
             <div class="gallery tile container-stretch {{ post.tag }} clearfix">
                 <a href="{{ post.permalink | prepend: site.baseurl }}">
@@ -88,44 +60,41 @@ title: "Photo Galleries"
                 </div>
             </div>
         </div>
-    </div>
         {% endif %}
 
 
-        {% if post.tag == 'badlands' %}
-        <div class="page-wide">
-            <div class="gallery tile container-pull-bottom {{ post.tag }} clearfix">
-                <div class="col-xs-12 col-sm-5 pull-right">
-                    <a href="{{ post.permalink | prepend: site.baseurl }}">
-                        <div class="container-image">
-                            <img src="{{ '/content/images/' | prepend: site.baseurl | append: post.thumbnail | append: '-500x500.jpg' }}" alt="">
-                        </div>
-                    </a>
-                </div>
-                <div class="col-xs-12 col-sm-7 description">
-                    <h2 class="sub-title">{{ post.title }}</h2>
-                    <div>{{ post.summary }}</div>
-                    <a href="{{ post.permalink | prepend: site.baseurl }}" title="View gallery" class="call-to-action secondary">View gallery</a>
-                </div>
-            </div>
-        </div>
-        {% endif %}
-
-
-    {% if post.tag == 'prairies' %}
-    <div class="container-grey">
-        <div class="page-wide">
-            <div class="gallery tile container-stretch stretch-right {{ post.tag }} clearfix">
+    {% if post.tag == 'badlands' %}
+    <div class="page-wide">
+        <div class="gallery tile {{ post.tag }} clearfix">
+            <div class="col-xs-12 col-sm-5 pull-right">
                 <a href="{{ post.permalink | prepend: site.baseurl }}">
                     <div class="container-image">
                         <img src="{{ '/content/images/' | prepend: site.baseurl | append: post.thumbnail | append: '-500x500.jpg' }}" alt="">
                     </div>
                 </a>
-                <div class="col-xs-12 description">
-                    <h2 class="sub-title">{{ post.title }}</h2>
-                    <div>{{ post.summary }}</div>
-                    <a href="{{ post.permalink | prepend: site.baseurl }}" title="View gallery" class="call-to-action secondary">View gallery</a>
+            </div>
+            <div class="col-xs-12 col-sm-7 description">
+                <h2 class="sub-title">{{ post.title }}</h2>
+                <div>{{ post.summary }}</div>
+                <a href="{{ post.permalink | prepend: site.baseurl }}" title="View gallery" class="call-to-action secondary">View gallery</a>
+            </div>
+        </div>
+    </div>
+    {% endif %}
+
+
+    {% if post.tag == 'prairies' %}
+    <div class="page-wide">
+        <div class="gallery tile container-stretch stretch-right {{ post.tag }} clearfix">
+            <a href="{{ post.permalink | prepend: site.baseurl }}">
+                <div class="container-image">
+                    <img src="{{ '/content/images/' | prepend: site.baseurl | append: post.thumbnail | append: '-500x500.jpg' }}" alt="">
                 </div>
+            </a>
+            <div class="col-xs-12 description">
+                <h2 class="sub-title">{{ post.title }}</h2>
+                <div>{{ post.summary }}</div>
+                <a href="{{ post.permalink | prepend: site.baseurl }}" title="View gallery" class="call-to-action secondary">View gallery</a>
             </div>
         </div>
     </div>
@@ -134,7 +103,7 @@ title: "Photo Galleries"
 
     {% if post.tag == 'northwest' %}
     <div class="page-wide">
-        <div class="gallery tile container-pull-top {{ post.tag }} clearfix">
+        <div class="gallery tile {{ post.tag }} clearfix">
             <div class="col-xs-12 col-sm-5">
                 <a href="{{ post.permalink | prepend: site.baseurl }}">
                     <div class="container-image">
