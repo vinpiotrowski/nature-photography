@@ -8,13 +8,13 @@ body.default {
 .decoration {
     background-position: center 0;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 2100%;
     bottom: -7px;
-    filter: blur(7px);
-    -webkit-filter: blur(7px);
-    -moz-filter: blur(7px);
-    -o-filter: blur(7px);
-    -ms-filter: blur(7px);
+    filter: blur(14px);
+    -webkit-filter: blur(14px);
+    -moz-filter: blur(14px);
+    -o-filter: blur(14px);
+    -ms-filter: blur(14px);
     left: -7px;
     position: fixed;
     right: -7px;
@@ -24,7 +24,7 @@ body.default {
 
 .decoration:after {
     background: $black;
-    background: rgba(0,0,0,0.63);
+    background: rgba(0,0,0,0.77);
     bottom: 0;
     content: ' ';
     left: 0;
